@@ -1,0 +1,7 @@
+2/1/20
+4.06 PM 
+researched into components, added datasheets in the repository.
+
+4/1/20
+6.19PM
+Soldered bluepill now testing blinkled code.
