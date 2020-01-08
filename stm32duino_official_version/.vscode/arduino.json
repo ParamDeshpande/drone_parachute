@@ -1,0 +1,7 @@
+{
+    "board": "stm32duino:STM32F1:genericSTM32F103C",
+    "output": "../build",
+    "configuration": "device_variant=STM32F103C8,upload_method=serialMethod,cpu_speed=speed_72mhz,opt=osstd",
+    "sketch": "src\\main.ino",
+    "port": "COM15"
+}

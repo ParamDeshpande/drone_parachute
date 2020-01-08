@@ -1,0 +1,17 @@
+[
+  {
+    "Sourcefile": "",
+    "Include": "",
+    "Includepath": "C:\\Users\\Param\\AppData\\Local\\Arduino15\\packages\\stm32duino\\hardware\\STM32F1\\2019.12.31\\cores\\maple"
+  },
+  {
+    "Sourcefile": "",
+    "Include": "",
+    "Includepath": "C:\\Users\\Param\\AppData\\Local\\Arduino15\\packages\\stm32duino\\hardware\\STM32F1\\2019.12.31\\variants\\generic_stm32f103c"
+  },
+  {
+    "Sourcefile": "e:\\drone_parachute\\build\\sketch\\main.ino.cpp",
+    "Include": "",
+    "Includepath": ""
+  }
+]

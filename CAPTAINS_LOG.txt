@@ -1,0 +1,95 @@
+2/1/20
+4.06 PM 
+researched into components, added datasheets in the repository.
+
+4/1/20
+6.19PM
+Soldered bluepill now testing blinkled code.
+
+5/1/20
+4.00 PM 
+Checking which code runs for IMU localization.
+7.36 PM 
+Memory overflow for the ic with kriswiner code.
+
+6/1/20
+12.49 PM 
+Cannot upload via stlink via arduino IDE coz of DFU issue trying in vscode.
+s1 only testing the serial on bluepill.
+1.13 PM 
+Serial doesnt seem to work with arduino at all rxtx pins tried all combiantions LED blink works.
+7.57 PM 
+ARM MBED COOMUNCICATION SEEMED TO WORK COZ IT WAS PROPRITERY content. Wont work with ARDUINO, got the FTDI usb to serial IC.
+Now testing../tested doesnt seem to work.
+However shows blinking led when chars sent via serial terminal.
+9.46 PM 
+WOLF CRY.
+ARDUINO SUCKS LIKE SHIT ... 
+FTDI works like charm via MBED.
+Looking for mbed compatible mpu9250 codes.
+10.20 PM
+Fuuny thing the code works on bluepill the kriswiner one ... sadly occupies about 99percent memory.
+If things are to go right, I need to REMOVE ALL COMMENTS FROM ALL CODES AND MAKE IT AS SMALL AND AS COMPACT AS POSSIBLE.
+
+11.07 PM 
+That above statement a joke. 
+Need to buy a bigger MCU, atleast with a bigger memory.
+
+7/1/20
+10.02AM
+TODAY TASKS 
+s1. TEST ax,ay,az kriswiner
+s2. TEST servo motor see how much memory ?
+s3. Look for alternate boards with higher memory.
+
+10.44 AM 
+s1 done 99.8% memory occupied now moving on to servo.
+3.31 PM 
+FOUND that bluepill supports 128kb flash despite written 64kb.
+BUT ARM MBED DOES NOT SUPPORT THAT.
+2 ways 
+1.Find a hack to work with arm mbed 
+2.PORT the entire project to stm32duino.
+
+8.37 PM 
+Numerous attempts in progress to make the size to 128KB
+Few of them namely are editing some stm32 file in openocd and some file in platfoemio 
+ref https://www.reddit.com/r/rust/comments/b18c51/tip_how_to_increase_default_flash_size_for/
+Didnt work fully.
+Attempt 2 
+Trying this option.
+https://community.platformio.org/t/region-flash-overflowed-on-bluepill-f103c8-with-mbed/3994/2
+
+9.23 PM
+So far both tests seem unsuccessful.
+Trying the apporach to use F103R8t6 board code, ( a nucleo variant now looking if it works the same)...
+If works rhe same HAPPY and joyous.
+If not BACK here.
+
+HAVING FUCKED UP UPDATES MOVING TO WINDOWS TO SEE IF THINGS TURN CORRECT, PIO UPDATES IN PARTICULAR.
+
+7/1/20 
+10.50 PM 
+Started testing for link2,
+
+5.10 PM
+Successfully ported the code on arduino framework with bolderflight's MPU lib, Now moving on to code testing of remaining components.
+components testing
+1. SERVO.
+2. RELAY.
+
+
+5.43 PM
+Completed the servo test, moving on to relay test.
+
+6.04 PM 
+Even relay seems to work good.
+NOW TO FUSE THEM ALL TOGETHER.
+
+9.14 PM
+WROTE CODE SKELETON... 
+Writing the other half.
+PS arduino uses sysTick to calc time, didnt knew that.
+Remaining 
+1.check_state
+2.deploy chute
