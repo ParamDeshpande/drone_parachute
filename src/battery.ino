@@ -13,12 +13,15 @@ float main_battery_volt_est = 0;
 float backup_battery_volt_est = 0;
 
 void batteries_init(void){
-    pinMode(MAIN_BAT_VOLT_PIN,INPUT);
-    pinMode(BACKUP_BAT_VOLT_PIN,INPUT);
+    //pinMode(PB1,INPUT_ANALOG);
+    pinMode(MAIN_BAT_VOLT_PIN,INPUT_ANALOG);
+    pinMode(BACKUP_BAT_VOLT_PIN,INPUT_ANALOG);
+
 }
 
 void check_main_battery_volt(void){
     main_battery_volt_est = analogRead(MAIN_BAT_VOLT_PIN);
+    
 }
 
 void check_backup_battery_volt(void){

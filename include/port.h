@@ -1,6 +1,9 @@
 #ifndef PORT_H
 #define PORT_H
 
+enum PIN_Nos{PA2,PA3,PB0,PB1};
+
+
 #define RX (PA3)
 #define TX (PA2)
 
