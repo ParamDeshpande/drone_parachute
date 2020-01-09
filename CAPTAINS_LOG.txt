@@ -68,7 +68,7 @@ If not BACK here.
 
 HAVING FUCKED UP UPDATES MOVING TO WINDOWS TO SEE IF THINGS TURN CORRECT, PIO UPDATES IN PARTICULAR.
 
-7/1/20 
+8/1/20 
 10.50 PM 
 Started testing for link2,
 
@@ -77,6 +77,7 @@ Successfully ported the code on arduino framework with bolderflight's MPU lib, N
 components testing
 1. SERVO.
 2. RELAY.
+
 
 
 5.43 PM
@@ -93,3 +94,12 @@ PS arduino uses sysTick to calc time, didnt knew that.
 Remaining 
 1.check_state
 2.deploy chute
+
+9/1/20
+12.01 PM 
+Finished porting code to arduino IDE, now fine tuning and tweaking.
+
+8.30 PM 
+Finished doing the prototype on breadboard today evening, tested main battery code, worked fine,
+Now moving on to the IMU code, it had some connecting issues regarding speed.
+Now need to address it via sysTick interrupts.

@@ -1,6 +1,7 @@
-e:\drone_parachute\build\sketch\main.ino.cpp.o: \
- e:\drone_parachute\build\sketch\main.ino.cpp \
- C:\Users\Param\AppData\Local\Arduino15\packages\stm32duino\hardware\STM32F1\2019.12.31\cores\maple/Arduino.h \
+e:\drone_parachute\build\libraries\Wire\Wire.cpp.o: \
+ C:\Users\Param\AppData\Local\Arduino15\packages\stm32duino\hardware\STM32F1\2019.12.31\libraries\Wire\Wire.cpp \
+ C:\Users\Param\AppData\Local\Arduino15\packages\stm32duino\hardware\STM32F1\2019.12.31\libraries\Wire\Wire.h \
+ C:\Users\Param\AppData\Local\Arduino15\packages\stm32duino\hardware\STM32F1\2019.12.31\libraries\Wire\utility/WireBase.h \
  C:\Users\Param\AppData\Local\Arduino15\packages\stm32duino\hardware\STM32F1\2019.12.31\cores\maple/wirish.h \
  C:\Users\Param\AppData\Local\Arduino15\packages\stm32duino\hardware\STM32F1\2019.12.31\cores\maple/WString.h \
  C:\Users\Param\AppData\Local\Arduino15\packages\stm32duino\hardware\STM32F1\2019.12.31\cores\maple/avr/pgmspace.h \
@@ -49,26 +50,8 @@ e:\drone_parachute\build\sketch\main.ino.cpp.o: \
  C:\Users\Param\AppData\Local\Arduino15\packages\stm32duino\hardware\STM32F1\2019.12.31\cores\maple/WCharacter.h \
  C:\Users\Param\AppData\Local\Arduino15\packages\stm32duino\hardware\STM32F1\2019.12.31\cores\maple/tone.h \
  C:\Users\Param\AppData\Local\Arduino15\packages\stm32duino\hardware\STM32F1\2019.12.31\cores\maple/Arduino.h \
- C:\Users\Param\AppData\Local\Arduino15\packages\stm32duino\hardware\STM32F1\2019.12.31\variants\generic_stm32f103c/variant.h \
- e:\drone_parachute\build\sketch\include/commons.h \
- e:\drone_parachute\build\sketch\include/global_vars.h \
- e:\drone_parachute\build\sketch\include/port.h \
- e:\drone_parachute\build\sketch\include/battery.h \
- e:\drone_parachute\build\sketch\include/parachute.h \
- e:\drone_parachute\build\sketch\include/imu.h \
- e:\drone_parachute\build\sketch\include/red_pencil.h \
- e:\drone_parachute\build\sketch\include/executioner.h \
- C:\Users\Param\Documents\Arduino\libraries\Bolder_Flight_Systems_MPU9250\src/MPU9250.h \
- C:\Users\Param\AppData\Local\Arduino15\packages\stm32duino\hardware\STM32F1\2019.12.31\libraries\Wire/Wire.h \
- C:\Users\Param\AppData\Local\Arduino15\packages\stm32duino\hardware\STM32F1\2019.12.31\libraries\Wire/utility/WireBase.h \
  C:\Users\Param\AppData\Local\Arduino15\packages\stm32duino\hardware\STM32F1\2019.12.31\cores\maple/wirish.h \
+ C:\Users\Param\AppData\Local\Arduino15\packages\stm32duino\hardware\STM32F1\2019.12.31\variants\generic_stm32f103c/variant.h \
  C:\Users\Param\AppData\Local\Arduino15\packages\stm32duino\hardware\STM32F1\2019.12.31\system/libmaple/include/libmaple/i2c.h \
  C:\Users\Param\AppData\Local\Arduino15\packages\stm32duino\hardware\STM32F1\2019.12.31\system/libmaple/stm32f1/include/series/i2c.h \
- C:\Users\Param\AppData\Local\Arduino15\packages\stm32duino\hardware\STM32F1\2019.12.31\system/libmaple/include/libmaple/i2c_common.h \
- C:\Users\Param\AppData\Local\Arduino15\packages\stm32duino\hardware\STM32F1\2019.12.31\libraries\SPI\src/SPI.h \
- C:\Users\Param\AppData\Local\Arduino15\packages\stm32duino\hardware\STM32F1\2019.12.31\system/libmaple/include/libmaple/spi.h \
- C:\Users\Param\AppData\Local\Arduino15\packages\stm32duino\hardware\STM32F1\2019.12.31\system/libmaple/stm32f1/include/series/spi.h \
- C:\Users\Param\AppData\Local\Arduino15\packages\stm32duino\hardware\STM32F1\2019.12.31\system/libmaple/include/libmaple/dma.h \
- C:\Users\Param\AppData\Local\Arduino15\packages\stm32duino\hardware\STM32F1\2019.12.31\system/libmaple/stm32f1/include/series/dma.h \
- C:\Users\Param\AppData\Local\Arduino15\packages\stm32duino\hardware\STM32F1\2019.12.31\system/libmaple/include/libmaple/dma_common.h \
- C:\Users\Param\AppData\Local\Arduino15\packages\stm32duino\hardware\STM32F1\2019.12.31\libraries\Servo\src/Servo.h
+ C:\Users\Param\AppData\Local\Arduino15\packages\stm32duino\hardware\STM32F1\2019.12.31\system/libmaple/include/libmaple/i2c_common.h

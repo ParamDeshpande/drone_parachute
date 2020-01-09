@@ -11,6 +11,56 @@
   },
   {
     "Sourcefile": "e:\\drone_parachute\\build\\sketch\\main.ino.cpp",
+    "Include": "MPU9250.h",
+    "Includepath": "C:\\Users\\Param\\Documents\\Arduino\\libraries\\Bolder_Flight_Systems_MPU9250\\src"
+  },
+  {
+    "Sourcefile": "e:\\drone_parachute\\build\\sketch\\main.ino.cpp",
+    "Include": "Wire.h",
+    "Includepath": "C:\\Users\\Param\\AppData\\Local\\Arduino15\\packages\\stm32duino\\hardware\\STM32F1\\2019.12.31\\libraries\\Wire"
+  },
+  {
+    "Sourcefile": "e:\\drone_parachute\\build\\sketch\\main.ino.cpp",
+    "Include": "SPI.h",
+    "Includepath": "C:\\Users\\Param\\AppData\\Local\\Arduino15\\packages\\stm32duino\\hardware\\STM32F1\\2019.12.31\\libraries\\SPI\\src"
+  },
+  {
+    "Sourcefile": "e:\\drone_parachute\\build\\sketch\\main.ino.cpp",
+    "Include": "Servo.h",
+    "Includepath": "C:\\Users\\Param\\AppData\\Local\\Arduino15\\packages\\stm32duino\\hardware\\STM32F1\\2019.12.31\\libraries\\Servo\\src"
+  },
+  {
+    "Sourcefile": "e:\\drone_parachute\\build\\sketch\\main.ino.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\Param\\Documents\\Arduino\\libraries\\Bolder_Flight_Systems_MPU9250\\src\\MPU9250.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\Param\\AppData\\Local\\Arduino15\\packages\\stm32duino\\hardware\\STM32F1\\2019.12.31\\libraries\\Wire\\SoftWire.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\Param\\AppData\\Local\\Arduino15\\packages\\stm32duino\\hardware\\STM32F1\\2019.12.31\\libraries\\Wire\\Wire.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\Param\\AppData\\Local\\Arduino15\\packages\\stm32duino\\hardware\\STM32F1\\2019.12.31\\libraries\\Wire\\utility\\WireBase.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\Param\\AppData\\Local\\Arduino15\\packages\\stm32duino\\hardware\\STM32F1\\2019.12.31\\libraries\\SPI\\src\\SPI.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\Param\\AppData\\Local\\Arduino15\\packages\\stm32duino\\hardware\\STM32F1\\2019.12.31\\libraries\\Servo\\src\\Servo.cpp",
     "Include": "",
     "Includepath": ""
   }
