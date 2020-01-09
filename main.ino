@@ -1,4 +1,4 @@
-#define DEBUG
+//#define DEBUG
 #ifdef DEBUG
 //#include "port.h"
 void setup(){};
@@ -14,7 +14,13 @@ void loop(){};
 
 //unsigned long long current_time = millis();
 
-/* MOST IMPORTANT VARIABLE DO NOT F*CK AROUND*/
+/* MOST IMPORTANT VARIABLE DO NOT F*CK AROUND
+*   IDEALLY THIS WOULD HAVE BEEN PUT IN SOME SCHEDULER 
+*  BUT CANT REALLY DO MUCH COZ OF ARDUINO ARCHITECTURE.
+*  THIS USES SYSTICK TIMER FOR MILLIS FUNCTION TO CALC TIME 
+*       DON'T WANNA TOUCH IT.
+*
+*/
 static bool MAYDAY = false;
 
 /* Function prototypes */

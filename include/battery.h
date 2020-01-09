@@ -5,6 +5,6 @@ void batteries_init(void);
 void check_main_battery_volt(void);
 void check_backup_battery_volt(void);
 
-
+extern bool BATTERY_MAYDAY ;
 
 #endif
