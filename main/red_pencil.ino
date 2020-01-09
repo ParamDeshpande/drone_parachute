@@ -3,8 +3,8 @@
 */
 
 
-#include "../include/commons.h"
-#include "../include/red_pencil.h"
+#include "include/commons.h"
+#include "include/red_pencil.h"
 
 
 /*PRIVATE VARS*/

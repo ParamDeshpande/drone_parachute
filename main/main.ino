@@ -53,7 +53,7 @@ void check_system(void){
 //  current_time = millis();
   
     check_main_battery_volt();
-    check_backup_battery_volt();
+    //check_backup_battery_volt();
     check_state();
     if (MAYDAY == TRUE)    {   
         kill_rotors();

@@ -5,9 +5,9 @@ brian.taylor@bolderflight.com
 */
 
 #include "MPU9250.h"
-#include "../include/imu.h"
-#include "../include/commons.h"
-#include "../include/red_pencil.h"
+#include "include/imu.h"
+#include "include/commons.h"
+#include "include/red_pencil.h"
 
 /*PRIVATE FUNCTION PROTYPES*/
 void refresh_imu(void);

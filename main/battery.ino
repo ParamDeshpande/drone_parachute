@@ -6,9 +6,9 @@
 *
 */
 
-#include "../include/battery.h"
-#include "../include/commons.h"
-#include "../include/red_pencil.h"
+#include "include/battery.h"
+#include "include/commons.h"
+#include "include/red_pencil.h"
 
 /*GLOBAL VARS*/
 bool BATTERY_MAYDAY = false;
@@ -44,10 +44,17 @@ void batteries_init(void){
     if(max_pin_voltage > 3.2){
         raise_error_signal();
     }
+
     pinMode(MAIN_BAT_VOLT_PIN,INPUT_ANALOG);
     pinMode(BACKUP_BAT_VOLT_PIN,INPUT_ANALOG);
+    
+    /*SEE IF BACKUP BATTERY IS ALL RIGHT*/
     backup_battery_volt_est = analogRead(BACKUP_BAT_VOLT_PIN);
-    if(backup_battery_volt_est < )
+    if(backup_battery_volt_est < BACKUP_min_cell_voltage){
+        raise_error_signal();
+    }
+    
+    /*SEE IF MAIN BATTERY IS ALL RIGHT*/
     main_battery_volt_est = analogRead(MAIN_BAT_VOLT_PIN);
     if((main_battery_volt_est <= 3.2) AND (main_battery_volt_est > max_pin_voltage) ){
          raise_error_signal();
@@ -60,7 +67,4 @@ void check_main_battery_volt(void){
         BATTERY_MAYDAY = true;
     }
     
-}
-
-void check_backup_battery_volt(void){
 }

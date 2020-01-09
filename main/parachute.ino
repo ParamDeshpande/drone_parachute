@@ -1,7 +1,7 @@
 
 #include <Servo.h>
-#include "../include/commons.h"
-#include "../include/parachute.h"
+#include "include/commons.h"
+#include "include/parachute.h"
 
 #define RELAY_TRIGGER_SIGNAL HIGH
 
