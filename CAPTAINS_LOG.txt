@@ -9,6 +9,7 @@ Soldered bluepill now testing blinkled code.
 5/1/20
 4.00 PM 
 Checking which code runs for IMU localization.
+<<<<<<< HEAD
 7.36 PM 
 Memory overflow for the ic with kriswiner code.
 
@@ -106,3 +107,5 @@ Now need to address it via sysTick interrupts.
 
 11.57 PM 
 Wrote and tested both the scenarios for mayday faliure things seem to work good, now moving on to pcb and battery charging.
+=======
+>>>>>>> 3285a02e86f6d9532a0dda0541a2d4119531dbf8
