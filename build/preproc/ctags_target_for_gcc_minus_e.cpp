@@ -1,13 +1,6 @@
 # 1 "e:\\drone_parachute\\arduino_version\\main\\main.ino"
 # 1 "e:\\drone_parachute\\arduino_version\\main\\main.ino"
-//#define DEBUG
-
-
-
-
-
-
-
+# 9 "e:\\drone_parachute\\arduino_version\\main\\main.ino"
 # 10 "e:\\drone_parachute\\arduino_version\\main\\main.ino" 2
 # 11 "e:\\drone_parachute\\arduino_version\\main\\main.ino" 2
 # 12 "e:\\drone_parachute\\arduino_version\\main\\main.ino" 2
@@ -18,14 +11,14 @@
 void setup(){
 
 
-
-
+    Serial1.begin(115200);
+    while(!Serial1) {}
 
 
     batteries_init();
     parachute_init();
     imu_init();
-
+    executioner_init();
     while (0x1){
         check_system();
     }
@@ -118,6 +111,26 @@ void check_main_battery_volt(void){
 }
 # 1 "e:\\drone_parachute\\arduino_version\\main\\executioner.ino"
 # 11 "e:\\drone_parachute\\arduino_version\\main\\executioner.ino"
+//#define exec_tick_count (0)
+
+void executioner_init(void){
+HardwareTimer timer(2);
+timer.pause();
+timer.setPeriod((20e3));
+timer.setChannel1Mode(TIMER_OUTPUT_COMPARE);
+timer.setCompare(TIMER_CH1, 1); // Interrupt 1 count after each update
+timer.attachCompare1Interrupt(handler_tim2);
+// Refresh the timer's count, prescale, and overflow
+timer.refresh();
+// Start the timer counting
+timer.resume();
+
+}
+/*SPECIALLY CRAFTED FOR REFRESH IMU*/
+void handler_tim2(void){
+  refresh_imu();
+}
+
 void check_system(void){
     check_main_battery_volt();
     check_state();
@@ -129,7 +142,6 @@ void check_system(void){
         }
     }
 }
-//*/
 # 1 "e:\\drone_parachute\\arduino_version\\main\\imu.ino"
 /*
 
@@ -146,8 +158,7 @@ brian.taylor@bolderflight.com
 
 
 
-/*PRIVATE FUNCTION PROTYPES*/
-void refresh_imu(void);
+
 
 /*GLOBAL VARS*/
 bool FREEFALL_MAYDAY = 0x0;
@@ -171,10 +182,10 @@ void imu_init(void) {
   if (status < 0) {
     raise_error_signal();
 
-
-
-
-
+    Serial1.println("IMU initialization unsuccessful");
+    Serial1.println("Check IMU wiring or try cycling power");
+    Serial1.print("Status: ");
+    Serial1.println(status);
 
   }
   // setting the accelerometer full scale range to +/-8G 
@@ -190,8 +201,7 @@ void imu_init(void) {
 void refresh_imu(void) {
   // read the sensor
   IMU.readSensor();
-# 79 "e:\\drone_parachute\\arduino_version\\main\\imu.ino"
-}
+  }
 
 
 
@@ -210,9 +220,33 @@ void refresh_imu(void) {
     * 
 
     */
-# 92 "e:\\drone_parachute\\arduino_version\\main\\imu.ino"
+# 68 "e:\\drone_parachute\\arduino_version\\main\\imu.ino"
 void check_state(void){
-    refresh_imu();
+    //refresh_imu();
+
+  // display the data
+  Serial1.print(IMU.getAccelX_mss(),6);
+  Serial1.print("\t");
+  Serial1.print(IMU.getAccelY_mss(),6);
+  Serial1.print("\t");
+  Serial1.print(IMU.getAccelZ_mss(),6);
+  Serial1.print("\t");
+  Serial1.print(IMU.getGyroX_rads(),6);
+  Serial1.print("\t");
+  Serial1.print(IMU.getGyroY_rads(),6);
+  Serial1.print("\t");
+  Serial1.print(IMU.getGyroZ_rads(),6);
+  Serial1.print("\t");
+  Serial1.print(IMU.getMagX_uT(),6);
+  Serial1.print("\t");
+  Serial1.print(IMU.getMagY_uT(),6);
+  Serial1.print("\t");
+  Serial1.print(IMU.getMagZ_uT(),6);
+  Serial1.print("\t");
+  Serial1.println(IMU.getTemperature_C(),6);
+  delay(20);
+
+
     ax_ffall = IMU.getAccelX_mss();
     ay_ffall = IMU.getAccelY_mss();
     az_ffall = IMU.getAccelZ_mss();

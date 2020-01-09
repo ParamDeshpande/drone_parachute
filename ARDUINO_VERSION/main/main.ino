@@ -1,11 +1,11 @@
-//#define DEBUG
-#ifdef DEBUG
+#define DEBUG
+#ifdef DEBUG_TEST
 //#include "port.h"
 void setup(){};
 void loop(){};
 #endif
 
-#ifndef DEBUG
+#ifndef DEBUG_TEST
 #include "include/commons.h"
 #include "include/battery.h"
 #include "include/parachute.h"
@@ -23,7 +23,7 @@ void setup(){
     batteries_init();
     parachute_init();
     imu_init();
-
+    executioner_init();
     while (true){
         check_system();
     }

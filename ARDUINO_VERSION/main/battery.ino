@@ -14,6 +14,10 @@
 bool BATTERY_MAYDAY = false;
 
 /*PRIVATE VARS*/
+static const float ADC_resolution = 4096.0; 
+static const float ADC_ref_voltage = 3.3; 
+
+
 static float main_battery_volt_est = 0;
 static float backup_battery_volt_est = 0;
 
@@ -49,13 +53,13 @@ void batteries_init(void){
     pinMode(BACKUP_BAT_VOLT_PIN,INPUT_ANALOG);
     
     /*SEE IF BACKUP BATTERY IS ALL RIGHT*/
-    backup_battery_volt_est = analogRead(BACKUP_BAT_VOLT_PIN);
+    backup_battery_volt_est = (analogRead(BACKUP_BAT_VOLT_PIN)*ADC_ref_voltage)/(ADC_resolution);
     if(backup_battery_volt_est < BACKUP_min_cell_voltage){
         raise_error_signal();
     }
     
     /*SEE IF MAIN BATTERY IS ALL RIGHT*/
-    main_battery_volt_est = analogRead(MAIN_BAT_VOLT_PIN);
+    main_battery_volt_est = (analogRead(MAIN_BAT_VOLT_PIN)*ADC_ref_voltage)/(ADC_resolution);
     if((main_battery_volt_est <= 3.2) AND (main_battery_volt_est > max_pin_voltage) ){
          raise_error_signal();
     }
@@ -63,6 +67,10 @@ void batteries_init(void){
 
 void check_main_battery_volt(void){
     main_battery_volt_est = analogRead(MAIN_BAT_VOLT_PIN);
+    #ifdef DEBUG 
+    Serial.print("Current main battery voltage");
+    Serial.println(main_battery_volt_est);
+
     if(main_battery_volt_est <= min_pin_voltage ){
         BATTERY_MAYDAY = true;
     }

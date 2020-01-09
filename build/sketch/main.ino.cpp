@@ -1,14 +1,14 @@
 #include <Arduino.h>
 #line 1 "e:\\drone_parachute\\arduino_version\\main\\main.ino"
 #line 1 "e:\\drone_parachute\\arduino_version\\main\\main.ino"
-//#define DEBUG
-#ifdef DEBUG
+#define DEBUG
+#ifdef DEBUG_TEST
 //#include "port.h"
 void setup(){};
 void loop(){};
 #endif
 
-#ifndef DEBUG
+#ifndef DEBUG_TEST
 #include "include/commons.h"
 #include "include/battery.h"
 #include "include/parachute.h"
@@ -24,11 +24,17 @@ void loop();
 void batteries_init(void);
 #line 64 "e:\\drone_parachute\\arduino_version\\main\\battery.ino"
 void check_main_battery_volt(void);
-#line 11 "e:\\drone_parachute\\arduino_version\\main\\executioner.ino"
+#line 13 "e:\\drone_parachute\\arduino_version\\main\\executioner.ino"
+void executioner_init(void);
+#line 27 "e:\\drone_parachute\\arduino_version\\main\\executioner.ino"
+void handler_tim2(void);
+#line 31 "e:\\drone_parachute\\arduino_version\\main\\executioner.ino"
 void check_system(void);
-#line 32 "e:\\drone_parachute\\arduino_version\\main\\imu.ino"
+#line 31 "e:\\drone_parachute\\arduino_version\\main\\imu.ino"
 void imu_init(void);
-#line 92 "e:\\drone_parachute\\arduino_version\\main\\imu.ino"
+#line 52 "e:\\drone_parachute\\arduino_version\\main\\imu.ino"
+void refresh_imu(void);
+#line 68 "e:\\drone_parachute\\arduino_version\\main\\imu.ino"
 void check_state(void);
 #line 12 "e:\\drone_parachute\\arduino_version\\main\\parachute.ino"
 void parachute_init(void);
@@ -51,7 +57,7 @@ void setup(){
     batteries_init();
     parachute_init();
     imu_init();
-
+    executioner_init();
     while (true){
         check_system();
     }
@@ -148,6 +154,26 @@ void check_main_battery_volt(void){
 #include "include/red_pencil.h"
 #include "include/executioner.h"
  
+#define TICK_DURATION (20e3)
+//#define exec_tick_count (0)
+
+void executioner_init(void){
+HardwareTimer timer(2);
+timer.pause();
+timer.setPeriod(TICK_DURATION); 
+timer.setChannel1Mode(TIMER_OUTPUT_COMPARE);
+timer.setCompare(TIMER_CH1, 1);  // Interrupt 1 count after each update
+timer.attachCompare1Interrupt(handler_tim2);
+// Refresh the timer's count, prescale, and overflow
+timer.refresh();
+// Start the timer counting
+timer.resume();
+
+}
+/*SPECIALLY CRAFTED FOR REFRESH IMU*/ 
+void handler_tim2(void){
+  refresh_imu();
+}
 
 void check_system(void){
     check_main_battery_volt();
@@ -160,7 +186,8 @@ void check_system(void){
         } 
     }
 }
-//*/
+
+
 #line 1 "e:\\drone_parachute\\arduino_version\\main\\imu.ino"
 /*
 Advanced_I2C.ino
@@ -173,8 +200,7 @@ brian.taylor@bolderflight.com
 #include "include/commons.h"
 #include "include/red_pencil.h"
 
-/*PRIVATE FUNCTION PROTYPES*/
-void refresh_imu(void);
+#define DEBUG
 
 /*GLOBAL VARS*/
 bool FREEFALL_MAYDAY = false; 
@@ -217,7 +243,22 @@ void imu_init(void) {
 void refresh_imu(void) {
   // read the sensor
   IMU.readSensor();
-  #ifdef DEBUG
+  }
+
+
+
+    /*CHECK FREE FALL CONDITION OR NOT
+    *   A LOT OF CHECKS CAN BE DONE like orientation etc etc 
+    * BUT THIS IS THE PROTOTYPE VERSION 
+    *  SO ONLY few 
+    *  will be adding time later on ...
+    * 
+    * 
+    */
+
+void check_state(void){
+    //refresh_imu();
+    #ifdef DEBUG
   // display the data
   Serial.print(IMU.getAccelX_mss(),6);
   Serial.print("\t");
@@ -240,21 +281,7 @@ void refresh_imu(void) {
   Serial.println(IMU.getTemperature_C(),6);
   delay(20);
   #endif
-}
 
-
-
-    /*CHECK FREE FALL CONDITION OR NOT
-    *   A LOT OF CHECKS CAN BE DONE like orientation etc etc 
-    * BUT THIS IS THE PROTOTYPE VERSION 
-    *  SO ONLY few 
-    *  will be adding time later on ...
-    * 
-    * 
-    */
-
-void check_state(void){
-    refresh_imu();
     ax_ffall = IMU.getAccelX_mss();
     ay_ffall = IMU.getAccelY_mss();
     az_ffall = IMU.getAccelZ_mss();    

@@ -9,8 +9,7 @@ brian.taylor@bolderflight.com
 #include "include/commons.h"
 #include "include/red_pencil.h"
 
-/*PRIVATE FUNCTION PROTYPES*/
-void refresh_imu(void);
+#define DEBUG
 
 /*GLOBAL VARS*/
 bool FREEFALL_MAYDAY = false; 
@@ -53,7 +52,22 @@ void imu_init(void) {
 void refresh_imu(void) {
   // read the sensor
   IMU.readSensor();
-  #ifdef DEBUG
+  }
+
+
+
+    /*CHECK FREE FALL CONDITION OR NOT
+    *   A LOT OF CHECKS CAN BE DONE like orientation etc etc 
+    * BUT THIS IS THE PROTOTYPE VERSION 
+    *  SO ONLY few 
+    *  will be adding time later on ...
+    * 
+    * 
+    */
+
+void check_state(void){
+    //refresh_imu();
+    #ifdef DEBUG
   // display the data
   Serial.print(IMU.getAccelX_mss(),6);
   Serial.print("\t");
@@ -76,21 +90,7 @@ void refresh_imu(void) {
   Serial.println(IMU.getTemperature_C(),6);
   delay(20);
   #endif
-}
 
-
-
-    /*CHECK FREE FALL CONDITION OR NOT
-    *   A LOT OF CHECKS CAN BE DONE like orientation etc etc 
-    * BUT THIS IS THE PROTOTYPE VERSION 
-    *  SO ONLY few 
-    *  will be adding time later on ...
-    * 
-    * 
-    */
-
-void check_state(void){
-    refresh_imu();
     ax_ffall = IMU.getAccelX_mss();
     ay_ffall = IMU.getAccelY_mss();
     az_ffall = IMU.getAccelZ_mss();    
