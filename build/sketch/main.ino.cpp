@@ -18,11 +18,11 @@ void loop(){};
  
 #line 16 "e:\\drone_parachute\\arduino_version\\main\\main.ino"
 void setup();
-#line 36 "e:\\drone_parachute\\arduino_version\\main\\main.ino"
+#line 54 "e:\\drone_parachute\\arduino_version\\main\\main.ino"
 void loop();
-#line 42 "e:\\drone_parachute\\arduino_version\\main\\battery.ino"
+#line 47 "e:\\drone_parachute\\arduino_version\\main\\battery.ino"
 void batteries_init(void);
-#line 64 "e:\\drone_parachute\\arduino_version\\main\\battery.ino"
+#line 85 "e:\\drone_parachute\\arduino_version\\main\\battery.ino"
 void check_main_battery_volt(void);
 #line 13 "e:\\drone_parachute\\arduino_version\\main\\executioner.ino"
 void executioner_init(void);
@@ -30,17 +30,17 @@ void executioner_init(void);
 void handler_tim2(void);
 #line 31 "e:\\drone_parachute\\arduino_version\\main\\executioner.ino"
 void check_system(void);
-#line 31 "e:\\drone_parachute\\arduino_version\\main\\imu.ino"
+#line 32 "e:\\drone_parachute\\arduino_version\\main\\imu.ino"
 void imu_init(void);
-#line 52 "e:\\drone_parachute\\arduino_version\\main\\imu.ino"
+#line 53 "e:\\drone_parachute\\arduino_version\\main\\imu.ino"
 void refresh_imu(void);
-#line 68 "e:\\drone_parachute\\arduino_version\\main\\imu.ino"
+#line 69 "e:\\drone_parachute\\arduino_version\\main\\imu.ino"
 void check_state(void);
-#line 12 "e:\\drone_parachute\\arduino_version\\main\\parachute.ino"
+#line 13 "e:\\drone_parachute\\arduino_version\\main\\parachute.ino"
 void parachute_init(void);
-#line 17 "e:\\drone_parachute\\arduino_version\\main\\parachute.ino"
+#line 18 "e:\\drone_parachute\\arduino_version\\main\\parachute.ino"
 void deploy_chute();
-#line 29 "e:\\drone_parachute\\arduino_version\\main\\parachute.ino"
+#line 26 "e:\\drone_parachute\\arduino_version\\main\\parachute.ino"
 void kill_rotors(void);
 #line 12 "e:\\drone_parachute\\arduino_version\\main\\red_pencil.ino"
 void error_signal_init(void);
@@ -51,13 +51,31 @@ void setup(){
     
     #ifdef DEBUG
     Serial.begin(115200);
+    pinMode(PC13,OUTPUT);
+    digitalWrite(PC13,HIGH);
     while(!Serial) {}
+    Serial.println("can you see me ?");
     #endif
-
+    error_signal_init();
+    #ifdef DEBUG
+    Serial.println("err sig init");
+    #endif
     batteries_init();
+    #ifdef DEBUG
+    Serial.println("batteries_init");
+    #endif
     parachute_init();
+    #ifdef DEBUG
+    Serial.println("parachute_init");
+    #endif
     imu_init();
+    #ifdef DEBUG
+    Serial.println("imu_init");
+    #endif
     executioner_init();
+    #ifdef DEBUG
+    Serial.println("executioner init");
+    #endif
     while (true){
         check_system();
     }
@@ -80,6 +98,7 @@ void loop(){};
 *   @param: NULL
 *
 */
+#define DEBUG
 
 #include "include/battery.h"
 #include "include/commons.h"
@@ -89,55 +108,79 @@ void loop(){};
 bool BATTERY_MAYDAY = false;
 
 /*PRIVATE VARS*/
+static const float ADC_resolution = 4096.0; 
+static const float ADC_ref_voltage = 3.3; 
+
+
 static float main_battery_volt_est = 0;
 static float backup_battery_volt_est = 0;
 
 /*EDIT THESE PARAMETERS (If needed ...) 
- * NOTE the pins are 3.3v tolerant so make sure to keep the calculations in check for max pin voltage else it WILL BURN DOWN the mcu 
- *  ALL CALCULATIONS ARE FOR THE MAIN BATTERY
+ * NOTE the pins are 3.3v tolerant so make sure to keep the calculations in check for max pin voltage else it WILL BURN DOWN THE MCU PERIOD.
  */
 static const float MAIN_max_cell_voltage = 4.2;
 static const float MAIN_min_cell_voltage = 3.3;
-static const float MAIN_no_of_cells = 4.0;
-static const float step_down_factor = 6.0;
-/*suggested not to modify beyond 3 to 4 percent*/
-static const float percent_tolerance = 2.0; /*BOTH MAX AND MIN used accordingly*/
-/*ie for 2 percent max 4.28v and 3.23v min*/
-
+static const float MAIN_no_of_cells = 4.0; /*SERIES */
+static const float MAIN_step_down_factor = 6.0;
 
 static const float BACKUP_max_cell_voltage = 4.2;
 static const float BACKUP_min_cell_voltage = 3.5;   /*ALTHOUGH 3.3v using rhis for a safer option*/
+static const float BACKUP_no_of_cells = 4.0; /*SERIES */
+static const float BACKUP_step_down_factor = 2.0;
 
+/*suggested not to modify beyond 3 to 4 percent*/
+static const float percent_tolerance = 2.0; /*BOTH MAX AND MIN used accordingly*/
+/*ie for 2 percent max 4.28v and 3.23v min per cell*/
 
 
 /*DO NOT TOUCH THESE PARAMETERS*/
-static const float max_pin_voltage = ((MAIN_no_of_cells*MAIN_max_cell_voltage)/(step_down_factor))*(1.0+percent_tolerance*0.01);
-static const float min_pin_voltage = ((MAIN_no_of_cells*MAIN_min_cell_voltage)/(step_down_factor))*(1.0-percent_tolerance*0.01);
+static const float max_pin_voltage = ((MAIN_no_of_cells*MAIN_max_cell_voltage)/(MAIN_step_down_factor))*(1.0+percent_tolerance*0.01);
+static const float min_pin_voltage = ((MAIN_no_of_cells*MAIN_min_cell_voltage)/(MAIN_step_down_factor))*(1.0-percent_tolerance*0.01);
 
 void batteries_init(void){
     /*cause 3.3v max voltage for pin*/
     if(max_pin_voltage > 3.2){
+        #ifdef DEBUG
+        Serial.println("Calculations for max Main battery pin voltage exceed 3.2v");
+        #endif  
+        
         raise_error_signal();
+        
     }
 
     pinMode(MAIN_BAT_VOLT_PIN,INPUT_ANALOG);
     pinMode(BACKUP_BAT_VOLT_PIN,INPUT_ANALOG);
-    
     /*SEE IF BACKUP BATTERY IS ALL RIGHT*/
-    backup_battery_volt_est = analogRead(BACKUP_BAT_VOLT_PIN);
-    if(backup_battery_volt_est < BACKUP_min_cell_voltage){
-        raise_error_signal();
-    }
+    //backup_battery_volt_est = (analogRead(BACKUP_BAT_VOLT_PIN)*ADC_ref_voltage)/(ADC_resolution);
+    //if(backup_battery_volt_est < BACKUP_min_cell_voltage){
+    //    
+    //    #ifdef DEBUG
+    //    Serial.println("Struck at backup battery init");
+    //    #endif
+    //
+    //    raise_error_signal();
+    //    
+    //}
     
     /*SEE IF MAIN BATTERY IS ALL RIGHT*/
-    main_battery_volt_est = analogRead(MAIN_BAT_VOLT_PIN);
+    main_battery_volt_est = (analogRead(MAIN_BAT_VOLT_PIN)*ADC_ref_voltage)/(ADC_resolution);
     if((main_battery_volt_est <= 3.2) AND (main_battery_volt_est > max_pin_voltage) ){
-         raise_error_signal();
+        
+        #ifdef DEBUG
+        Serial.println("Struck at main battery init");
+        #endif
+        
+        raise_error_signal();
+        
     }
 }
 
 void check_main_battery_volt(void){
-    main_battery_volt_est = analogRead(MAIN_BAT_VOLT_PIN);
+    main_battery_volt_est = (analogRead(MAIN_BAT_VOLT_PIN)*ADC_ref_voltage)/(ADC_resolution);
+    #ifdef DEBUG 
+    Serial.print("Current main battery voltage");
+    Serial.println(main_battery_volt_est);
+    #endif
     if(main_battery_volt_est <= min_pin_voltage ){
         BATTERY_MAYDAY = true;
     }
@@ -158,16 +201,16 @@ void check_main_battery_volt(void){
 //#define exec_tick_count (0)
 
 void executioner_init(void){
-HardwareTimer timer(2);
-timer.pause();
-timer.setPeriod(TICK_DURATION); 
-timer.setChannel1Mode(TIMER_OUTPUT_COMPARE);
-timer.setCompare(TIMER_CH1, 1);  // Interrupt 1 count after each update
-timer.attachCompare1Interrupt(handler_tim2);
-// Refresh the timer's count, prescale, and overflow
-timer.refresh();
-// Start the timer counting
-timer.resume();
+//HardwareTimer timer(2);
+//timer.pause();
+//timer.setPeriod(TICK_DURATION); 
+//timer.setChannel1Mode(TIMER_OUTPUT_COMPARE);
+//timer.setCompare(TIMER_CH1, 1);  // Interrupt 1 count after each update
+//timer.attachCompare1Interrupt(handler_tim2);
+//// Refresh the timer's count, prescale, and overflow
+//timer.refresh();
+//// Start the timer counting
+//timer.resume();
 
 }
 /*SPECIALLY CRAFTED FOR REFRESH IMU*/ 
@@ -176,6 +219,7 @@ void handler_tim2(void){
 }
 
 void check_system(void){
+     refresh_imu();
     check_main_battery_volt();
     check_state();
     if((BATTERY_MAYDAY == true) OR (FREEFALL_MAYDAY == true)){
@@ -201,6 +245,7 @@ brian.taylor@bolderflight.com
 #include "include/red_pencil.h"
 
 #define DEBUG
+#define acc_gravity 9.82
 
 /*GLOBAL VARS*/
 bool FREEFALL_MAYDAY = false; 
@@ -286,10 +331,10 @@ void check_state(void){
     ay_ffall = IMU.getAccelY_mss();
     az_ffall = IMU.getAccelZ_mss();    
     
-    a_net_gnd = sqrt(sq(ax_ffall) + sq(ay_ffall) + sq(az_ffall));
+    a_net_gnd = abs(sqrt(sq(ax_ffall) + sq(ay_ffall) + sq(az_ffall)) - acc_gravity);
 
     if(a_net_gnd >= 6.0){
-      delay(350);
+      //delay(10);
       if( ((ax_ffall>-3.0)AND(ax_ffall<3.0)) AND ((ay_ffall>-3.0)AND(ay_ffall<3.0)) AND ((az_ffall>-3.0)AND(az_ffall<3.0)) )
       FREEFALL_MAYDAY = true;
     }
@@ -303,6 +348,7 @@ void check_state(void){
 
 #define RELAY_TRIGGER_SIGNAL HIGH
 
+
 static Servo container_lid_servo;  // create servo object to control a servo
 // twelve servo objects can be created on most boards
 static int pos = 0;    // variable to store the servo position
@@ -315,10 +361,6 @@ void parachute_init(void) {
 void deploy_chute() {
   for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
     // in steps of 1 degree
-    container_lid_servo.write(pos);              // tell servo to go to position in variable 'pos'
-    delay(15);                       // waits 15ms for the servo to reach the position
-  }
-  for (pos = 180; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
     container_lid_servo.write(pos);              // tell servo to go to position in variable 'pos'
     delay(15);                       // waits 15ms for the servo to reach the position
   }
@@ -349,7 +391,7 @@ void raise_error_signal(void){
     while(true){
         digitalWrite(BUZZER_PIN, HIGH);
         digitalWrite(LED_PIN, HIGH);
-        delay(1000);
+        delay(200);
         digitalWrite(BUZZER_PIN, LOW);
         digitalWrite(LED_PIN, LOW);
         delay(1000);

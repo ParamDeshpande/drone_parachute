@@ -10,6 +10,7 @@ brian.taylor@bolderflight.com
 #include "include/red_pencil.h"
 
 #define DEBUG
+#define acc_gravity 9.82
 
 /*GLOBAL VARS*/
 bool FREEFALL_MAYDAY = false; 
@@ -95,10 +96,10 @@ void check_state(void){
     ay_ffall = IMU.getAccelY_mss();
     az_ffall = IMU.getAccelZ_mss();    
     
-    a_net_gnd = sqrt(sq(ax_ffall) + sq(ay_ffall) + sq(az_ffall));
+    a_net_gnd = abs(sqrt(sq(ax_ffall) + sq(ay_ffall) + sq(az_ffall)) - acc_gravity);
 
     if(a_net_gnd >= 6.0){
-      delay(350);
+      //delay(10);
       if( ((ax_ffall>-3.0)AND(ax_ffall<3.0)) AND ((ay_ffall>-3.0)AND(ay_ffall<3.0)) AND ((az_ffall>-3.0)AND(az_ffall<3.0)) )
       FREEFALL_MAYDAY = true;
     }

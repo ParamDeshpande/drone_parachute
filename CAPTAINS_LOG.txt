@@ -103,3 +103,6 @@ Finished porting code to arduino IDE, now fine tuning and tweaking.
 Finished doing the prototype on breadboard today evening, tested main battery code, worked fine,
 Now moving on to the IMU code, it had some connecting issues regarding speed.
 Now need to address it via sysTick interrupts.
+
+11.57 PM 
+Wrote and tested both the scenarios for mayday faliure things seem to work good, now moving on to pcb and battery charging.

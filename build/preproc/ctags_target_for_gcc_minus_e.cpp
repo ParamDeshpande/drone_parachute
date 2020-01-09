@@ -12,13 +12,31 @@ void setup(){
 
 
     Serial1.begin(115200);
+    pinMode(PC13,OUTPUT);
+    digitalWrite(PC13,0x1);
     while(!Serial1) {}
+    Serial1.println("can you see me ?");
 
+    error_signal_init();
+
+    Serial1.println("err sig init");
 
     batteries_init();
+
+    Serial1.println("batteries_init");
+
     parachute_init();
+
+    Serial1.println("parachute_init");
+
     imu_init();
+
+    Serial1.println("imu_init");
+
     executioner_init();
+
+    Serial1.println("executioner init");
+
     while (0x1){
         check_system();
     }
@@ -46,64 +64,86 @@ void loop(){};
 *
 
 */
-# 13 "e:\\drone_parachute\\arduino_version\\main\\battery.ino"
 /*GLOBAL VARS*/
 bool BATTERY_MAYDAY = 0x0;
 
 /*PRIVATE VARS*/
+static const float ADC_resolution = 4096.0;
+static const float ADC_ref_voltage = 3.3;
+
+
 static float main_battery_volt_est = 0;
 static float backup_battery_volt_est = 0;
 
 /*EDIT THESE PARAMETERS (If needed ...) 
 
- * NOTE the pins are 3.3v tolerant so make sure to keep the calculations in check for max pin voltage else it WILL BURN DOWN the mcu 
-
- *  ALL CALCULATIONS ARE FOR THE MAIN BATTERY
+ * NOTE the pins are 3.3v tolerant so make sure to keep the calculations in check for max pin voltage else it WILL BURN DOWN THE MCU PERIOD.
 
  */
-# 24 "e:\\drone_parachute\\arduino_version\\main\\battery.ino"
+# 28 "e:\\drone_parachute\\arduino_version\\main\\battery.ino"
 static const float MAIN_max_cell_voltage = 4.2;
 static const float MAIN_min_cell_voltage = 3.3;
-static const float MAIN_no_of_cells = 4.0;
-static const float step_down_factor = 6.0;
-/*suggested not to modify beyond 3 to 4 percent*/
-static const float percent_tolerance = 2.0; /*BOTH MAX AND MIN used accordingly*/
-/*ie for 2 percent max 4.28v and 3.23v min*/
-
+static const float MAIN_no_of_cells = 4.0; /*SERIES */
+static const float MAIN_step_down_factor = 6.0;
 
 static const float BACKUP_max_cell_voltage = 4.2;
 static const float BACKUP_min_cell_voltage = 3.5; /*ALTHOUGH 3.3v using rhis for a safer option*/
+static const float BACKUP_no_of_cells = 4.0; /*SERIES */
+static const float BACKUP_step_down_factor = 2.0;
 
+/*suggested not to modify beyond 3 to 4 percent*/
+static const float percent_tolerance = 2.0; /*BOTH MAX AND MIN used accordingly*/
+/*ie for 2 percent max 4.28v and 3.23v min per cell*/
 
 
 /*DO NOT TOUCH THESE PARAMETERS*/
-static const float max_pin_voltage = ((MAIN_no_of_cells*MAIN_max_cell_voltage)/(step_down_factor))*(1.0+percent_tolerance*0.01);
-static const float min_pin_voltage = ((MAIN_no_of_cells*MAIN_min_cell_voltage)/(step_down_factor))*(1.0-percent_tolerance*0.01);
+static const float max_pin_voltage = ((MAIN_no_of_cells*MAIN_max_cell_voltage)/(MAIN_step_down_factor))*(1.0+percent_tolerance*0.01);
+static const float min_pin_voltage = ((MAIN_no_of_cells*MAIN_min_cell_voltage)/(MAIN_step_down_factor))*(1.0-percent_tolerance*0.01);
 
 void batteries_init(void){
     /*cause 3.3v max voltage for pin*/
     if(max_pin_voltage > 3.2){
+
+        Serial1.println("Calculations for max Main battery pin voltage exceed 3.2v");
+
+
         raise_error_signal();
+
     }
 
     pinMode(MAIN_BAT_VOLT_PIN,INPUT_ANALOG);
     pinMode(BACKUP_BAT_VOLT_PIN,INPUT_ANALOG);
-
     /*SEE IF BACKUP BATTERY IS ALL RIGHT*/
-    backup_battery_volt_est = analogRead(BACKUP_BAT_VOLT_PIN);
-    if(backup_battery_volt_est < BACKUP_min_cell_voltage){
-        raise_error_signal();
-    }
+    //backup_battery_volt_est = (analogRead(BACKUP_BAT_VOLT_PIN)*ADC_ref_voltage)/(ADC_resolution);
+    //if(backup_battery_volt_est < BACKUP_min_cell_voltage){
+    //    
+    //    #ifdef DEBUG
+    //    Serial.println("Struck at backup battery init");
+    //    #endif
+    //
+    //    raise_error_signal();
+    //    
+    //}
 
     /*SEE IF MAIN BATTERY IS ALL RIGHT*/
-    main_battery_volt_est = analogRead(MAIN_BAT_VOLT_PIN);
+    main_battery_volt_est = (analogRead(MAIN_BAT_VOLT_PIN)*ADC_ref_voltage)/(ADC_resolution);
     if((main_battery_volt_est <= 3.2) && (main_battery_volt_est > max_pin_voltage) ){
-         raise_error_signal();
+
+
+        Serial1.println("Struck at main battery init");
+
+
+        raise_error_signal();
+
     }
 }
 
 void check_main_battery_volt(void){
-    main_battery_volt_est = analogRead(MAIN_BAT_VOLT_PIN);
+    main_battery_volt_est = (analogRead(MAIN_BAT_VOLT_PIN)*ADC_ref_voltage)/(ADC_resolution);
+
+    Serial1.print("Current main battery voltage");
+    Serial1.println(main_battery_volt_est);
+
     if(main_battery_volt_est <= min_pin_voltage ){
         BATTERY_MAYDAY = 0x1;
     }
@@ -114,16 +154,16 @@ void check_main_battery_volt(void){
 //#define exec_tick_count (0)
 
 void executioner_init(void){
-HardwareTimer timer(2);
-timer.pause();
-timer.setPeriod((20e3));
-timer.setChannel1Mode(TIMER_OUTPUT_COMPARE);
-timer.setCompare(TIMER_CH1, 1); // Interrupt 1 count after each update
-timer.attachCompare1Interrupt(handler_tim2);
-// Refresh the timer's count, prescale, and overflow
-timer.refresh();
-// Start the timer counting
-timer.resume();
+//HardwareTimer timer(2);
+//timer.pause();
+//timer.setPeriod(TICK_DURATION); 
+//timer.setChannel1Mode(TIMER_OUTPUT_COMPARE);
+//timer.setCompare(TIMER_CH1, 1);  // Interrupt 1 count after each update
+//timer.attachCompare1Interrupt(handler_tim2);
+//// Refresh the timer's count, prescale, and overflow
+//timer.refresh();
+//// Start the timer counting
+//timer.resume();
 
 }
 /*SPECIALLY CRAFTED FOR REFRESH IMU*/
@@ -132,6 +172,7 @@ void handler_tim2(void){
 }
 
 void check_system(void){
+     refresh_imu();
     check_main_battery_volt();
     check_state();
     if((BATTERY_MAYDAY == 0x1) || (FREEFALL_MAYDAY == 0x1)){
@@ -154,6 +195,7 @@ brian.taylor@bolderflight.com
 */
 # 7 "e:\\drone_parachute\\arduino_version\\main\\imu.ino"
 # 8 "e:\\drone_parachute\\arduino_version\\main\\imu.ino" 2
+
 
 
 
@@ -220,7 +262,7 @@ void refresh_imu(void) {
     * 
 
     */
-# 68 "e:\\drone_parachute\\arduino_version\\main\\imu.ino"
+# 69 "e:\\drone_parachute\\arduino_version\\main\\imu.ino"
 void check_state(void){
     //refresh_imu();
 
@@ -251,10 +293,10 @@ void check_state(void){
     ay_ffall = IMU.getAccelY_mss();
     az_ffall = IMU.getAccelZ_mss();
 
-    a_net_gnd = sqrt(((ax_ffall)*(ax_ffall)) + ((ay_ffall)*(ay_ffall)) + ((az_ffall)*(az_ffall)));
+    a_net_gnd = (((sqrt(((ax_ffall)*(ax_ffall)) + ((ay_ffall)*(ay_ffall)) + ((az_ffall)*(az_ffall))) - 9.82) > 0) ? (sqrt(((ax_ffall)*(ax_ffall)) + ((ay_ffall)*(ay_ffall)) + ((az_ffall)*(az_ffall))) - 9.82) : -(sqrt(((ax_ffall)*(ax_ffall)) + ((ay_ffall)*(ay_ffall)) + ((az_ffall)*(az_ffall))) - 9.82));
 
     if(a_net_gnd >= 6.0){
-      delay(350);
+      //delay(10);
       if( ((ax_ffall>-3.0)&&(ax_ffall<3.0)) && ((ay_ffall>-3.0)&&(ay_ffall<3.0)) && ((az_ffall>-3.0)&&(az_ffall<3.0)) )
       FREEFALL_MAYDAY = 0x1;
     }
@@ -263,6 +305,7 @@ void check_state(void){
 # 1 "e:\\drone_parachute\\arduino_version\\main\\parachute.ino"
 
 # 3 "e:\\drone_parachute\\arduino_version\\main\\parachute.ino" 2
+
 
 
 
@@ -280,10 +323,6 @@ void parachute_init(void) {
 void deploy_chute() {
   for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
     // in steps of 1 degree
-    container_lid_servo.write(pos); // tell servo to go to position in variable 'pos'
-    delay(15); // waits 15ms for the servo to reach the position
-  }
-  for (pos = 180; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
     container_lid_servo.write(pos); // tell servo to go to position in variable 'pos'
     delay(15); // waits 15ms for the servo to reach the position
   }
@@ -313,7 +352,7 @@ void raise_error_signal(void){
     while(0x1){
         digitalWrite(BUZZER_PIN, 0x1);
         digitalWrite(LED_PIN, 0x1);
-        delay(1000);
+        delay(200);
         digitalWrite(BUZZER_PIN, 0x0);
         digitalWrite(LED_PIN, 0x0);
         delay(1000);
