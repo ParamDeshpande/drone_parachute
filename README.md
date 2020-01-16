@@ -26,3 +26,4 @@ EITHER WAY OPENS under the given or desired conditions.
 
 ## PROTOTYPE GPB VERSION.
 ![GPB_image_isometric](https://user-images.githubusercontent.com/37805111/72545254-c17ed080-38ae-11ea-9e65-7e24cecc2b3a.jpg)
+SEE DRONE_PARACHUTE_PCB for board schematic.
