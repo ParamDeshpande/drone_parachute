@@ -1057,9 +1057,9 @@ START GROUP
 LOAD c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libnosys.a
 END GROUP
                 0x20005000                PROVIDE (__msp_init, (ORIGIN (ram) + 0x5000))
-                0x08001e48                PROVIDE (__exc_reset, __start__)
+                0x08001eb0                PROVIDE (__exc_reset, __start__)
 
-.text           0x08000000     0x6364
+.text           0x08000000     0x63d4
                 0x08000000                __text_start__ = .
  *(.stm32.interrupt_vector)
  .stm32.interrupt_vector
@@ -1072,911 +1072,911 @@ END GROUP
                 0x08000140                loop()
  *fill*         0x08000142        0x2 
  .text._Z23check_main_battery_voltv
-                0x08000144       0x68 e:\drone_parachute\build\sketch\main.ino.cpp.o
+                0x08000144       0x70 e:\drone_parachute\build\sketch\main.ino.cpp.o
                 0x08000144                check_main_battery_volt()
  .text._Z11refresh_imuv
-                0x080001ac        0xc e:\drone_parachute\build\sketch\main.ino.cpp.o
-                0x080001ac                refresh_imu()
+                0x080001b4        0xc e:\drone_parachute\build\sketch\main.ino.cpp.o
+                0x080001b4                refresh_imu()
  .text._Z11check_statev
-                0x080001b8      0x268 e:\drone_parachute\build\sketch\main.ino.cpp.o
-                0x080001b8                check_state()
+                0x080001c0      0x268 e:\drone_parachute\build\sketch\main.ino.cpp.o
+                0x080001c0                check_state()
  .text._Z14parachute_initv
-                0x08000420       0x2c e:\drone_parachute\build\sketch\main.ino.cpp.o
-                0x08000420                parachute_init()
+                0x08000428       0x2c e:\drone_parachute\build\sketch\main.ino.cpp.o
+                0x08000428                parachute_init()
  .text._Z12deploy_chutev
-                0x0800044c       0x30 e:\drone_parachute\build\sketch\main.ino.cpp.o
-                0x0800044c                deploy_chute()
+                0x08000454       0x30 e:\drone_parachute\build\sketch\main.ino.cpp.o
+                0x08000454                deploy_chute()
  .text._Z11kill_rotorsv
-                0x0800047c        0x8 e:\drone_parachute\build\sketch\main.ino.cpp.o
-                0x0800047c                kill_rotors()
+                0x08000484        0x8 e:\drone_parachute\build\sketch\main.ino.cpp.o
+                0x08000484                kill_rotors()
  .text._Z17error_signal_initv
-                0x08000484       0x16 e:\drone_parachute\build\sketch\main.ino.cpp.o
-                0x08000484                error_signal_init()
+                0x0800048c       0x16 e:\drone_parachute\build\sketch\main.ino.cpp.o
+                0x0800048c                error_signal_init()
  .text._Z18raise_error_signalv
-                0x0800049a       0x32 e:\drone_parachute\build\sketch\main.ino.cpp.o
-                0x0800049a                raise_error_signal()
- *fill*         0x080004cc        0x4 
+                0x080004a2       0x32 e:\drone_parachute\build\sketch\main.ino.cpp.o
+                0x080004a2                raise_error_signal()
+ *fill*         0x080004d4        0x4 
  .text._Z14batteries_initv
-                0x080004d0       0x78 e:\drone_parachute\build\sketch\main.ino.cpp.o
-                0x080004d0                batteries_init()
+                0x080004d8       0xd8 e:\drone_parachute\build\sketch\main.ino.cpp.o
+                0x080004d8                batteries_init()
  .text._Z12check_systemv
-                0x08000548       0x30 e:\drone_parachute\build\sketch\main.ino.cpp.o
-                0x08000548                check_system()
+                0x080005b0       0x30 e:\drone_parachute\build\sketch\main.ino.cpp.o
+                0x080005b0                check_system()
  .text._Z8imu_initv
-                0x08000578       0x40 e:\drone_parachute\build\sketch\main.ino.cpp.o
-                0x08000578                imu_init()
+                0x080005e0       0x40 e:\drone_parachute\build\sketch\main.ino.cpp.o
+                0x080005e0                imu_init()
  .text._Z5setupv
-                0x080005b8       0x80 e:\drone_parachute\build\sketch\main.ino.cpp.o
-                0x080005b8                setup()
+                0x08000620       0x80 e:\drone_parachute\build\sketch\main.ino.cpp.o
+                0x08000620                setup()
  .text.startup._GLOBAL__sub_I__Z5setupv
-                0x08000638       0x24 e:\drone_parachute\build\sketch\main.ino.cpp.o
+                0x080006a0       0x24 e:\drone_parachute\build\sketch\main.ino.cpp.o
  .text._ZN7MPU9250C2ER7TwoWireh
-                0x0800065c      0x294 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
-                0x0800065c                MPU9250::MPU9250(TwoWire&, unsigned char)
-                0x0800065c                MPU9250::MPU9250(TwoWire&, unsigned char)
+                0x080006c4      0x294 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
+                0x080006c4                MPU9250::MPU9250(TwoWire&, unsigned char)
+                0x080006c4                MPU9250::MPU9250(TwoWire&, unsigned char)
  .text._ZN7MPU925013getAccelX_mssEv
-                0x080008f0        0x4 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
-                0x080008f0                MPU9250::getAccelX_mss()
+                0x08000958        0x4 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
+                0x08000958                MPU9250::getAccelX_mss()
  .text._ZN7MPU925013getAccelY_mssEv
-                0x080008f4        0x4 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
-                0x080008f4                MPU9250::getAccelY_mss()
+                0x0800095c        0x4 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
+                0x0800095c                MPU9250::getAccelY_mss()
  .text._ZN7MPU925013getAccelZ_mssEv
-                0x080008f8        0x4 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
-                0x080008f8                MPU9250::getAccelZ_mss()
+                0x08000960        0x4 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
+                0x08000960                MPU9250::getAccelZ_mss()
  .text._ZN7MPU925013getGyroX_radsEv
-                0x080008fc        0x4 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
-                0x080008fc                MPU9250::getGyroX_rads()
+                0x08000964        0x4 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
+                0x08000964                MPU9250::getGyroX_rads()
  .text._ZN7MPU925013getGyroY_radsEv
-                0x08000900        0x4 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
-                0x08000900                MPU9250::getGyroY_rads()
+                0x08000968        0x4 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
+                0x08000968                MPU9250::getGyroY_rads()
  .text._ZN7MPU925013getGyroZ_radsEv
-                0x08000904        0x4 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
-                0x08000904                MPU9250::getGyroZ_rads()
+                0x0800096c        0x4 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
+                0x0800096c                MPU9250::getGyroZ_rads()
  .text._ZN7MPU925010getMagX_uTEv
-                0x08000908        0x4 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
-                0x08000908                MPU9250::getMagX_uT()
+                0x08000970        0x4 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
+                0x08000970                MPU9250::getMagX_uT()
  .text._ZN7MPU925010getMagY_uTEv
-                0x0800090c        0x4 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
-                0x0800090c                MPU9250::getMagY_uT()
+                0x08000974        0x4 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
+                0x08000974                MPU9250::getMagY_uT()
  .text._ZN7MPU925010getMagZ_uTEv
-                0x08000910        0x4 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
-                0x08000910                MPU9250::getMagZ_uT()
+                0x08000978        0x4 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
+                0x08000978                MPU9250::getMagZ_uT()
  .text._ZN7MPU925016getTemperature_CEv
-                0x08000914        0x4 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
-                0x08000914                MPU9250::getTemperature_C()
+                0x0800097c        0x4 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
+                0x0800097c                MPU9250::getTemperature_C()
  .text._ZN7MPU925013readRegistersEhhPh
-                0x08000918      0x130 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
-                0x08000918                MPU9250::readRegisters(unsigned char, unsigned char, unsigned char*)
+                0x08000980      0x130 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
+                0x08000980                MPU9250::readRegisters(unsigned char, unsigned char, unsigned char*)
  .text._ZN7MPU925010readSensorEv
-                0x08000a48      0x29e e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
-                0x08000a48                MPU9250::readSensor()
+                0x08000ab0      0x29e e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
+                0x08000ab0                MPU9250::readSensor()
  .text._ZN7MPU925013writeRegisterEhh
-                0x08000ce6       0xc6 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
-                0x08000ce6                MPU9250::writeRegister(unsigned char, unsigned char)
+                0x08000d4e       0xc6 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
+                0x08000d4e                MPU9250::writeRegister(unsigned char, unsigned char)
  .text._ZN7MPU925013setAccelRangeENS_10AccelRangeE
-                0x08000dac       0x9c e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
-                0x08000dac                MPU9250::setAccelRange(MPU9250::AccelRange)
+                0x08000e14       0x9c e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
+                0x08000e14                MPU9250::setAccelRange(MPU9250::AccelRange)
  .text._ZN7MPU925012setGyroRangeENS_9GyroRangeE
-                0x08000e48       0x9c e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
-                0x08000e48                MPU9250::setGyroRange(MPU9250::GyroRange)
+                0x08000eb0       0x9c e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
+                0x08000eb0                MPU9250::setGyroRange(MPU9250::GyroRange)
  .text._ZN7MPU925016setDlpfBandwidthENS_13DlpfBandwidthE
-                0x08000ee4       0xda e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
-                0x08000ee4                MPU9250::setDlpfBandwidth(MPU9250::DlpfBandwidth)
+                0x08000f4c       0xda e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
+                0x08000f4c                MPU9250::setDlpfBandwidth(MPU9250::DlpfBandwidth)
  .text._ZN7MPU925019readAK8963RegistersEhhPh
-                0x08000fbe       0x6e e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
-                0x08000fbe                MPU9250::readAK8963Registers(unsigned char, unsigned char, unsigned char*)
+                0x08001026       0x6e e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
+                0x08001026                MPU9250::readAK8963Registers(unsigned char, unsigned char, unsigned char*)
  .text._ZN7MPU925019writeAK8963RegisterEhh
-                0x0800102c       0x8e e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
-                0x0800102c                MPU9250::writeAK8963Register(unsigned char, unsigned char)
+                0x08001094       0x8e e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
+                0x08001094                MPU9250::writeAK8963Register(unsigned char, unsigned char)
  .text._ZN7MPU92506setSrdEh
-                0x080010ba       0xa6 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
-                0x080010ba                MPU9250::setSrd(unsigned char)
+                0x08001122       0xa6 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
+                0x08001122                MPU9250::setSrd(unsigned char)
  .text._ZN7MPU925013calibrateGyroEv
-                0x08001160      0x148 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
-                0x08001160                MPU9250::calibrateGyro()
+                0x080011c8      0x148 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
+                0x080011c8                MPU9250::calibrateGyro()
  .text._ZN7MPU92506whoAmIEv
-                0x080012a8       0x20 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
-                0x080012a8                MPU9250::whoAmI()
+                0x08001310       0x20 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
+                0x08001310                MPU9250::whoAmI()
  .text._ZN7MPU925012whoAmIAK8963Ev
-                0x080012c8       0x20 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
-                0x080012c8                MPU9250::whoAmIAK8963()
+                0x08001330       0x20 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
+                0x08001330                MPU9250::whoAmIAK8963()
  .text._ZN7MPU92505beginEv
-                0x080012e8      0x358 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
-                0x080012e8                MPU9250::begin()
+                0x08001350      0x358 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
+                0x08001350                MPU9250::begin()
  .text._ZN7TwoWire7processEv
-                0x08001640        0xc e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
-                0x08001640                TwoWire::process()
+                0x080016a8        0xc e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
+                0x080016a8                TwoWire::process()
  .text._ZN7TwoWire5beginEh
-                0x0800164c        0xe e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
-                0x0800164c                TwoWire::begin(unsigned char)
+                0x080016b4        0xe e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
+                0x080016b4                TwoWire::begin(unsigned char)
  .text.i2c_disable
-                0x0800165a       0x1a e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
+                0x080016c2       0x1a e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
  .text._ZN7TwoWire3endEv
-                0x08001674       0x10 e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
-                0x08001674                TwoWire::end()
+                0x080016dc       0x10 e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
+                0x080016dc                TwoWire::end()
  .text._ZN7TwoWire7processEh
-                0x08001684       0x4a e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
-                0x08001684                TwoWire::process(unsigned char)
- *fill*         0x080016ce        0x2 
+                0x080016ec       0x4a e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
+                0x080016ec                TwoWire::process(unsigned char)
+ *fill*         0x08001736        0x2 
  .text._ZN7TwoWireD2Ev
-                0x080016d0       0x24 e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
-                0x080016d0                TwoWire::~TwoWire()
-                0x080016d0                TwoWire::~TwoWire()
+                0x08001738       0x24 e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
+                0x08001738                TwoWire::~TwoWire()
+                0x08001738                TwoWire::~TwoWire()
  .text._ZN7TwoWire8setClockEm
-                0x080016f4       0x26 e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
-                0x080016f4                TwoWire::setClock(unsigned long)
- *fill*         0x0800171a        0x2 
+                0x0800175c       0x26 e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
+                0x0800175c                TwoWire::setClock(unsigned long)
+ *fill*         0x08001782        0x2 
  .text.startup._GLOBAL__sub_I__ZN7TwoWire7processEh
-                0x0800171c       0x28 e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
+                0x08001784       0x28 e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
  .text.exit._GLOBAL__sub_D__ZN7TwoWire7processEh
-                0x08001744        0xc e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
+                0x080017ac        0xc e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
  .text._ZN8WireBase5beginEh
-                0x08001750       0x14 e:\drone_parachute\build\libraries\Wire\utility\WireBase.cpp.o
-                0x08001750                WireBase::begin(unsigned char)
+                0x080017b8       0x14 e:\drone_parachute\build\libraries\Wire\utility\WireBase.cpp.o
+                0x080017b8                WireBase::begin(unsigned char)
  .text._ZN8WireBase17beginTransmissionEh
-                0x08001764       0x14 e:\drone_parachute\build\libraries\Wire\utility\WireBase.cpp.o
-                0x08001764                WireBase::beginTransmission(unsigned char)
+                0x080017cc       0x14 e:\drone_parachute\build\libraries\Wire\utility\WireBase.cpp.o
+                0x080017cc                WireBase::beginTransmission(unsigned char)
  .text._ZN8WireBase15endTransmissionEb
-                0x08001778       0x1e e:\drone_parachute\build\libraries\Wire\utility\WireBase.cpp.o
-                0x08001778                WireBase::endTransmission(bool)
+                0x080017e0       0x1e e:\drone_parachute\build\libraries\Wire\utility\WireBase.cpp.o
+                0x080017e0                WireBase::endTransmission(bool)
  .text._ZN8WireBase15endTransmissionEv
-                0x08001796        0x6 e:\drone_parachute\build\libraries\Wire\utility\WireBase.cpp.o
-                0x08001796                WireBase::endTransmission()
+                0x080017fe        0x6 e:\drone_parachute\build\libraries\Wire\utility\WireBase.cpp.o
+                0x080017fe                WireBase::endTransmission()
  .text._ZN8WireBase11requestFromEhib
-                0x0800179c       0x38 e:\drone_parachute\build\libraries\Wire\utility\WireBase.cpp.o
-                0x0800179c                WireBase::requestFrom(unsigned char, int, bool)
+                0x08001804       0x38 e:\drone_parachute\build\libraries\Wire\utility\WireBase.cpp.o
+                0x08001804                WireBase::requestFrom(unsigned char, int, bool)
  .text._ZN8WireBase5writeEh
-                0x080017d4       0x28 e:\drone_parachute\build\libraries\Wire\utility\WireBase.cpp.o
-                0x080017d4                WireBase::write(unsigned char)
+                0x0800183c       0x28 e:\drone_parachute\build\libraries\Wire\utility\WireBase.cpp.o
+                0x0800183c                WireBase::write(unsigned char)
  .text._ZN8WireBase4readEv
-                0x080017fc       0x3e e:\drone_parachute\build\libraries\Wire\utility\WireBase.cpp.o
-                0x080017fc                WireBase::read()
+                0x08001864       0x3e e:\drone_parachute\build\libraries\Wire\utility\WireBase.cpp.o
+                0x08001864                WireBase::read()
  .text._ZL12waitSpiTxEndP7spi_dev
-                0x0800183a       0x10 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
+                0x080018a2       0x10 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
  .text._ZL11disable_pwmPK14stm32_pin_info
-                0x0800184a       0x10 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
- *fill*         0x0800185a        0x2 
+                0x080018b2       0x10 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
+ *fill*         0x080018c2        0x2 
  .text._ZL15dev_to_spi_pinsP7spi_dev.isra.8
-                0x0800185c       0x1c e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
+                0x080018c4       0x1c e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
  .text._ZL15configure_gpiosP7spi_devb
-                0x08001878       0x84 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
+                0x080018e0       0x84 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
  .text._ZL19determine_baud_rateP7spi_devm.isra.9
-                0x080018fc       0x3c e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
+                0x08001964       0x3c e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
  .text._ZN8SPIClassC2Em
-                0x08001938       0xa8 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
-                0x08001938                SPIClass::SPIClass(unsigned long)
-                0x08001938                SPIClass::SPIClass(unsigned long)
+                0x080019a0       0xa8 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
+                0x080019a0                SPIClass::SPIClass(unsigned long)
+                0x080019a0                SPIClass::SPIClass(unsigned long)
  .text._ZN8SPIClass14updateSettingsEv
-                0x080019e0       0x24 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
-                0x080019e0                SPIClass::updateSettings()
+                0x08001a48       0x24 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
+                0x08001a48                SPIClass::updateSettings()
  .text._ZN8SPIClass5beginEv
-                0x08001a04       0x24 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
-                0x08001a04                SPIClass::begin()
+                0x08001a6c       0x24 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
+                0x08001a6c                SPIClass::begin()
  .text._ZN8SPIClass15setClockDividerEm
-                0x08001a28       0x18 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
-                0x08001a28                SPIClass::setClockDivider(unsigned long)
+                0x08001a90       0x18 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
+                0x08001a90                SPIClass::setClockDivider(unsigned long)
  .text._ZN8SPIClass11setBitOrderE8BitOrder
-                0x08001a40       0x18 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
-                0x08001a40                SPIClass::setBitOrder(BitOrder)
+                0x08001aa8       0x18 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
+                0x08001aa8                SPIClass::setBitOrder(BitOrder)
  .text._ZN8SPIClass11setDataSizeEm
-                0x08001a58       0x30 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
-                0x08001a58                SPIClass::setDataSize(unsigned long)
+                0x08001ac0       0x30 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
+                0x08001ac0                SPIClass::setDataSize(unsigned long)
  .text._ZN8SPIClass11setDataModeEh
-                0x08001a88       0x1a e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
-                0x08001a88                SPIClass::setDataMode(unsigned char)
+                0x08001af0       0x1a e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
+                0x08001af0                SPIClass::setDataMode(unsigned char)
  .text._ZN8SPIClass16beginTransactionEh11SPISettings
-                0x08001aa2       0x46 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
-                0x08001aa2                SPIClass::beginTransaction(unsigned char, SPISettings)
+                0x08001b0a       0x46 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
+                0x08001b0a                SPIClass::beginTransaction(unsigned char, SPISettings)
  .text._ZN8SPIClass14endTransactionEv
-                0x08001ae8        0x2 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
-                0x08001ae8                SPIClass::endTransaction()
+                0x08001b50        0x2 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
+                0x08001b50                SPIClass::endTransaction()
  .text._ZNK8SPIClass8transferEh
-                0x08001aea       0x1a e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
-                0x08001aea                SPIClass::transfer(unsigned char) const
+                0x08001b52       0x1a e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
+                0x08001b52                SPIClass::transfer(unsigned char) const
  .text.startup._GLOBAL__sub_I__ZN8SPIClassC2Em
-                0x08001b04        0xc e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
+                0x08001b6c        0xc e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
  .text._ZN5Servo17writeMicrosecondsEt
-                0x08001b10       0x3a e:\drone_parachute\build\libraries\Servo\Servo.cpp.o
-                0x08001b10                Servo::writeMicroseconds(unsigned short)
+                0x08001b78       0x3a e:\drone_parachute\build\libraries\Servo\Servo.cpp.o
+                0x08001b78                Servo::writeMicroseconds(unsigned short)
  .text._ZN5Servo5writeEi
-                0x08001b4a       0x3c e:\drone_parachute\build\libraries\Servo\Servo.cpp.o
-                0x08001b4a                Servo::write(int)
+                0x08001bb2       0x3c e:\drone_parachute\build\libraries\Servo\Servo.cpp.o
+                0x08001bb2                Servo::write(int)
  .text._ZN5Servo11resetFieldsEv
-                0x08001b86       0x1c e:\drone_parachute\build\libraries\Servo\Servo.cpp.o
-                0x08001b86                Servo::resetFields()
+                0x08001bee       0x1c e:\drone_parachute\build\libraries\Servo\Servo.cpp.o
+                0x08001bee                Servo::resetFields()
  .text._ZN5ServoC2Ev
-                0x08001ba2        0xc e:\drone_parachute\build\libraries\Servo\Servo.cpp.o
-                0x08001ba2                Servo::Servo()
-                0x08001ba2                Servo::Servo()
- *fill*         0x08001bae        0x2 
+                0x08001c0a        0xc e:\drone_parachute\build\libraries\Servo\Servo.cpp.o
+                0x08001c0a                Servo::Servo()
+                0x08001c0a                Servo::Servo()
+ *fill*         0x08001c16        0x2 
  .text._ZN5Servo6detachEv
-                0x08001bb0       0x30 e:\drone_parachute\build\libraries\Servo\Servo.cpp.o
-                0x08001bb0                Servo::detach()
+                0x08001c18       0x30 e:\drone_parachute\build\libraries\Servo\Servo.cpp.o
+                0x08001c18                Servo::detach()
  .text._ZN5Servo6attachEhttss
-                0x08001be0       0x68 e:\drone_parachute\build\libraries\Servo\Servo.cpp.o
-                0x08001be0                Servo::attach(unsigned char, unsigned short, unsigned short, short, short)
+                0x08001c48       0x68 e:\drone_parachute\build\libraries\Servo\Servo.cpp.o
+                0x08001c48                Servo::attach(unsigned char, unsigned short, unsigned short, short, short)
  .text._Z9boardInitv
-                0x08001c48        0x2 e:\drone_parachute\build\core\board.cpp.o
-                0x08001c48                boardInit()
- *fill*         0x08001c4a        0x2 
+                0x08001cb0        0x2 e:\drone_parachute\build\core\board.cpp.o
+                0x08001cb0                boardInit()
+ *fill*         0x08001cb2        0x2 
  .text.startup._GLOBAL__sub_I__Z9boardInitv
-                0x08001c4c       0x48 e:\drone_parachute\build\core\board.cpp.o
+                0x08001cb4       0x48 e:\drone_parachute\build\core\board.cpp.o
  .text._ZL18adc_default_configP7adc_dev
-                0x08001c94       0x1c e:\drone_parachute\build\core\wirish\boards.cpp.o
+                0x08001cfc       0x1c e:\drone_parachute\build\core\wirish\boards.cpp.o
  .text._ZL20timer_default_configP9timer_dev
-                0x08001cb0       0x9e e:\drone_parachute\build\core\wirish\boards.cpp.o
- *fill*         0x08001d4e        0x2 
+                0x08001d18       0x9e e:\drone_parachute\build\core\wirish\boards.cpp.o
+ *fill*         0x08001db6        0x2 
  .text._Z4initv
-                0x08001d50       0xbc e:\drone_parachute\build\core\wirish\boards.cpp.o
-                0x08001d50                init()
+                0x08001db8       0xbc e:\drone_parachute\build\core\wirish\boards.cpp.o
+                0x08001db8                init()
  .text._ZN6wirish4priv15board_reset_pllEv
-                0x08001e0c        0x2 e:\drone_parachute\build\core\wirish\boards_setup.cpp.o
-                0x08001e0c                wirish::priv::board_reset_pll()
+                0x08001e74        0x2 e:\drone_parachute\build\core\wirish\boards_setup.cpp.o
+                0x08001e74                wirish::priv::board_reset_pll()
  .text._ZN6wirish4priv28board_setup_clock_prescalersEv
-                0x08001e0e       0x2e e:\drone_parachute\build\core\wirish\boards_setup.cpp.o
-                0x08001e0e                wirish::priv::board_setup_clock_prescalers()
+                0x08001e76       0x2e e:\drone_parachute\build\core\wirish\boards_setup.cpp.o
+                0x08001e76                wirish::priv::board_setup_clock_prescalers()
  .text._ZN6wirish4priv16board_setup_gpioEv
-                0x08001e3c        0x4 e:\drone_parachute\build\core\wirish\boards_setup.cpp.o
-                0x08001e3c                wirish::priv::board_setup_gpio()
+                0x08001ea4        0x4 e:\drone_parachute\build\core\wirish\boards_setup.cpp.o
+                0x08001ea4                wirish::priv::board_setup_gpio()
  .text._ZN6wirish4priv15board_setup_usbEv
-                0x08001e40        0x2 e:\drone_parachute\build\core\wirish\boards_setup.cpp.o
-                0x08001e40                wirish::priv::board_setup_usb()
+                0x08001ea8        0x2 e:\drone_parachute\build\core\wirish\boards_setup.cpp.o
+                0x08001ea8                wirish::priv::board_setup_usb()
  .text._ZN6wirish4priv11series_initEv
-                0x08001e42        0x4 e:\drone_parachute\build\core\wirish\boards_setup.cpp.o
-                0x08001e42                wirish::priv::series_init()
- *fill*         0x08001e46        0x2 
- .text          0x08001e48       0x10 e:\drone_parachute\build\core\wirish\start.S.o
-                0x08001e48                __start__
- .text.start_c  0x08001e58       0x58 e:\drone_parachute\build\core\wirish\start_c.c.o
-                0x08001e58                start_c
+                0x08001eaa        0x4 e:\drone_parachute\build\core\wirish\boards_setup.cpp.o
+                0x08001eaa                wirish::priv::series_init()
+ *fill*         0x08001eae        0x2 
+ .text          0x08001eb0       0x10 e:\drone_parachute\build\core\wirish\start.S.o
+                0x08001eb0                __start__
+ .text.start_c  0x08001ec0       0x58 e:\drone_parachute\build\core\wirish\start_c.c.o
+                0x08001ec0                start_c
  .text.rb_full_count
-                0x08001eb0       0x22 e:\drone_parachute\build\core\core.a(HardwareSerial.cpp.o)
- .text._ZN14HardwareSerial4readEv
-                0x08001ed2       0x3a e:\drone_parachute\build\core\core.a(HardwareSerial.cpp.o)
-                0x08001ed2                HardwareSerial::read()
- .text._ZN14HardwareSerial9availableEv
-                0x08001f0c        0xc e:\drone_parachute\build\core\core.a(HardwareSerial.cpp.o)
-                0x08001f0c                HardwareSerial::available()
- .text._ZN14HardwareSerial4peekEv
                 0x08001f18       0x22 e:\drone_parachute\build\core\core.a(HardwareSerial.cpp.o)
-                0x08001f18                HardwareSerial::peek()
+ .text._ZN14HardwareSerial4readEv
+                0x08001f3a       0x3a e:\drone_parachute\build\core\core.a(HardwareSerial.cpp.o)
+                0x08001f3a                HardwareSerial::read()
+ .text._ZN14HardwareSerial9availableEv
+                0x08001f74        0xc e:\drone_parachute\build\core\core.a(HardwareSerial.cpp.o)
+                0x08001f74                HardwareSerial::available()
+ .text._ZN14HardwareSerial4peekEv
+                0x08001f80       0x22 e:\drone_parachute\build\core\core.a(HardwareSerial.cpp.o)
+                0x08001f80                HardwareSerial::peek()
  .text._ZN14HardwareSerial5flushEv
-                0x08001f3a       0x1a e:\drone_parachute\build\core\core.a(HardwareSerial.cpp.o)
-                0x08001f3a                HardwareSerial::flush()
+                0x08001fa2       0x1a e:\drone_parachute\build\core\core.a(HardwareSerial.cpp.o)
+                0x08001fa2                HardwareSerial::flush()
  .text._ZN14HardwareSerial5writeEh
-                0x08001f54       0x1e e:\drone_parachute\build\core\core.a(HardwareSerial.cpp.o)
-                0x08001f54                HardwareSerial::write(unsigned char)
- *fill*         0x08001f72        0x2 
+                0x08001fbc       0x1e e:\drone_parachute\build\core\core.a(HardwareSerial.cpp.o)
+                0x08001fbc                HardwareSerial::write(unsigned char)
+ *fill*         0x08001fda        0x2 
  .text._ZN14HardwareSerialC2EP9usart_devhh
-                0x08001f74       0x1c e:\drone_parachute\build\core\core.a(HardwareSerial.cpp.o)
-                0x08001f74                HardwareSerial::HardwareSerial(usart_dev*, unsigned char, unsigned char)
-                0x08001f74                HardwareSerial::HardwareSerial(usart_dev*, unsigned char, unsigned char)
+                0x08001fdc       0x1c e:\drone_parachute\build\core\core.a(HardwareSerial.cpp.o)
+                0x08001fdc                HardwareSerial::HardwareSerial(usart_dev*, unsigned char, unsigned char)
+                0x08001fdc                HardwareSerial::HardwareSerial(usart_dev*, unsigned char, unsigned char)
  .text._ZN14HardwareSerial5beginEmh
-                0x08001f90       0x78 e:\drone_parachute\build\core\core.a(HardwareSerial.cpp.o)
-                0x08001f90                HardwareSerial::begin(unsigned long, unsigned char)
+                0x08001ff8       0x78 e:\drone_parachute\build\core\core.a(HardwareSerial.cpp.o)
+                0x08001ff8                HardwareSerial::begin(unsigned long, unsigned char)
  .text._ZN14HardwareSerial5beginEm
-                0x08002008        0x6 e:\drone_parachute\build\core\core.a(HardwareSerial.cpp.o)
-                0x08002008                HardwareSerial::begin(unsigned long)
+                0x08002070        0x6 e:\drone_parachute\build\core\core.a(HardwareSerial.cpp.o)
+                0x08002070                HardwareSerial::begin(unsigned long)
  .text._ZN5Print5writeEPKvm
-                0x0800200e       0x20 e:\drone_parachute\build\core\core.a(Print.cpp.o)
-                0x0800200e                Print::write(void const*, unsigned long)
+                0x08002076       0x20 e:\drone_parachute\build\core\core.a(Print.cpp.o)
+                0x08002076                Print::write(void const*, unsigned long)
  .text._ZN5Print5writeEPKc
-                0x0800202e       0x1e e:\drone_parachute\build\core\core.a(Print.cpp.o)
-                0x0800202e                Print::write(char const*)
+                0x08002096       0x1e e:\drone_parachute\build\core\core.a(Print.cpp.o)
+                0x08002096                Print::write(char const*)
  .text._ZN5Print5printEc
-                0x0800204c        0xa e:\drone_parachute\build\core\core.a(Print.cpp.o)
-                0x0800204c                Print::print(char)
+                0x080020b4        0xa e:\drone_parachute\build\core\core.a(Print.cpp.o)
+                0x080020b4                Print::print(char)
  .text._ZN5Print5printEPKc
-                0x08002056        0xa e:\drone_parachute\build\core\core.a(Print.cpp.o)
-                0x08002056                Print::print(char const*)
+                0x080020be        0xa e:\drone_parachute\build\core\core.a(Print.cpp.o)
+                0x080020be                Print::print(char const*)
  .text._ZN5Print7printlnEv
-                0x08002060       0x18 e:\drone_parachute\build\core\core.a(Print.cpp.o)
-                0x08002060                Print::println()
+                0x080020c8       0x18 e:\drone_parachute\build\core\core.a(Print.cpp.o)
+                0x080020c8                Print::println()
  .text._ZN5Print7printlnEPKc
-                0x08002078       0x14 e:\drone_parachute\build\core\core.a(Print.cpp.o)
-                0x08002078                Print::println(char const*)
+                0x080020e0       0x14 e:\drone_parachute\build\core\core.a(Print.cpp.o)
+                0x080020e0                Print::println(char const*)
  .text._ZN5Print11printNumberEyh
-                0x0800208c       0x84 e:\drone_parachute\build\core\core.a(Print.cpp.o)
-                0x0800208c                Print::printNumber(unsigned long long, unsigned char)
+                0x080020f4       0x84 e:\drone_parachute\build\core\core.a(Print.cpp.o)
+                0x080020f4                Print::printNumber(unsigned long long, unsigned char)
  .text._ZN5Print5printExi
-                0x08002110       0x32 e:\drone_parachute\build\core\core.a(Print.cpp.o)
-                0x08002110                Print::print(long long, int)
+                0x08002178       0x32 e:\drone_parachute\build\core\core.a(Print.cpp.o)
+                0x08002178                Print::print(long long, int)
  .text._ZN5Print5printEii
-                0x08002142       0x12 e:\drone_parachute\build\core\core.a(Print.cpp.o)
-                0x08002142                Print::print(int, int)
- *fill*         0x08002154        0x4 
+                0x080021aa       0x12 e:\drone_parachute\build\core\core.a(Print.cpp.o)
+                0x080021aa                Print::print(int, int)
+ *fill*         0x080021bc        0x4 
  .text._ZN5Print10printFloatEdh
-                0x08002158      0x158 e:\drone_parachute\build\core\core.a(Print.cpp.o)
-                0x08002158                Print::printFloat(double, unsigned char)
+                0x080021c0      0x158 e:\drone_parachute\build\core\core.a(Print.cpp.o)
+                0x080021c0                Print::printFloat(double, unsigned char)
  .text._ZN5Print5printEdi
-                0x080022b0        0xa e:\drone_parachute\build\core\core.a(Print.cpp.o)
-                0x080022b0                Print::print(double, int)
+                0x08002318        0xa e:\drone_parachute\build\core\core.a(Print.cpp.o)
+                0x08002318                Print::print(double, int)
  .text._ZN5Print7printlnEdi
-                0x080022ba       0x1c e:\drone_parachute\build\core\core.a(Print.cpp.o)
-                0x080022ba                Print::println(double, int)
+                0x08002322       0x1c e:\drone_parachute\build\core\core.a(Print.cpp.o)
+                0x08002322                Print::println(double, int)
  .text.__cxa_pure_virtual
-                0x080022d6        0x2 e:\drone_parachute\build\core\core.a(cxxabi-compat.cpp.o)
-                0x080022d6                __cxa_pure_virtual
+                0x0800233e        0x2 e:\drone_parachute\build\core\core.a(cxxabi-compat.cpp.o)
+                0x0800233e                __cxa_pure_virtual
  .text.adc_init
-                0x080022d8       0x14 e:\drone_parachute\build\core\core.a(adc.c.o)
-                0x080022d8                adc_init
+                0x08002340       0x14 e:\drone_parachute\build\core\core.a(adc.c.o)
+                0x08002340                adc_init
  .text.adc_set_extsel
-                0x080022ec       0x12 e:\drone_parachute\build\core\core.a(adc.c.o)
-                0x080022ec                adc_set_extsel
+                0x08002354       0x12 e:\drone_parachute\build\core\core.a(adc.c.o)
+                0x08002354                adc_set_extsel
  .text.adc_set_sample_rate
-                0x080022fe       0x30 e:\drone_parachute\build\core\core.a(adc.c.o)
-                0x080022fe                adc_set_sample_rate
+                0x08002366       0x30 e:\drone_parachute\build\core\core.a(adc.c.o)
+                0x08002366                adc_set_sample_rate
  .text.adc_read
-                0x0800232e       0x20 e:\drone_parachute\build\core\core.a(adc.c.o)
-                0x0800232e                adc_read
- *fill*         0x0800234e        0x2 
+                0x08002396       0x20 e:\drone_parachute\build\core\core.a(adc.c.o)
+                0x08002396                adc_read
+ *fill*         0x080023b6        0x2 
  .text.__irq_adc
-                0x08002350       0x50 e:\drone_parachute\build\core\core.a(adc_f1.c.o)
-                0x08002350                __irq_adc
+                0x080023b8       0x50 e:\drone_parachute\build\core\core.a(adc_f1.c.o)
+                0x080023b8                __irq_adc
  .text.adc_calibrate
-                0x080023a0       0x24 e:\drone_parachute\build\core\core.a(adc_f1.c.o)
-                0x080023a0                adc_calibrate
+                0x08002408       0x24 e:\drone_parachute\build\core\core.a(adc_f1.c.o)
+                0x08002408                adc_calibrate
  .text.adc_set_prescaler
-                0x080023c4        0x8 e:\drone_parachute\build\core\core.a(adc_f1.c.o)
-                0x080023c4                adc_set_prescaler
+                0x0800242c        0x8 e:\drone_parachute\build\core\core.a(adc_f1.c.o)
+                0x0800242c                adc_set_prescaler
  .text.adc_foreach
-                0x080023cc       0x1c e:\drone_parachute\build\core\core.a(adc_f1.c.o)
-                0x080023cc                adc_foreach
+                0x08002434       0x1c e:\drone_parachute\build\core\core.a(adc_f1.c.o)
+                0x08002434                adc_foreach
  .text.adc_enable_single_swstart
-                0x080023e8       0x36 e:\drone_parachute\build\core\core.a(adc_f1.c.o)
-                0x080023e8                adc_enable_single_swstart
+                0x08002450       0x36 e:\drone_parachute\build\core\core.a(adc_f1.c.o)
+                0x08002450                adc_enable_single_swstart
  .text.dma_irq_handler
-                0x0800241e       0x1c e:\drone_parachute\build\core\core.a(dma_f1.c.o)
- *fill*         0x0800243a        0x2 
+                0x08002486       0x1c e:\drone_parachute\build\core\core.a(dma_f1.c.o)
+ *fill*         0x080024a2        0x2 
  .text.__irq_dma1_channel1
-                0x0800243c       0x10 e:\drone_parachute\build\core\core.a(dma_f1.c.o)
-                0x0800243c                __irq_dma1_channel1
+                0x080024a4       0x10 e:\drone_parachute\build\core\core.a(dma_f1.c.o)
+                0x080024a4                __irq_dma1_channel1
  .text.__irq_dma1_channel2
-                0x0800244c       0x10 e:\drone_parachute\build\core\core.a(dma_f1.c.o)
-                0x0800244c                __irq_dma1_channel2
+                0x080024b4       0x10 e:\drone_parachute\build\core\core.a(dma_f1.c.o)
+                0x080024b4                __irq_dma1_channel2
  .text.__irq_dma1_channel3
-                0x0800245c       0x10 e:\drone_parachute\build\core\core.a(dma_f1.c.o)
-                0x0800245c                __irq_dma1_channel3
+                0x080024c4       0x10 e:\drone_parachute\build\core\core.a(dma_f1.c.o)
+                0x080024c4                __irq_dma1_channel3
  .text.__irq_dma1_channel4
-                0x0800246c       0x10 e:\drone_parachute\build\core\core.a(dma_f1.c.o)
-                0x0800246c                __irq_dma1_channel4
+                0x080024d4       0x10 e:\drone_parachute\build\core\core.a(dma_f1.c.o)
+                0x080024d4                __irq_dma1_channel4
  .text.__irq_dma1_channel5
-                0x0800247c       0x10 e:\drone_parachute\build\core\core.a(dma_f1.c.o)
-                0x0800247c                __irq_dma1_channel5
+                0x080024e4       0x10 e:\drone_parachute\build\core\core.a(dma_f1.c.o)
+                0x080024e4                __irq_dma1_channel5
  .text.__irq_dma1_channel6
-                0x0800248c       0x10 e:\drone_parachute\build\core\core.a(dma_f1.c.o)
-                0x0800248c                __irq_dma1_channel6
+                0x080024f4       0x10 e:\drone_parachute\build\core\core.a(dma_f1.c.o)
+                0x080024f4                __irq_dma1_channel6
  .text.__irq_dma1_channel7
-                0x0800249c       0x10 e:\drone_parachute\build\core\core.a(dma_f1.c.o)
-                0x0800249c                __irq_dma1_channel7
- *fill*         0x080024ac        0x4 
- .text          0x080024b0       0x60 e:\drone_parachute\build\core\core.a(exc.S.o)
-                0x080024b0                __exc_nmi
-                0x080024b4                __exc_hardfault
-                0x080024b8                __exc_memmanage
-                0x080024bc                __exc_busfault
-                0x080024c0                __exc_usagefault
+                0x08002504       0x10 e:\drone_parachute\build\core\core.a(dma_f1.c.o)
+                0x08002504                __irq_dma1_channel7
+ *fill*         0x08002514        0xc 
+ .text          0x08002520       0x60 e:\drone_parachute\build\core\core.a(exc.S.o)
+                0x08002520                __exc_nmi
+                0x08002524                __exc_hardfault
+                0x08002528                __exc_memmanage
+                0x0800252c                __exc_busfault
+                0x08002530                __exc_usagefault
  .text.dispatch_single_exti
-                0x08002510       0x2c e:\drone_parachute\build\core\core.a(exti.c.o)
-                0x08002510                dispatch_single_exti
+                0x08002580       0x2c e:\drone_parachute\build\core\core.a(exti.c.o)
+                0x08002580                dispatch_single_exti
  .text.dispatch_extis
-                0x0800253c       0x4c e:\drone_parachute\build\core\core.a(exti.c.o)
-                0x0800253c                dispatch_extis
+                0x080025ac       0x4c e:\drone_parachute\build\core\core.a(exti.c.o)
+                0x080025ac                dispatch_extis
  .text.__irq_exti0
-                0x08002588        0x6 e:\drone_parachute\build\core\core.a(exti.c.o)
-                0x08002588                __irq_exti0
+                0x080025f8        0x6 e:\drone_parachute\build\core\core.a(exti.c.o)
+                0x080025f8                __irq_exti0
  .text.__irq_exti1
-                0x0800258e        0x6 e:\drone_parachute\build\core\core.a(exti.c.o)
-                0x0800258e                __irq_exti1
+                0x080025fe        0x6 e:\drone_parachute\build\core\core.a(exti.c.o)
+                0x080025fe                __irq_exti1
  .text.__irq_exti2
-                0x08002594        0x6 e:\drone_parachute\build\core\core.a(exti.c.o)
-                0x08002594                __irq_exti2
+                0x08002604        0x6 e:\drone_parachute\build\core\core.a(exti.c.o)
+                0x08002604                __irq_exti2
  .text.__irq_exti3
-                0x0800259a        0x6 e:\drone_parachute\build\core\core.a(exti.c.o)
-                0x0800259a                __irq_exti3
+                0x0800260a        0x6 e:\drone_parachute\build\core\core.a(exti.c.o)
+                0x0800260a                __irq_exti3
  .text.__irq_exti4
-                0x080025a0        0x6 e:\drone_parachute\build\core\core.a(exti.c.o)
-                0x080025a0                __irq_exti4
+                0x08002610        0x6 e:\drone_parachute\build\core\core.a(exti.c.o)
+                0x08002610                __irq_exti4
  .text.__irq_exti9_5
-                0x080025a6        0x8 e:\drone_parachute\build\core\core.a(exti.c.o)
-                0x080025a6                __irq_exti9_5
+                0x08002616        0x8 e:\drone_parachute\build\core\core.a(exti.c.o)
+                0x08002616                __irq_exti9_5
  .text.__irq_exti15_10
-                0x080025ae        0x8 e:\drone_parachute\build\core\core.a(exti.c.o)
-                0x080025ae                __irq_exti15_10
- *fill*         0x080025b6        0x2 
+                0x0800261e        0x8 e:\drone_parachute\build\core\core.a(exti.c.o)
+                0x0800261e                __irq_exti15_10
+ *fill*         0x08002626        0x2 
  .text.flash_set_latency
-                0x080025b8       0x14 e:\drone_parachute\build\core\core.a(flash.c.o)
-                0x080025b8                flash_set_latency
+                0x08002628       0x14 e:\drone_parachute\build\core\core.a(flash.c.o)
+                0x08002628                flash_set_latency
  .text.gpio_init_all
-                0x080025cc       0x30 e:\drone_parachute\build\core\core.a(gpio_f1.c.o)
-                0x080025cc                gpio_init_all
+                0x0800263c       0x30 e:\drone_parachute\build\core\core.a(gpio_f1.c.o)
+                0x0800263c                gpio_init_all
  .text.gpio_set_mode
-                0x080025fc       0x50 e:\drone_parachute\build\core\core.a(gpio_f1.c.o)
-                0x080025fc                gpio_set_mode
+                0x0800266c       0x50 e:\drone_parachute\build\core\core.a(gpio_f1.c.o)
+                0x0800266c                gpio_set_mode
  .text.afio_init
-                0x0800264c       0x12 e:\drone_parachute\build\core\core.a(gpio_f1.c.o)
-                0x0800264c                afio_init
- *fill*         0x0800265e        0x2 
+                0x080026bc       0x12 e:\drone_parachute\build\core\core.a(gpio_f1.c.o)
+                0x080026bc                afio_init
+ *fill*         0x080026ce        0x2 
  .text.afio_remap
-                0x08002660       0x20 e:\drone_parachute\build\core\core.a(gpio_f1.c.o)
-                0x08002660                afio_remap
+                0x080026d0       0x20 e:\drone_parachute\build\core\core.a(gpio_f1.c.o)
+                0x080026d0                afio_remap
  .text.nvic_irq_enable
-                0x08002680       0x1c e:\drone_parachute\build\core\core.a(i2c.c.o)
+                0x080026f0       0x1c e:\drone_parachute\build\core\core.a(i2c.c.o)
  .text.i2c_disable_irq
-                0x0800269c        0xc e:\drone_parachute\build\core\core.a(i2c.c.o)
+                0x0800270c        0xc e:\drone_parachute\build\core\core.a(i2c.c.o)
  .text.delay_us.part.0.constprop.6
-                0x080026a8        0xa e:\drone_parachute\build\core\core.a(i2c.c.o)
+                0x08002718        0xa e:\drone_parachute\build\core\core.a(i2c.c.o)
  .text.i2c_bus_reset
-                0x080026b2       0xc2 e:\drone_parachute\build\core\core.a(i2c.c.o)
-                0x080026b2                i2c_bus_reset
+                0x08002722       0xc2 e:\drone_parachute\build\core\core.a(i2c.c.o)
+                0x08002722                i2c_bus_reset
  .text.i2c_init
-                0x08002774       0x1e e:\drone_parachute\build\core\core.a(i2c.c.o)
-                0x08002774                i2c_init
- *fill*         0x08002792        0x2 
+                0x080027e4       0x1e e:\drone_parachute\build\core\core.a(i2c.c.o)
+                0x080027e4                i2c_init
+ *fill*         0x08002802        0x2 
  .text.wait_for_state_change
-                0x08002794       0x98 e:\drone_parachute\build\core\core.a(i2c.c.o)
-                0x08002794                wait_for_state_change
+                0x08002804       0x98 e:\drone_parachute\build\core\core.a(i2c.c.o)
+                0x08002804                wait_for_state_change
  .text.i2c_master_xfer
-                0x0800282c       0xa4 e:\drone_parachute\build\core\core.a(i2c.c.o)
-                0x0800282c                i2c_master_xfer
+                0x0800289c       0xa4 e:\drone_parachute\build\core\core.a(i2c.c.o)
+                0x0800289c                i2c_master_xfer
  .text._i2c_irq_handler
-                0x080028d0      0x3d8 e:\drone_parachute\build\core\core.a(i2c.c.o)
-                0x080028d0                _i2c_irq_handler
+                0x08002940      0x3d8 e:\drone_parachute\build\core\core.a(i2c.c.o)
+                0x08002940                _i2c_irq_handler
  .text._i2c_irq_error_handler
-                0x08002ca8       0x84 e:\drone_parachute\build\core\core.a(i2c.c.o)
-                0x08002ca8                _i2c_irq_error_handler
+                0x08002d18       0x84 e:\drone_parachute\build\core\core.a(i2c.c.o)
+                0x08002d18                _i2c_irq_error_handler
  .text.i2c_set_ccr_trise
-                0x08002d2c       0x54 e:\drone_parachute\build\core\core.a(i2c.c.o)
-                0x08002d2c                i2c_set_ccr_trise
+                0x08002d9c       0x54 e:\drone_parachute\build\core\core.a(i2c.c.o)
+                0x08002d9c                i2c_set_ccr_trise
  .text.i2c_master_enable
-                0x08002d80      0x1b4 e:\drone_parachute\build\core\core.a(i2c.c.o)
-                0x08002d80                i2c_master_enable
+                0x08002df0      0x1b4 e:\drone_parachute\build\core\core.a(i2c.c.o)
+                0x08002df0                i2c_master_enable
  .text.i2c_config_gpios
-                0x08002f34       0x58 e:\drone_parachute\build\core\core.a(i2c_f1.c.o)
-                0x08002f34                i2c_config_gpios
+                0x08002fa4       0x58 e:\drone_parachute\build\core\core.a(i2c_f1.c.o)
+                0x08002fa4                i2c_config_gpios
  .text.i2c_master_release_bus
-                0x08002f8c       0x4c e:\drone_parachute\build\core\core.a(i2c_f1.c.o)
-                0x08002f8c                i2c_master_release_bus
+                0x08002ffc       0x4c e:\drone_parachute\build\core\core.a(i2c_f1.c.o)
+                0x08002ffc                i2c_master_release_bus
  .text.__irq_i2c1_ev
-                0x08002fd8        0xc e:\drone_parachute\build\core\core.a(i2c_f1.c.o)
-                0x08002fd8                __irq_i2c1_ev
+                0x08003048        0xc e:\drone_parachute\build\core\core.a(i2c_f1.c.o)
+                0x08003048                __irq_i2c1_ev
  .text.__irq_i2c2_ev
-                0x08002fe4        0xc e:\drone_parachute\build\core\core.a(i2c_f1.c.o)
-                0x08002fe4                __irq_i2c2_ev
+                0x08003054        0xc e:\drone_parachute\build\core\core.a(i2c_f1.c.o)
+                0x08003054                __irq_i2c2_ev
  .text.__irq_i2c1_er
-                0x08002ff0        0xc e:\drone_parachute\build\core\core.a(i2c_f1.c.o)
-                0x08002ff0                __irq_i2c1_er
+                0x08003060        0xc e:\drone_parachute\build\core\core.a(i2c_f1.c.o)
+                0x08003060                __irq_i2c1_er
  .text.__irq_i2c2_er
-                0x08002ffc        0xc e:\drone_parachute\build\core\core.a(i2c_f1.c.o)
-                0x08002ffc                __irq_i2c2_er
+                0x0800306c        0xc e:\drone_parachute\build\core\core.a(i2c_f1.c.o)
+                0x0800306c                __irq_i2c2_er
  .text._i2c_irq_priority_fixup
-                0x08003008        0xa e:\drone_parachute\build\core\core.a(i2c_f1.c.o)
-                0x08003008                _i2c_irq_priority_fixup
- *fill*         0x08003012        0x2 
+                0x08003078        0xa e:\drone_parachute\build\core\core.a(i2c_f1.c.o)
+                0x08003078                _i2c_irq_priority_fixup
+ *fill*         0x08003082        0x2 
  .text.nvic_irq_set_priority
-                0x08003014       0x28 e:\drone_parachute\build\core\core.a(nvic.c.o)
-                0x08003014                nvic_irq_set_priority
+                0x08003084       0x28 e:\drone_parachute\build\core\core.a(nvic.c.o)
+                0x08003084                nvic_irq_set_priority
  .text.nvic_init
-                0x0800303c       0x30 e:\drone_parachute\build\core\core.a(nvic.c.o)
-                0x0800303c                nvic_init
+                0x080030ac       0x30 e:\drone_parachute\build\core\core.a(nvic.c.o)
+                0x080030ac                nvic_init
  .text.rcc_dev_clk
-                0x0800306c        0xc e:\drone_parachute\build\core\core.a(rcc.c.o)
-                0x0800306c                rcc_dev_clk
+                0x080030dc        0xc e:\drone_parachute\build\core\core.a(rcc.c.o)
+                0x080030dc                rcc_dev_clk
  .text.rcc_switch_sysclk
-                0x08003078       0x20 e:\drone_parachute\build\core\core.a(rcc.c.o)
-                0x08003078                rcc_switch_sysclk
+                0x080030e8       0x20 e:\drone_parachute\build\core\core.a(rcc.c.o)
+                0x080030e8                rcc_switch_sysclk
  .text.rcc_turn_on_clk
-                0x08003098       0x1a e:\drone_parachute\build\core\core.a(rcc.c.o)
-                0x08003098                rcc_turn_on_clk
+                0x08003108       0x1a e:\drone_parachute\build\core\core.a(rcc.c.o)
+                0x08003108                rcc_turn_on_clk
  .text.rcc_turn_off_clk
-                0x080030b2       0x1c e:\drone_parachute\build\core\core.a(rcc.c.o)
-                0x080030b2                rcc_turn_off_clk
+                0x08003122       0x1c e:\drone_parachute\build\core\core.a(rcc.c.o)
+                0x08003122                rcc_turn_off_clk
  .text.rcc_is_clk_ready
-                0x080030ce       0x18 e:\drone_parachute\build\core\core.a(rcc.c.o)
-                0x080030ce                rcc_is_clk_ready
- *fill*         0x080030e6        0x2 
+                0x0800313e       0x18 e:\drone_parachute\build\core\core.a(rcc.c.o)
+                0x0800313e                rcc_is_clk_ready
+ *fill*         0x08003156        0x2 
  .text.rcc_configure_pll
-                0x080030e8       0x18 e:\drone_parachute\build\core\core.a(rcc_f1.c.o)
-                0x080030e8                rcc_configure_pll
+                0x08003158       0x18 e:\drone_parachute\build\core\core.a(rcc_f1.c.o)
+                0x08003158                rcc_configure_pll
  .text.rcc_clk_enable
-                0x08003100       0x30 e:\drone_parachute\build\core\core.a(rcc_f1.c.o)
-                0x08003100                rcc_clk_enable
+                0x08003170       0x30 e:\drone_parachute\build\core\core.a(rcc_f1.c.o)
+                0x08003170                rcc_clk_enable
  .text.rcc_reset_dev
-                0x08003130       0x34 e:\drone_parachute\build\core\core.a(rcc_f1.c.o)
-                0x08003130                rcc_reset_dev
+                0x080031a0       0x34 e:\drone_parachute\build\core\core.a(rcc_f1.c.o)
+                0x080031a0                rcc_reset_dev
  .text.rcc_set_prescaler
-                0x08003164       0x20 e:\drone_parachute\build\core\core.a(rcc_f1.c.o)
-                0x08003164                rcc_set_prescaler
+                0x080031d4       0x20 e:\drone_parachute\build\core\core.a(rcc_f1.c.o)
+                0x080031d4                rcc_set_prescaler
  .text.rcc_clk_disable
-                0x08003184       0x30 e:\drone_parachute\build\core\core.a(rcc_f1.c.o)
-                0x08003184                rcc_clk_disable
+                0x080031f4       0x30 e:\drone_parachute\build\core\core.a(rcc_f1.c.o)
+                0x080031f4                rcc_clk_disable
  .text.bb_peri_set_bit
-                0x080031b4        0xe e:\drone_parachute\build\core\core.a(spi.c.o)
+                0x08003224        0xe e:\drone_parachute\build\core\core.a(spi.c.o)
  .text.spi_init
-                0x080031c2       0x14 e:\drone_parachute\build\core\core.a(spi.c.o)
-                0x080031c2                spi_init
+                0x08003232       0x14 e:\drone_parachute\build\core\core.a(spi.c.o)
+                0x08003232                spi_init
  .text.spi_peripheral_enable
-                0x080031d6        0xa e:\drone_parachute\build\core\core.a(spi.c.o)
-                0x080031d6                spi_peripheral_enable
+                0x08003246        0xa e:\drone_parachute\build\core\core.a(spi.c.o)
+                0x08003246                spi_peripheral_enable
  .text.spi_peripheral_disable
-                0x080031e0        0xa e:\drone_parachute\build\core\core.a(spi.c.o)
-                0x080031e0                spi_peripheral_disable
+                0x08003250        0xa e:\drone_parachute\build\core\core.a(spi.c.o)
+                0x08003250                spi_peripheral_disable
  .text.spi_reconfigure
-                0x080031ea       0x2c e:\drone_parachute\build\core\core.a(spi.c.o)
+                0x0800325a       0x2c e:\drone_parachute\build\core\core.a(spi.c.o)
  .text.spi_master_enable
-                0x08003216        0xc e:\drone_parachute\build\core\core.a(spi.c.o)
-                0x08003216                spi_master_enable
+                0x08003286        0xc e:\drone_parachute\build\core\core.a(spi.c.o)
+                0x08003286                spi_master_enable
  .text.spi_config_gpios
-                0x08003222       0x5a e:\drone_parachute\build\core\core.a(spi_f1.c.o)
-                0x08003222                spi_config_gpios
- .text          0x0800327c        0x2 e:\drone_parachute\build\core\core.a(isrs.S.o)
-                0x0800327c                __stm32reservedexception9
-                0x0800327c                __exc_debug_monitor
-                0x0800327c                __exc_svc
-                0x0800327c                __irq_can_rx1
-                0x0800327c                __irq_spi2
-                0x0800327c                __irq_can_sce
-                0x0800327c                __irq_pvd
-                0x0800327c                __irq_tamper
-                0x0800327c                __default_handler
-                0x0800327c                __irq_wwdg
-                0x0800327c                __stm32reservedexception10
-                0x0800327c                __irq_flash
-                0x0800327c                __stm32reservedexception13
-                0x0800327c                __irq_rtc
-                0x0800327c                __irq_spi1
-                0x0800327c                __stm32reservedexception7
-                0x0800327c                __irq_usb_hp_can_tx
-                0x0800327c                __irq_rtcalarm
-                0x0800327c                __stm32reservedexception8
-                0x0800327c                __exc_pendsv
-                0x0800327c                __irq_usbwakeup
-                0x0800327c                __irq_rcc
- *fill*         0x0800327e        0x2 
+                0x08003292       0x5a e:\drone_parachute\build\core\core.a(spi_f1.c.o)
+                0x08003292                spi_config_gpios
+ .text          0x080032ec        0x2 e:\drone_parachute\build\core\core.a(isrs.S.o)
+                0x080032ec                __stm32reservedexception9
+                0x080032ec                __exc_debug_monitor
+                0x080032ec                __exc_svc
+                0x080032ec                __irq_can_rx1
+                0x080032ec                __irq_spi2
+                0x080032ec                __irq_can_sce
+                0x080032ec                __irq_pvd
+                0x080032ec                __irq_tamper
+                0x080032ec                __default_handler
+                0x080032ec                __irq_wwdg
+                0x080032ec                __stm32reservedexception10
+                0x080032ec                __irq_flash
+                0x080032ec                __stm32reservedexception13
+                0x080032ec                __irq_rtc
+                0x080032ec                __irq_spi1
+                0x080032ec                __stm32reservedexception7
+                0x080032ec                __irq_usb_hp_can_tx
+                0x080032ec                __irq_rtcalarm
+                0x080032ec                __stm32reservedexception8
+                0x080032ec                __exc_pendsv
+                0x080032ec                __irq_usbwakeup
+                0x080032ec                __irq_rcc
+ *fill*         0x080032ee        0x2 
  .text.systick_init
-                0x08003280       0x10 e:\drone_parachute\build\core\core.a(systick.c.o)
-                0x08003280                systick_init
+                0x080032f0       0x10 e:\drone_parachute\build\core\core.a(systick.c.o)
+                0x080032f0                systick_init
  .text.__exc_systick
-                0x08003290       0x1c e:\drone_parachute\build\core\core.a(systick.c.o)
-                0x08003290                __exc_systick
+                0x08003300       0x1c e:\drone_parachute\build\core\core.a(systick.c.o)
+                0x08003300                __exc_systick
  .text.timer_oc_set_mode
-                0x080032ac       0x3a e:\drone_parachute\build\core\core.a(timer.c.o)
+                0x0800331c       0x3a e:\drone_parachute\build\core\core.a(timer.c.o)
  .text.dispatch_general
-                0x080032e6       0x66 e:\drone_parachute\build\core\core.a(timer.c.o)
+                0x08003356       0x66 e:\drone_parachute\build\core\core.a(timer.c.o)
  .text.timer_cc_enable
-                0x0800334c       0x1c e:\drone_parachute\build\core\core.a(timer.c.o)
+                0x080033bc       0x1c e:\drone_parachute\build\core\core.a(timer.c.o)
  .text.timer_foreach
-                0x08003368       0x28 e:\drone_parachute\build\core\core.a(timer.c.o)
-                0x08003368                timer_foreach
+                0x080033d8       0x28 e:\drone_parachute\build\core\core.a(timer.c.o)
+                0x080033d8                timer_foreach
  .text.timer_init
-                0x08003390       0x14 e:\drone_parachute\build\core\core.a(timer.c.o)
-                0x08003390                timer_init
+                0x08003400       0x14 e:\drone_parachute\build\core\core.a(timer.c.o)
+                0x08003400                timer_init
  .text.timer_has_cc_channel
-                0x080033a4       0x30 e:\drone_parachute\build\core\core.a(timer.c.o)
-                0x080033a4                timer_has_cc_channel
+                0x08003414       0x30 e:\drone_parachute\build\core\core.a(timer.c.o)
+                0x08003414                timer_has_cc_channel
  .text.timer_detach_interrupt
-                0x080033d4       0x1e e:\drone_parachute\build\core\core.a(timer.c.o)
-                0x080033d4                timer_detach_interrupt
+                0x08003444       0x1e e:\drone_parachute\build\core\core.a(timer.c.o)
+                0x08003444                timer_detach_interrupt
  .text.input_capture_mode
-                0x080033f2       0x1a e:\drone_parachute\build\core\core.a(timer.c.o)
-                0x080033f2                input_capture_mode
+                0x08003462       0x1a e:\drone_parachute\build\core\core.a(timer.c.o)
+                0x08003462                input_capture_mode
  .text.timer_set_mode
-                0x0800340c       0x8c e:\drone_parachute\build\core\core.a(timer.c.o)
-                0x0800340c                timer_set_mode
+                0x0800347c       0x8c e:\drone_parachute\build\core\core.a(timer.c.o)
+                0x0800347c                timer_set_mode
  .text.__irq_tim1_brk
-                0x08003498       0x24 e:\drone_parachute\build\core\core.a(timer.c.o)
-                0x08003498                __irq_tim1_brk
+                0x08003508       0x24 e:\drone_parachute\build\core\core.a(timer.c.o)
+                0x08003508                __irq_tim1_brk
  .text.__irq_tim1_up
-                0x080034bc       0x24 e:\drone_parachute\build\core\core.a(timer.c.o)
-                0x080034bc                __irq_tim1_up
+                0x0800352c       0x24 e:\drone_parachute\build\core\core.a(timer.c.o)
+                0x0800352c                __irq_tim1_up
  .text.__irq_tim1_trg_com
-                0x080034e0       0x34 e:\drone_parachute\build\core\core.a(timer.c.o)
-                0x080034e0                __irq_tim1_trg_com
+                0x08003550       0x34 e:\drone_parachute\build\core\core.a(timer.c.o)
+                0x08003550                __irq_tim1_trg_com
  .text.__irq_tim1_cc
-                0x08003514       0x50 e:\drone_parachute\build\core\core.a(timer.c.o)
-                0x08003514                __irq_tim1_cc
+                0x08003584       0x50 e:\drone_parachute\build\core\core.a(timer.c.o)
+                0x08003584                __irq_tim1_cc
  .text.__irq_tim2
-                0x08003564        0xc e:\drone_parachute\build\core\core.a(timer.c.o)
-                0x08003564                __irq_tim2
+                0x080035d4        0xc e:\drone_parachute\build\core\core.a(timer.c.o)
+                0x080035d4                __irq_tim2
  .text.__irq_tim3
-                0x08003570        0xc e:\drone_parachute\build\core\core.a(timer.c.o)
-                0x08003570                __irq_tim3
+                0x080035e0        0xc e:\drone_parachute\build\core\core.a(timer.c.o)
+                0x080035e0                __irq_tim3
  .text.__irq_tim4
-                0x0800357c        0xc e:\drone_parachute\build\core\core.a(timer.c.o)
-                0x0800357c                __irq_tim4
+                0x080035ec        0xc e:\drone_parachute\build\core\core.a(timer.c.o)
+                0x080035ec                __irq_tim4
  .text.usart_init
-                0x08003588       0x4c e:\drone_parachute\build\core\core.a(usart.c.o)
-                0x08003588                usart_init
+                0x080035f8       0x4c e:\drone_parachute\build\core\core.a(usart.c.o)
+                0x080035f8                usart_init
  .text.usart_enable
-                0x080035d4       0x14 e:\drone_parachute\build\core\core.a(usart.c.o)
-                0x080035d4                usart_enable
+                0x08003644       0x14 e:\drone_parachute\build\core\core.a(usart.c.o)
+                0x08003644                usart_enable
  .text.usart_tx
-                0x080035e8       0x9c e:\drone_parachute\build\core\core.a(usart.c.o)
-                0x080035e8                usart_tx
+                0x08003658       0x9c e:\drone_parachute\build\core\core.a(usart.c.o)
+                0x08003658                usart_tx
  .text.usart_irq
-                0x08003684       0xc8 e:\drone_parachute\build\core\core.a(usart_f1.c.o)
+                0x080036f4       0xc8 e:\drone_parachute\build\core\core.a(usart_f1.c.o)
  .text.usart_config_gpios_async
-                0x0800374c       0x4a e:\drone_parachute\build\core\core.a(usart_f1.c.o)
-                0x0800374c                usart_config_gpios_async
+                0x080037bc       0x4a e:\drone_parachute\build\core\core.a(usart_f1.c.o)
+                0x080037bc                usart_config_gpios_async
  .text.usart_set_baud_rate
-                0x08003796       0x3c e:\drone_parachute\build\core\core.a(usart_f1.c.o)
-                0x08003796                usart_set_baud_rate
- *fill*         0x080037d2        0x2 
+                0x08003806       0x3c e:\drone_parachute\build\core\core.a(usart_f1.c.o)
+                0x08003806                usart_set_baud_rate
+ *fill*         0x08003842        0x2 
  .text.__irq_usart1
-                0x080037d4       0x18 e:\drone_parachute\build\core\core.a(usart_f1.c.o)
-                0x080037d4                __irq_usart1
+                0x08003844       0x18 e:\drone_parachute\build\core\core.a(usart_f1.c.o)
+                0x08003844                __irq_usart1
  .text.__irq_usart2
-                0x080037ec       0x18 e:\drone_parachute\build\core\core.a(usart_f1.c.o)
-                0x080037ec                __irq_usart2
+                0x0800385c       0x18 e:\drone_parachute\build\core\core.a(usart_f1.c.o)
+                0x0800385c                __irq_usart2
  .text.__irq_usart3
-                0x08003804       0x18 e:\drone_parachute\build\core\core.a(usart_f1.c.o)
-                0x08003804                __irq_usart3
+                0x08003874       0x18 e:\drone_parachute\build\core\core.a(usart_f1.c.o)
+                0x08003874                __irq_usart3
  .text._usart_clock_freq
-                0x0800381c       0x24 e:\drone_parachute\build\core\core.a(usart_private.c.o)
-                0x0800381c                _usart_clock_freq
+                0x0800388c       0x24 e:\drone_parachute\build\core\core.a(usart_private.c.o)
+                0x0800388c                _usart_clock_freq
  .text.usb_resume
-                0x08003840       0xb4 e:\drone_parachute\build\core\core.a(usb.c.o)
+                0x080038b0       0xb4 e:\drone_parachute\build\core\core.a(usb.c.o)
  .text.__irq_usb_lp_can_rx0
-                0x080038f4      0x1c8 e:\drone_parachute\build\core\core.a(usb.c.o)
-                0x080038f4                __irq_usb_lp_can_rx0
+                0x08003964      0x1c8 e:\drone_parachute\build\core\core.a(usb.c.o)
+                0x08003964                __irq_usb_lp_can_rx0
  .text.usb_set_ep_rx_stat
-                0x08003abc       0x22 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
- *fill*         0x08003ade        0x2 
+                0x08003b2c       0x22 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
+ *fill*         0x08003b4e        0x2 
  .text.vcomGetSetLineCoding
-                0x08003ae0       0x18 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
+                0x08003b50       0x18 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
  .text.usbDataSetup
-                0x08003af8       0x54 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
+                0x08003b68       0x54 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
  .text.usbNoDataSetup
-                0x08003b4c       0x50 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
+                0x08003bbc       0x50 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
  .text.usbGetInterfaceSetting
-                0x08003b9c       0x10 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
+                0x08003c0c       0x10 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
  .text.usbGetStringDescriptor
-                0x08003bac       0x20 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
+                0x08003c1c       0x20 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
  .text.usbGetConfigDescriptor
-                0x08003bcc        0xc e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
+                0x08003c3c        0xc e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
  .text.usbGetDeviceDescriptor
-                0x08003bd8        0xc e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
- .text.usbInit  0x08003be4       0x44 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
+                0x08003c48        0xc e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
+ .text.usbInit  0x08003c54       0x44 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
  .text.usbReset
-                0x08003c28      0x160 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
+                0x08003c98      0x160 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
  .text.usb_set_ep_rx_count
-                0x08003d88       0x4c e:\drone_parachute\build\core\core.a(usb_reg_map.c.o)
-                0x08003d88                usb_set_ep_rx_count
+                0x08003df8       0x4c e:\drone_parachute\build\core\core.a(usb_reg_map.c.o)
+                0x08003df8                usb_set_ep_rx_count
  .text.Standard_GetConfiguration
-                0x08003dd4       0x24 e:\drone_parachute\build\core\core.a(usb_core.c.o)
-                0x08003dd4                Standard_GetConfiguration
+                0x08003e44       0x24 e:\drone_parachute\build\core\core.a(usb_core.c.o)
+                0x08003e44                Standard_GetConfiguration
  .text.Standard_GetInterface
-                0x08003df8       0x24 e:\drone_parachute\build\core\core.a(usb_core.c.o)
-                0x08003df8                Standard_GetInterface
+                0x08003e68       0x24 e:\drone_parachute\build\core\core.a(usb_core.c.o)
+                0x08003e68                Standard_GetInterface
  .text.Standard_GetStatus
-                0x08003e1c       0x90 e:\drone_parachute\build\core\core.a(usb_core.c.o)
-                0x08003e1c                Standard_GetStatus
+                0x08003e8c       0x90 e:\drone_parachute\build\core\core.a(usb_core.c.o)
+                0x08003e8c                Standard_GetStatus
  .text.DataStageIn
-                0x08003eac       0xa8 e:\drone_parachute\build\core\core.a(usb_core.c.o)
+                0x08003f1c       0xa8 e:\drone_parachute\build\core\core.a(usb_core.c.o)
  .text.Standard_SetConfiguration
-                0x08003f54       0x38 e:\drone_parachute\build\core\core.a(usb_core.c.o)
-                0x08003f54                Standard_SetConfiguration
+                0x08003fc4       0x38 e:\drone_parachute\build\core\core.a(usb_core.c.o)
+                0x08003fc4                Standard_SetConfiguration
  .text.Standard_SetInterface
-                0x08003f8c       0x48 e:\drone_parachute\build\core\core.a(usb_core.c.o)
-                0x08003f8c                Standard_SetInterface
+                0x08003ffc       0x48 e:\drone_parachute\build\core\core.a(usb_core.c.o)
+                0x08003ffc                Standard_SetInterface
  .text.Standard_ClearFeature
-                0x08003fd4       0xd0 e:\drone_parachute\build\core\core.a(usb_core.c.o)
-                0x08003fd4                Standard_ClearFeature
+                0x08004044       0xd0 e:\drone_parachute\build\core\core.a(usb_core.c.o)
+                0x08004044                Standard_ClearFeature
  .text.Standard_SetEndPointFeature
-                0x080040a4       0x84 e:\drone_parachute\build\core\core.a(usb_core.c.o)
-                0x080040a4                Standard_SetEndPointFeature
+                0x08004114       0x84 e:\drone_parachute\build\core\core.a(usb_core.c.o)
+                0x08004114                Standard_SetEndPointFeature
  .text.Standard_SetDeviceFeature
-                0x08004128       0x24 e:\drone_parachute\build\core\core.a(usb_core.c.o)
-                0x08004128                Standard_SetDeviceFeature
+                0x08004198       0x24 e:\drone_parachute\build\core\core.a(usb_core.c.o)
+                0x08004198                Standard_SetDeviceFeature
  .text.Standard_GetDescriptorData
-                0x0800414c       0x1c e:\drone_parachute\build\core\core.a(usb_core.c.o)
-                0x0800414c                Standard_GetDescriptorData
+                0x080041bc       0x1c e:\drone_parachute\build\core\core.a(usb_core.c.o)
+                0x080041bc                Standard_GetDescriptorData
  .text.Post0_Process
-                0x08004168       0x40 e:\drone_parachute\build\core\core.a(usb_core.c.o)
-                0x08004168                Post0_Process
+                0x080041d8       0x40 e:\drone_parachute\build\core\core.a(usb_core.c.o)
+                0x080041d8                Post0_Process
  .text.Setup0_Process
-                0x080041a8      0x2d0 e:\drone_parachute\build\core\core.a(usb_core.c.o)
-                0x080041a8                Setup0_Process
+                0x08004218      0x2d0 e:\drone_parachute\build\core\core.a(usb_core.c.o)
+                0x08004218                Setup0_Process
  .text.Out0_Process
-                0x08004478       0xc8 e:\drone_parachute\build\core\core.a(usb_core.c.o)
-                0x08004478                Out0_Process
+                0x080044e8       0xc8 e:\drone_parachute\build\core\core.a(usb_core.c.o)
+                0x080044e8                Out0_Process
  .text.SetDeviceAddress
-                0x08004540       0x38 e:\drone_parachute\build\core\core.a(usb_core.c.o)
-                0x08004540                SetDeviceAddress
+                0x080045b0       0x38 e:\drone_parachute\build\core\core.a(usb_core.c.o)
+                0x080045b0                SetDeviceAddress
  .text.In0_Process
-                0x08004578       0x5c e:\drone_parachute\build\core\core.a(usb_core.c.o)
-                0x08004578                In0_Process
+                0x080045e8       0x5c e:\drone_parachute\build\core\core.a(usb_core.c.o)
+                0x080045e8                In0_Process
  .text.NOP_Process
-                0x080045d4        0x2 e:\drone_parachute\build\core\core.a(usb_core.c.o)
-                0x080045d4                NOP_Process
+                0x08004644        0x2 e:\drone_parachute\build\core\core.a(usb_core.c.o)
+                0x08004644                NOP_Process
  .text.UserToPMABufferCopy
-                0x080045d6       0x30 e:\drone_parachute\build\core\core.a(usb_mem.c.o)
-                0x080045d6                UserToPMABufferCopy
+                0x08004646       0x30 e:\drone_parachute\build\core\core.a(usb_mem.c.o)
+                0x08004646                UserToPMABufferCopy
  .text.PMAToUserBufferCopy
-                0x08004606       0x32 e:\drone_parachute\build\core\core.a(usb_mem.c.o)
-                0x08004606                PMAToUserBufferCopy
+                0x08004676       0x32 e:\drone_parachute\build\core\core.a(usb_mem.c.o)
+                0x08004676                PMAToUserBufferCopy
  .text.SetEPTxStatus
-                0x08004638       0x2a e:\drone_parachute\build\core\core.a(usb_regs.c.o)
-                0x08004638                SetEPTxStatus
+                0x080046a8       0x2a e:\drone_parachute\build\core\core.a(usb_regs.c.o)
+                0x080046a8                SetEPTxStatus
  .text.ClearDTOG_RX
-                0x08004662       0x20 e:\drone_parachute\build\core\core.a(usb_regs.c.o)
-                0x08004662                ClearDTOG_RX
+                0x080046d2       0x20 e:\drone_parachute\build\core\core.a(usb_regs.c.o)
+                0x080046d2                ClearDTOG_RX
  .text.ClearDTOG_TX
-                0x08004682       0x20 e:\drone_parachute\build\core\core.a(usb_regs.c.o)
-                0x08004682                ClearDTOG_TX
- *fill*         0x080046a2        0x2 
+                0x080046f2       0x20 e:\drone_parachute\build\core\core.a(usb_regs.c.o)
+                0x080046f2                ClearDTOG_TX
+ *fill*         0x08004712        0x2 
  .text.GetEPTxAddr
-                0x080046a4       0x1c e:\drone_parachute\build\core\core.a(usb_regs.c.o)
-                0x080046a4                GetEPTxAddr
+                0x08004714       0x1c e:\drone_parachute\build\core\core.a(usb_regs.c.o)
+                0x08004714                GetEPTxAddr
  .text.GetEPRxAddr
-                0x080046c0       0x1c e:\drone_parachute\build\core\core.a(usb_regs.c.o)
-                0x080046c0                GetEPRxAddr
+                0x08004730       0x1c e:\drone_parachute\build\core\core.a(usb_regs.c.o)
+                0x08004730                GetEPRxAddr
  .text.SetEPTxCount
-                0x080046dc       0x1c e:\drone_parachute\build\core\core.a(usb_regs.c.o)
-                0x080046dc                SetEPTxCount
+                0x0800474c       0x1c e:\drone_parachute\build\core\core.a(usb_regs.c.o)
+                0x0800474c                SetEPTxCount
  .text.SetEPRxCount
-                0x080046f8       0x40 e:\drone_parachute\build\core\core.a(usb_regs.c.o)
-                0x080046f8                SetEPRxCount
- .text.throb    0x08004738       0x4c e:\drone_parachute\build\core\core.a(util.c.o)
-                0x08004738                throb
- .text.__error  0x08004784       0x14 e:\drone_parachute\build\core\core.a(util.c.o)
-                0x08004784                __error
+                0x08004768       0x40 e:\drone_parachute\build\core\core.a(usb_regs.c.o)
+                0x08004768                SetEPRxCount
+ .text.throb    0x080047a8       0x4c e:\drone_parachute\build\core\core.a(util.c.o)
+                0x080047a8                throb
+ .text.__error  0x080047f4       0x14 e:\drone_parachute\build\core\core.a(util.c.o)
+                0x080047f4                __error
  .text.startup._Z7premainv
-                0x08004798        0x4 e:\drone_parachute\build\core\core.a(main.cpp.o)
-                0x08004798                premain()
+                0x08004808        0x4 e:\drone_parachute\build\core\core.a(main.cpp.o)
+                0x08004808                premain()
  .text.startup.main
-                0x0800479c        0xc e:\drone_parachute\build\core\core.a(main.cpp.o)
-                0x0800479c                main
+                0x0800480c        0xc e:\drone_parachute\build\core\core.a(main.cpp.o)
+                0x0800480c                main
  .text._Z8pwmWriteht
-                0x080047a8       0x24 e:\drone_parachute\build\core\core.a(pwm.cpp.o)
-                0x080047a8                pwmWrite(unsigned char, unsigned short)
+                0x08004818       0x24 e:\drone_parachute\build\core\core.a(pwm.cpp.o)
+                0x08004818                pwmWrite(unsigned char, unsigned short)
  .text._Z7pinModeh13WiringPinMode
-                0x080047cc       0x84 e:\drone_parachute\build\core\core.a(wirish_digital_f1.cpp.o)
-                0x080047cc                pinMode(unsigned char, WiringPinMode)
+                0x0800483c       0x84 e:\drone_parachute\build\core\core.a(wirish_digital_f1.cpp.o)
+                0x0800483c                pinMode(unsigned char, WiringPinMode)
  .text._Z10analogReadh
-                0x08004850       0x1c e:\drone_parachute\build\core\core.a(wirish_analog.cpp.o)
-                0x08004850                analogRead(unsigned char)
+                0x080048c0       0x1c e:\drone_parachute\build\core\core.a(wirish_analog.cpp.o)
+                0x080048c0                analogRead(unsigned char)
  .text._Z12digitalWritehh
-                0x0800486c       0x2c e:\drone_parachute\build\core\core.a(wirish_digital.cpp.o)
-                0x0800486c                digitalWrite(unsigned char, unsigned char)
+                0x080048dc       0x2c e:\drone_parachute\build\core\core.a(wirish_digital.cpp.o)
+                0x080048dc                digitalWrite(unsigned char, unsigned char)
  .text._ZL6microsv
-                0x08004898       0x34 e:\drone_parachute\build\core\core.a(wirish_time.cpp.o)
+                0x08004908       0x34 e:\drone_parachute\build\core\core.a(wirish_time.cpp.o)
  .text._Z5delaym
-                0x080048cc       0x2a e:\drone_parachute\build\core\core.a(wirish_time.cpp.o)
-                0x080048cc                delay(unsigned long)
- .text.__empty  0x080048f6        0x2 e:\drone_parachute\build\core\core.a(hooks.c.o)
-                0x080048f6                yield
+                0x0800493c       0x2a e:\drone_parachute\build\core\core.a(wirish_time.cpp.o)
+                0x0800493c                delay(unsigned long)
+ .text.__empty  0x08004966        0x2 e:\drone_parachute\build\core\core.a(hooks.c.o)
+                0x08004966                yield
  .text.gpio_init
-                0x080048f8       0x14 e:\drone_parachute\build\core\core.a(gpio.c.o)
-                0x080048f8                gpio_init
- .text.sqrt     0x0800490c       0xac c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_sqrt.o)
-                0x0800490c                sqrt
+                0x08004968       0x14 e:\drone_parachute\build\core\core.a(gpio.c.o)
+                0x08004968                gpio_init
+ .text.sqrt     0x0800497c       0xac c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_sqrt.o)
+                0x0800497c                sqrt
  .text.__ieee754_sqrt
-                0x080049b8      0x180 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_sqrt.o)
-                0x080049b8                __ieee754_sqrt
+                0x08004a28      0x180 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_sqrt.o)
+                0x08004a28                __ieee754_sqrt
  .text.__fpclassifyd
-                0x08004b38       0x50 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_fpclassify.o)
-                0x08004b38                __fpclassifyd
- .text.matherr  0x08004b88        0x4 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_matherr.o)
-                0x08004b88                matherr
- .text          0x08004b8c      0x370 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_arm_addsubdf3.o)
-                0x08004b8c                __aeabi_drsub
-                0x08004b94                __aeabi_dsub
-                0x08004b94                __subdf3
-                0x08004b98                __aeabi_dadd
-                0x08004b98                __adddf3
-                0x08004e10                __floatunsidf
-                0x08004e10                __aeabi_ui2d
-                0x08004e30                __floatsidf
-                0x08004e30                __aeabi_i2d
-                0x08004e54                __aeabi_f2d
-                0x08004e54                __extendsfdf2
-                0x08004e90                __floatundidf
-                0x08004e90                __aeabi_ul2d
-                0x08004ea0                __floatdidf
-                0x08004ea0                __aeabi_l2d
- .text          0x08004efc      0x424 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_arm_muldivdf3.o)
-                0x08004efc                __aeabi_dmul
-                0x08004efc                __muldf3
-                0x08005150                __divdf3
-                0x08005150                __aeabi_ddiv
- .text          0x08005320      0x110 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_arm_cmpdf2.o)
-                0x08005320                __gtdf2
-                0x08005320                __gedf2
-                0x08005328                __ltdf2
-                0x08005328                __ledf2
-                0x08005330                __nedf2
-                0x08005330                __eqdf2
-                0x08005330                __cmpdf2
-                0x080053ac                __aeabi_cdrcmple
-                0x080053bc                __aeabi_cdcmpeq
-                0x080053bc                __aeabi_cdcmple
-                0x080053cc                __aeabi_dcmpeq
-                0x080053e0                __aeabi_dcmplt
-                0x080053f4                __aeabi_dcmple
-                0x08005408                __aeabi_dcmpge
-                0x0800541c                __aeabi_dcmpgt
- .text          0x08005430       0x50 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_arm_fixdfsi.o)
-                0x08005430                __aeabi_d2iz
-                0x08005430                __fixdfsi
- .text          0x08005480       0xa0 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_arm_truncdfsf2.o)
-                0x08005480                __truncdfsf2
-                0x08005480                __aeabi_d2f
- .text          0x08005520      0x21c c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_arm_addsubsf3.o)
-                0x08005520                __aeabi_frsub
-                0x08005528                __subsf3
-                0x08005528                __aeabi_fsub
-                0x0800552c                __aeabi_fadd
-                0x0800552c                __addsf3
-                0x0800568c                __aeabi_ui2f
-                0x0800568c                __floatunsisf
-                0x08005694                __aeabi_i2f
-                0x08005694                __floatsisf
-                0x080056b0                __aeabi_ul2f
-                0x080056b0                __floatundisf
-                0x080056c0                __aeabi_l2f
-                0x080056c0                __floatdisf
- .text          0x0800573c      0x2a0 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_arm_muldivsf3.o)
-                0x0800573c                __mulsf3
-                0x0800573c                __aeabi_fmul
-                0x080058a4                __aeabi_fdiv
-                0x080058a4                __divsf3
- .text          0x080059dc       0xec c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_arm_cmpsf2.o)
-                0x080059dc                __gesf2
-                0x080059dc                __gtsf2
-                0x080059e4                __lesf2
-                0x080059e4                __ltsf2
-                0x080059ec                __nesf2
-                0x080059ec                __eqsf2
-                0x080059ec                __cmpsf2
-                0x08005a4c                __aeabi_cfrcmple
-                0x08005a54                __aeabi_cfcmpeq
-                0x08005a54                __aeabi_cfcmple
-                0x08005a64                __aeabi_fcmpeq
-                0x08005a78                __aeabi_fcmplt
-                0x08005a8c                __aeabi_fcmple
-                0x08005aa0                __aeabi_fcmpge
-                0x08005ab4                __aeabi_fcmpgt
- .text          0x08005ac8       0x38 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_aeabi_ldivmod.o)
-                0x08005ac8                __aeabi_ldivmod
- .text          0x08005b00       0x2c c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_aeabi_uldivmod.o)
-                0x08005b00                __aeabi_uldivmod
- .text          0x08005b2c       0x30 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_fixdfdi.o)
-                0x08005b2c                __fixdfdi
-                0x08005b2c                __aeabi_d2lz
- .text          0x08005b5c       0x44 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_fixunsdfdi.o)
-                0x08005b5c                __fixunsdfdi
-                0x08005b5c                __aeabi_d2ulz
- .text          0x08005ba0       0x60 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(bpabi.o)
-                0x08005ba0                __gnu_ldivmod_helper
-                0x08005bd0                __gnu_uldivmod_helper
- .text          0x08005c00        0x4 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_dvmd_tls.o)
-                0x08005c00                __aeabi_idiv0
-                0x08005c00                __aeabi_ldiv0
- .text          0x08005c04       0x40 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_arm_fixunsdfsi.o)
-                0x08005c04                __aeabi_d2uiz
-                0x08005c04                __fixunsdfsi
- .text          0x08005c44      0x2a0 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_divdi3.o)
-                0x08005c44                __divdi3
- .text          0x08005ee4      0x290 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_udivdi3.o)
-                0x08005ee4                __udivdi3
- .text.__errno  0x08006174        0xc c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-errno.o)
-                0x08006174                __errno
+                0x08004ba8       0x50 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_fpclassify.o)
+                0x08004ba8                __fpclassifyd
+ .text.matherr  0x08004bf8        0x4 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_matherr.o)
+                0x08004bf8                matherr
+ .text          0x08004bfc      0x370 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_arm_addsubdf3.o)
+                0x08004bfc                __aeabi_drsub
+                0x08004c04                __aeabi_dsub
+                0x08004c04                __subdf3
+                0x08004c08                __aeabi_dadd
+                0x08004c08                __adddf3
+                0x08004e80                __floatunsidf
+                0x08004e80                __aeabi_ui2d
+                0x08004ea0                __floatsidf
+                0x08004ea0                __aeabi_i2d
+                0x08004ec4                __aeabi_f2d
+                0x08004ec4                __extendsfdf2
+                0x08004f00                __floatundidf
+                0x08004f00                __aeabi_ul2d
+                0x08004f10                __floatdidf
+                0x08004f10                __aeabi_l2d
+ .text          0x08004f6c      0x424 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_arm_muldivdf3.o)
+                0x08004f6c                __aeabi_dmul
+                0x08004f6c                __muldf3
+                0x080051c0                __divdf3
+                0x080051c0                __aeabi_ddiv
+ .text          0x08005390      0x110 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_arm_cmpdf2.o)
+                0x08005390                __gtdf2
+                0x08005390                __gedf2
+                0x08005398                __ltdf2
+                0x08005398                __ledf2
+                0x080053a0                __nedf2
+                0x080053a0                __eqdf2
+                0x080053a0                __cmpdf2
+                0x0800541c                __aeabi_cdrcmple
+                0x0800542c                __aeabi_cdcmpeq
+                0x0800542c                __aeabi_cdcmple
+                0x0800543c                __aeabi_dcmpeq
+                0x08005450                __aeabi_dcmplt
+                0x08005464                __aeabi_dcmple
+                0x08005478                __aeabi_dcmpge
+                0x0800548c                __aeabi_dcmpgt
+ .text          0x080054a0       0x50 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_arm_fixdfsi.o)
+                0x080054a0                __aeabi_d2iz
+                0x080054a0                __fixdfsi
+ .text          0x080054f0       0xa0 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_arm_truncdfsf2.o)
+                0x080054f0                __truncdfsf2
+                0x080054f0                __aeabi_d2f
+ .text          0x08005590      0x21c c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_arm_addsubsf3.o)
+                0x08005590                __aeabi_frsub
+                0x08005598                __subsf3
+                0x08005598                __aeabi_fsub
+                0x0800559c                __aeabi_fadd
+                0x0800559c                __addsf3
+                0x080056fc                __aeabi_ui2f
+                0x080056fc                __floatunsisf
+                0x08005704                __aeabi_i2f
+                0x08005704                __floatsisf
+                0x08005720                __aeabi_ul2f
+                0x08005720                __floatundisf
+                0x08005730                __aeabi_l2f
+                0x08005730                __floatdisf
+ .text          0x080057ac      0x2a0 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_arm_muldivsf3.o)
+                0x080057ac                __mulsf3
+                0x080057ac                __aeabi_fmul
+                0x08005914                __aeabi_fdiv
+                0x08005914                __divsf3
+ .text          0x08005a4c       0xec c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_arm_cmpsf2.o)
+                0x08005a4c                __gesf2
+                0x08005a4c                __gtsf2
+                0x08005a54                __lesf2
+                0x08005a54                __ltsf2
+                0x08005a5c                __nesf2
+                0x08005a5c                __eqsf2
+                0x08005a5c                __cmpsf2
+                0x08005abc                __aeabi_cfrcmple
+                0x08005ac4                __aeabi_cfcmpeq
+                0x08005ac4                __aeabi_cfcmple
+                0x08005ad4                __aeabi_fcmpeq
+                0x08005ae8                __aeabi_fcmplt
+                0x08005afc                __aeabi_fcmple
+                0x08005b10                __aeabi_fcmpge
+                0x08005b24                __aeabi_fcmpgt
+ .text          0x08005b38       0x38 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_aeabi_ldivmod.o)
+                0x08005b38                __aeabi_ldivmod
+ .text          0x08005b70       0x2c c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_aeabi_uldivmod.o)
+                0x08005b70                __aeabi_uldivmod
+ .text          0x08005b9c       0x30 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_fixdfdi.o)
+                0x08005b9c                __fixdfdi
+                0x08005b9c                __aeabi_d2lz
+ .text          0x08005bcc       0x44 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_fixunsdfdi.o)
+                0x08005bcc                __fixunsdfdi
+                0x08005bcc                __aeabi_d2ulz
+ .text          0x08005c10       0x60 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(bpabi.o)
+                0x08005c10                __gnu_ldivmod_helper
+                0x08005c40                __gnu_uldivmod_helper
+ .text          0x08005c70        0x4 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_dvmd_tls.o)
+                0x08005c70                __aeabi_idiv0
+                0x08005c70                __aeabi_ldiv0
+ .text          0x08005c74       0x40 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_arm_fixunsdfsi.o)
+                0x08005c74                __aeabi_d2uiz
+                0x08005c74                __fixunsdfsi
+ .text          0x08005cb4      0x2a0 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_divdi3.o)
+                0x08005cb4                __divdi3
+ .text          0x08005f54      0x290 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_udivdi3.o)
+                0x08005f54                __udivdi3
+ .text.__errno  0x080061e4        0xc c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-errno.o)
+                0x080061e4                __errno
  .text.__libc_init_array
-                0x08006180       0x50 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-init.o)
-                0x08006180                __libc_init_array
- .text.strlen   0x080061d0       0x60 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-strlen.o)
-                0x080061d0                strlen
+                0x080061f0       0x50 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-init.o)
+                0x080061f0                __libc_init_array
+ .text.strlen   0x08006240       0x60 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-strlen.o)
+                0x08006240                strlen
  .text.startup.register_fini
-                0x08006230       0x14 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-__call_atexit.o)
- .text.atexit   0x08006244        0xc c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-atexit.o)
-                0x08006244                atexit
+                0x080062a0       0x14 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-__call_atexit.o)
+ .text.atexit   0x080062b4        0xc c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-atexit.o)
+                0x080062b4                atexit
  .text.__libc_fini_array
-                0x08006250       0x30 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-fini.o)
-                0x08006250                __libc_fini_array
+                0x080062c0       0x30 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-fini.o)
+                0x080062c0                __libc_fini_array
  .text.__register_exitproc
-                0x08006280       0xa8 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-__atexit.o)
-                0x08006280                __register_exitproc
+                0x080062f0       0xa8 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-__atexit.o)
+                0x080062f0                __register_exitproc
  *(.plt)
  *(.gnu.warning)
  *(.glue_7t)
@@ -1989,74 +1989,74 @@ END GROUP
  *(.gcc_except_table)
  *(.eh_frame_hdr)
  *(.eh_frame)
- .eh_frame      0x08006328        0x0 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtbegin.o
-                0x08006328                . = ALIGN (0x4)
+ .eh_frame      0x08006398        0x0 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtbegin.o
+                0x08006398                . = ALIGN (0x4)
  *(.init)
- .init          0x08006328        0x4 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crti.o
-                0x08006328                _init
- .init          0x0800632c        0x8 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtn.o
-                0x08006334                . = ALIGN (0x4)
-                0x08006334                __preinit_array_start = .
+ .init          0x08006398        0x4 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crti.o
+                0x08006398                _init
+ .init          0x0800639c        0x8 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtn.o
+                0x080063a4                . = ALIGN (0x4)
+                0x080063a4                __preinit_array_start = .
  *(.preinit_array)
-                0x08006334                __preinit_array_end = .
-                0x08006334                . = ALIGN (0x4)
-                0x08006334                __init_array_start = .
+                0x080063a4                __preinit_array_end = .
+                0x080063a4                . = ALIGN (0x4)
+                0x080063a4                __init_array_start = .
  *(SORT(.init_array.*))
  .init_array.00000
-                0x08006334        0x4 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-__call_atexit.o)
+                0x080063a4        0x4 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-__call_atexit.o)
  .init_array.00101
-                0x08006338        0x4 e:\drone_parachute\build\core\core.a(main.cpp.o)
+                0x080063a8        0x4 e:\drone_parachute\build\core\core.a(main.cpp.o)
  *(.init_array)
- .init_array    0x0800633c        0x4 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtbegin.o
- .init_array    0x08006340        0x4 e:\drone_parachute\build\sketch\main.ino.cpp.o
- .init_array    0x08006344        0x4 e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
- .init_array    0x08006348        0x4 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
- .init_array    0x0800634c        0x4 e:\drone_parachute\build\core\board.cpp.o
-                0x08006350                __init_array_end = .
-                0x08006350                . = ALIGN (0x4)
+ .init_array    0x080063ac        0x4 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtbegin.o
+ .init_array    0x080063b0        0x4 e:\drone_parachute\build\sketch\main.ino.cpp.o
+ .init_array    0x080063b4        0x4 e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
+ .init_array    0x080063b8        0x4 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
+ .init_array    0x080063bc        0x4 e:\drone_parachute\build\core\board.cpp.o
+                0x080063c0                __init_array_end = .
+                0x080063c0                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
  *crtend.o(.ctors)
-                0x08006350                . = ALIGN (0x4)
+                0x080063c0                . = ALIGN (0x4)
  *(.fini)
- .fini          0x08006350        0x4 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crti.o
-                0x08006350                _fini
- .fini          0x08006354        0x8 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtn.o
-                0x0800635c                . = ALIGN (0x4)
-                0x0800635c                __fini_array_start = .
+ .fini          0x080063c0        0x4 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crti.o
+                0x080063c0                _fini
+ .fini          0x080063c4        0x8 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtn.o
+                0x080063cc                . = ALIGN (0x4)
+                0x080063cc                __fini_array_start = .
  *(.fini_array)
- .fini_array    0x0800635c        0x4 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtbegin.o
- .fini_array    0x08006360        0x4 e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
+ .fini_array    0x080063cc        0x4 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtbegin.o
+ .fini_array    0x080063d0        0x4 e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
  *(SORT(.fini_array.*))
-                0x08006364                __fini_array_end = .
+                0x080063d4                __fini_array_end = .
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT(.dtors.*))
  *crtend.o(.dtors)
 
-.v4_bx          0x08006364        0x0
+.v4_bx          0x080063d4        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.iplt           0x08006364        0x0
+.iplt           0x080063d4        0x0
  .iplt          0x00000000        0x0 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtbegin.o
 
-.text.align     0x08006364        0x4
-                0x08006368                . = ALIGN (0x8)
- *fill*         0x08006364        0x4 
-                0x08006368                __text_end__ = .
-                0x08006368                __exidx_start = .
+.text.align     0x080063d4        0x4
+                0x080063d8                . = ALIGN (0x8)
+ *fill*         0x080063d4        0x4 
+                0x080063d8                __text_end__ = .
+                0x080063d8                __exidx_start = .
 
-.ARM.exidx      0x08006368        0x8
+.ARM.exidx      0x080063d8        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x08006368        0x8 e:\drone_parachute\build\core\wirish\start.S.o
- .ARM.exidx     0x08006370        0x0 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_divdi3.o)
+ .ARM.exidx     0x080063d8        0x8 e:\drone_parachute\build\core\wirish\start.S.o
+ .ARM.exidx     0x080063e0        0x0 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_divdi3.o)
                                   0x8 (size before relaxing)
- .ARM.exidx     0x08006370        0x0 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_udivdi3.o)
+ .ARM.exidx     0x080063e0        0x0 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_udivdi3.o)
                                   0x8 (size before relaxing)
-                0x08006370                __exidx_end = .
+                0x080063e0                __exidx_end = .
 
-.data           0x20000000      0x850 load address 0x08006370
+.data           0x20000000      0x850 load address 0x080063e0
                 0x20000000                __data_start__ = .
                 0x20000000        0x4 LONG 0x0
                 0x20000008                . = ALIGN (0x8)
@@ -2157,70 +2157,70 @@ END GROUP
  *fill*         0x2000084c        0x4 
                 0x20000850                __data_end__ = .
 
-.jcr            0x20000850        0x0 load address 0x08006bc0
+.jcr            0x20000850        0x0 load address 0x08006c30
  .jcr           0x20000850        0x0 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtbegin.o
 
-.igot.plt       0x20000850        0x0 load address 0x08006bc0
+.igot.plt       0x20000850        0x0 load address 0x08006c30
  .igot.plt      0x00000000        0x0 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtbegin.o
 
-.rodata         0x08006bc0      0x448
+.rodata         0x08006c30      0x470
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  .rodata.str1.1
-                0x08006bc0       0x91 e:\drone_parachute\build\sketch\main.ino.cpp.o
- *fill*         0x08006c51        0x7 
+                0x08006c30       0xba e:\drone_parachute\build\sketch\main.ino.cpp.o
+ *fill*         0x08006cea        0x6 
  .rodata._ZTV7TwoWire
-                0x08006c58       0x18 e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
-                0x08006c58                vtable for TwoWire
+                0x08006cf0       0x18 e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
+                0x08006cf0                vtable for TwoWire
  .rodata._ZTV8WireBase
-                0x08006c70       0x18 e:\drone_parachute\build\libraries\Wire\utility\WireBase.cpp.o
-                0x08006c70                vtable for WireBase
+                0x08006d08       0x18 e:\drone_parachute\build\libraries\Wire\utility\WireBase.cpp.o
+                0x08006d08                vtable for WireBase
  .rodata.PIN_MAP
-                0x08006c88      0x230 e:\drone_parachute\build\core\board.cpp.o
-                0x08006c88                PIN_MAP
+                0x08006d20      0x230 e:\drone_parachute\build\core\board.cpp.o
+                0x08006d20                PIN_MAP
  .rodata._ZTV14HardwareSerial
-                0x08006eb8       0x28 e:\drone_parachute\build\core\core.a(HardwareSerial.cpp.o)
-                0x08006eb8                vtable for HardwareSerial
+                0x08006f50       0x28 e:\drone_parachute\build\core\core.a(HardwareSerial.cpp.o)
+                0x08006f50                vtable for HardwareSerial
  .rodata.str1.1
-                0x08006ee0       0x11 e:\drone_parachute\build\core\core.a(Print.cpp.o)
- *fill*         0x08006ef1        0x3 
- .rodata.GPIOC  0x08006ef4        0x4 e:\drone_parachute\build\core\core.a(gpio_f1.c.o)
-                0x08006ef4                GPIOC
- .rodata.I2C1   0x08006ef8        0x4 e:\drone_parachute\build\core\core.a(i2c_f1.c.o)
-                0x08006ef8                I2C1
+                0x08006f78       0x11 e:\drone_parachute\build\core\core.a(Print.cpp.o)
+ *fill*         0x08006f89        0x3 
+ .rodata.GPIOC  0x08006f8c        0x4 e:\drone_parachute\build\core\core.a(gpio_f1.c.o)
+                0x08006f8c                GPIOC
+ .rodata.I2C1   0x08006f90        0x4 e:\drone_parachute\build\core\core.a(i2c_f1.c.o)
+                0x08006f90                I2C1
  .rodata.rcc_dev_table
-                0x08006efc       0x5c e:\drone_parachute\build\core\core.a(rcc_f1.c.o)
-                0x08006efc                rcc_dev_table
+                0x08006f94       0x5c e:\drone_parachute\build\core\core.a(rcc_f1.c.o)
+                0x08006f94                rcc_dev_table
  .rodata.masks.4420
-                0x08006f58       0x14 e:\drone_parachute\build\core\core.a(rcc_f1.c.o)
+                0x08006ff0       0x14 e:\drone_parachute\build\core\core.a(rcc_f1.c.o)
  .rodata.usbVcomDescriptor_iProduct
-                0x08006f6c        0xc e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
+                0x08007004        0xc e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
  .rodata.usbVcomDescriptor_iManufacturer
-                0x08006f78       0x12 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
+                0x08007010       0x12 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
  .rodata.usbVcomDescriptor_Device
-                0x08006f8a       0x12 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
+                0x08007022       0x12 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
  .rodata.usbVcomDescriptor_Config
-                0x08006f9c       0x43 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
+                0x08007034       0x43 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
  .rodata.usbVcomDescriptor_LangID
-                0x08006fdf        0x4 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
- *fill*         0x08006fe3        0x1 
+                0x08007077        0x4 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
+ *fill*         0x0800707b        0x1 
  .rodata.str1.4
-                0x08006fe4        0x5 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_sqrt.o)
+                0x0800707c        0x5 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_sqrt.o)
                                   0x8 (size before relaxing)
- *fill*         0x08006fe9        0x3 
+ *fill*         0x08007081        0x3 
  .rodata.str1.4
-                0x08006fec        0x4 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-impure.o)
+                0x08007084        0x4 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-impure.o)
  .rodata._global_impure_ptr
-                0x08006ff0        0x4 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-impure.o)
-                0x08006ff0                _global_impure_ptr
+                0x08007088        0x4 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-impure.o)
+                0x08007088                _global_impure_ptr
  *(.USER_FLASH)
- .USER_FLASH    0x08006ff4       0x10 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
-                0x08007004                . = ALIGN (0x4)
-                0x08007004                _lm_rom_img_cfgp = .
-                0x08007004        0x4 LONG 0x8006370 LOADADDR (.data)
+ .USER_FLASH    0x0800708c       0x10 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
+                0x0800709c                . = ALIGN (0x4)
+                0x0800709c                _lm_rom_img_cfgp = .
+                0x0800709c        0x4 LONG 0x80063e0 LOADADDR (.data)
                 0x20000c98                _lm_heap_start = DEFINED (_lm_heap_start)?_lm_heap_start:_end
                 0x20005000                _lm_heap_end = DEFINED (_lm_heap_end)?_lm_heap_end:__msp_init
 
-.rel.dyn        0x08007008        0x0
+.rel.dyn        0x080070a0        0x0
  .rel.iplt      0x00000000        0x0 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m/crtbegin.o
 
 .bss            0x20000850      0x448
@@ -2250,75 +2250,77 @@ END GROUP
  .bss._ZL3IMU   0x20000890      0x1d0 e:\drone_parachute\build\sketch\main.ino.cpp.o
  .bss._ZL8ay_ffall
                 0x20000a60        0x4 e:\drone_parachute\build\sketch\main.ino.cpp.o
- .bss._ZL3pos   0x20000a64        0x4 e:\drone_parachute\build\sketch\main.ino.cpp.o
+ .bss._ZL23backup_battery_volt_est
+                0x20000a64        0x4 e:\drone_parachute\build\sketch\main.ino.cpp.o
+ .bss._ZL3pos   0x20000a68        0x4 e:\drone_parachute\build\sketch\main.ino.cpp.o
  .bss._ZL6status
-                0x20000a68        0x4 e:\drone_parachute\build\sketch\main.ino.cpp.o
- .bss.Wire      0x20000a6c       0x60 e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
-                0x20000a6c                Wire
+                0x20000a6c        0x4 e:\drone_parachute\build\sketch\main.ino.cpp.o
+ .bss.Wire      0x20000a70       0x60 e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
+                0x20000a70                Wire
  .bss._ZL10_spi2_this
-                0x20000acc        0x4 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
- .bss._ZL10_spi1_this
                 0x20000ad0        0x4 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
- .bss.SPI       0x20000ad4       0x4c e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
-                0x20000ad4                SPI
- .bss.Serial1   0x20000b20       0x18 e:\drone_parachute\build\core\board.cpp.o
-                0x20000b20                Serial1
- .bss.Serial2   0x20000b38       0x18 e:\drone_parachute\build\core\board.cpp.o
-                0x20000b38                Serial2
- .bss.Serial3   0x20000b50       0x18 e:\drone_parachute\build\core\board.cpp.o
-                0x20000b50                Serial3
+ .bss._ZL10_spi1_this
+                0x20000ad4        0x4 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
+ .bss.SPI       0x20000ad8       0x4c e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
+                0x20000ad8                SPI
+ .bss.Serial1   0x20000b24       0x18 e:\drone_parachute\build\core\board.cpp.o
+                0x20000b24                Serial1
+ .bss.Serial2   0x20000b3c       0x18 e:\drone_parachute\build\core\board.cpp.o
+                0x20000b3c                Serial2
+ .bss.Serial3   0x20000b54       0x18 e:\drone_parachute\build\core\board.cpp.o
+                0x20000b54                Serial3
  .bss.exti_channels
-                0x20000b68       0x80 e:\drone_parachute\build\core\core.a(exti.c.o)
-                0x20000b68                exti_channels
+                0x20000b6c       0x80 e:\drone_parachute\build\core\core.a(exti.c.o)
+                0x20000b6c                exti_channels
  .bss.systick_user_callback
-                0x20000be8        0x4 e:\drone_parachute\build\core\core.a(systick.c.o)
+                0x20000bec        0x4 e:\drone_parachute\build\core\core.a(systick.c.o)
  .bss.usart1_wb
-                0x20000bec        0xc e:\drone_parachute\build\core\core.a(usart_f1.c.o)
+                0x20000bf0        0xc e:\drone_parachute\build\core\core.a(usart_f1.c.o)
  .bss.usart1_rb
-                0x20000bf8        0xc e:\drone_parachute\build\core\core.a(usart_f1.c.o)
+                0x20000bfc        0xc e:\drone_parachute\build\core\core.a(usart_f1.c.o)
  .bss.usart2_rb
-                0x20000c04        0xc e:\drone_parachute\build\core\core.a(usart_f1.c.o)
+                0x20000c08        0xc e:\drone_parachute\build\core\core.a(usart_f1.c.o)
  .bss.usart3_rb
-                0x20000c10        0xc e:\drone_parachute\build\core\core.a(usart_f1.c.o)
+                0x20000c14        0xc e:\drone_parachute\build\core\core.a(usart_f1.c.o)
  .bss.usart2_wb
-                0x20000c1c        0xc e:\drone_parachute\build\core\core.a(usart_f1.c.o)
+                0x20000c20        0xc e:\drone_parachute\build\core\core.a(usart_f1.c.o)
  .bss.usart3_wb
-                0x20000c28        0xc e:\drone_parachute\build\core\core.a(usart_f1.c.o)
+                0x20000c2c        0xc e:\drone_parachute\build\core\core.a(usart_f1.c.o)
  .bss.line_dtr_rts
-                0x20000c34        0x1 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
- *fill*         0x20000c35        0x3 
- .bss.tx_head   0x20000c38        0x4 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
+                0x20000c38        0x1 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
+ *fill*         0x20000c39        0x3 
+ .bss.tx_head   0x20000c3c        0x4 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
  .bss.transmitting
-                0x20000c3c        0x1 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
- *fill*         0x20000c3d        0x3 
- .bss.rx_tail   0x20000c40        0x4 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
+                0x20000c40        0x1 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
+ *fill*         0x20000c41        0x3 
+ .bss.rx_tail   0x20000c44        0x4 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
  .bss.iface_setup_hook
-                0x20000c44        0x4 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
- .bss.rx_head   0x20000c48        0x4 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
- .bss.tx_tail   0x20000c4c        0x4 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
+                0x20000c48        0x4 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
+ .bss.rx_head   0x20000c4c        0x4 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
+ .bss.tx_tail   0x20000c50        0x4 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
  .bss.Data_Mul_MaxPacketSize
-                0x20000c50        0x1 e:\drone_parachute\build\core\core.a(usb_core.c.o)
-                0x20000c50                Data_Mul_MaxPacketSize
+                0x20000c54        0x1 e:\drone_parachute\build\core\core.a(usb_core.c.o)
+                0x20000c54                Data_Mul_MaxPacketSize
  *(COMMON)
- *fill*         0x20000c51        0x3 
- COMMON         0x20000c54        0x4 e:\drone_parachute\build\core\core.a(systick.c.o)
-                0x20000c54                systick_uptime_millis
- COMMON         0x20000c58        0x6 e:\drone_parachute\build\core\core.a(usb.c.o)
-                0x20000c58                SaveRState
-                0x20000c5a                SaveTState
-                0x20000c5c                ResumeS
- COMMON         0x20000c5e        0x2 e:\drone_parachute\build\core\core.a(usb_core.c.o)
-                0x20000c5e                StatusInfo
- COMMON         0x20000c60       0x32 e:\drone_parachute\build\core\core.a(usb_init.c.o)
-                0x20000c60                SaveState
-                0x20000c64                pProperty
-                0x20000c68                EPindex
-                0x20000c6c                Device_Info
-                0x20000c88                pUser_Standard_Requests
-                0x20000c8c                pInformation
-                0x20000c90                wInterrupt_Mask
+ *fill*         0x20000c55        0x3 
+ COMMON         0x20000c58        0x4 e:\drone_parachute\build\core\core.a(systick.c.o)
+                0x20000c58                systick_uptime_millis
+ COMMON         0x20000c5c        0x6 e:\drone_parachute\build\core\core.a(usb.c.o)
+                0x20000c5c                SaveRState
+                0x20000c5e                SaveTState
+                0x20000c60                ResumeS
+ COMMON         0x20000c62        0x2 e:\drone_parachute\build\core\core.a(usb_core.c.o)
+                0x20000c62                StatusInfo
+ COMMON         0x20000c64       0x32 e:\drone_parachute\build\core\core.a(usb_init.c.o)
+                0x20000c64                SaveState
+                0x20000c68                pProperty
+                0x20000c6c                EPindex
+                0x20000c70                Device_Info
+                0x20000c8c                pUser_Standard_Requests
+                0x20000c90                pInformation
+                0x20000c94                wInterrupt_Mask
                 0x20000c98                . = ALIGN (0x8)
- *fill*         0x20000c92        0x6 
+ *fill*         0x20000c96        0x2 
                 0x20000c98                __bss_end__ = .
                 0x20000c98                _end = __bss_end__
 
@@ -2454,62 +2456,62 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000    0x2e9fc
+.debug_info     0x00000000    0x2ea5b
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000     0x33f9 e:\drone_parachute\build\sketch\main.ino.cpp.o
- .debug_info    0x000033f9     0x4968 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
- .debug_info    0x00007d61     0x1980 e:\drone_parachute\build\libraries\Wire\SoftWire.cpp.o
- .debug_info    0x000096e1      0xd87 e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
- .debug_info    0x0000a468      0xf2c e:\drone_parachute\build\libraries\Wire\utility\WireBase.cpp.o
- .debug_info    0x0000b394     0x3533 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
- .debug_info    0x0000e8c7     0x1362 e:\drone_parachute\build\libraries\Servo\Servo.cpp.o
- .debug_info    0x0000fc29      0xf2e e:\drone_parachute\build\core\board.cpp.o
- .debug_info    0x00010b57     0x142d e:\drone_parachute\build\core\wirish\boards.cpp.o
- .debug_info    0x00011f84      0x665 e:\drone_parachute\build\core\wirish\boards_setup.cpp.o
- .debug_info    0x000125e9       0xf8 e:\drone_parachute\build\core\wirish\start.S.o
- .debug_info    0x000126e1      0x14d e:\drone_parachute\build\core\wirish\start_c.c.o
- .debug_info    0x0001282e      0x5cd e:\drone_parachute\build\core\wirish\syscalls.c.o
- .debug_info    0x00012dfb     0x29ea e:\drone_parachute\build\core\core.a(HardwareSerial.cpp.o)
- .debug_info    0x000157e5     0x258c e:\drone_parachute\build\core\core.a(Print.cpp.o)
- .debug_info    0x00017d71      0x526 e:\drone_parachute\build\core\core.a(cxxabi-compat.cpp.o)
- .debug_info    0x00018297      0x79a e:\drone_parachute\build\core\core.a(adc.c.o)
- .debug_info    0x00018a31      0xe4a e:\drone_parachute\build\core\core.a(adc_f1.c.o)
- .debug_info    0x0001987b      0x6f7 e:\drone_parachute\build\core\core.a(dma.c.o)
- .debug_info    0x00019f72     0x183f e:\drone_parachute\build\core\core.a(dma_f1.c.o)
- .debug_info    0x0001b7b1       0xe8 e:\drone_parachute\build\core\core.a(exc.S.o)
- .debug_info    0x0001b899      0xd3c e:\drone_parachute\build\core\core.a(exti.c.o)
- .debug_info    0x0001c5d5      0x213 e:\drone_parachute\build\core\core.a(exti_f1.c.o)
- .debug_info    0x0001c7e8      0x128 e:\drone_parachute\build\core\core.a(flash.c.o)
- .debug_info    0x0001c910      0x6d6 e:\drone_parachute\build\core\core.a(gpio_f1.c.o)
- .debug_info    0x0001cfe6     0x1ab8 e:\drone_parachute\build\core\core.a(i2c.c.o)
- .debug_info    0x0001ea9e      0xc25 e:\drone_parachute\build\core\core.a(i2c_f1.c.o)
- .debug_info    0x0001f6c3      0x5a2 e:\drone_parachute\build\core\core.a(nvic.c.o)
- .debug_info    0x0001fc65      0x556 e:\drone_parachute\build\core\core.a(rcc.c.o)
- .debug_info    0x000201bb      0xb64 e:\drone_parachute\build\core\core.a(rcc_f1.c.o)
- .debug_info    0x00020d1f      0xa88 e:\drone_parachute\build\core\core.a(spi.c.o)
- .debug_info    0x000217a7      0x794 e:\drone_parachute\build\core\core.a(spi_f1.c.o)
- .debug_info    0x00021f3b       0xfd e:\drone_parachute\build\core\core.a(isrs.S.o)
- .debug_info    0x00022038      0x182 e:\drone_parachute\build\core\core.a(systick.c.o)
- .debug_info    0x000221ba     0x197d e:\drone_parachute\build\core\core.a(timer.c.o)
- .debug_info    0x00023b37      0xc32 e:\drone_parachute\build\core\core.a(usart.c.o)
- .debug_info    0x00024769      0xb89 e:\drone_parachute\build\core\core.a(usart_f1.c.o)
- .debug_info    0x000252f2      0x595 e:\drone_parachute\build\core\core.a(usart_private.c.o)
- .debug_info    0x00025887      0xd16 e:\drone_parachute\build\core\core.a(usb.c.o)
- .debug_info    0x0002659d     0x22d2 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
- .debug_info    0x0002886f      0x26c e:\drone_parachute\build\core\core.a(usb_reg_map.c.o)
- .debug_info    0x00028adb      0xddf e:\drone_parachute\build\core\core.a(usb_core.c.o)
- .debug_info    0x000298ba      0x3ed e:\drone_parachute\build\core\core.a(usb_init.c.o)
- .debug_info    0x00029ca7      0x183 e:\drone_parachute\build\core\core.a(usb_mem.c.o)
- .debug_info    0x00029e2a      0xc88 e:\drone_parachute\build\core\core.a(usb_regs.c.o)
- .debug_info    0x0002aab2      0xad2 e:\drone_parachute\build\core\core.a(util.c.o)
- .debug_info    0x0002b584       0x99 e:\drone_parachute\build\core\core.a(main.cpp.o)
- .debug_info    0x0002b61d      0xbc0 e:\drone_parachute\build\core\core.a(pwm.cpp.o)
- .debug_info    0x0002c1dd      0xc8a e:\drone_parachute\build\core\core.a(wirish_digital_f1.cpp.o)
- .debug_info    0x0002ce67      0xa7e e:\drone_parachute\build\core\core.a(wirish_analog.cpp.o)
- .debug_info    0x0002d8e5      0xb0b e:\drone_parachute\build\core\core.a(wirish_digital.cpp.o)
- .debug_info    0x0002e3f0      0x2c6 e:\drone_parachute\build\core\core.a(wirish_time.cpp.o)
- .debug_info    0x0002e6b6       0x33 e:\drone_parachute\build\core\core.a(hooks.c.o)
- .debug_info    0x0002e6e9      0x313 e:\drone_parachute\build\core\core.a(gpio.c.o)
+ .debug_info    0x00000000     0x3458 e:\drone_parachute\build\sketch\main.ino.cpp.o
+ .debug_info    0x00003458     0x4968 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
+ .debug_info    0x00007dc0     0x1980 e:\drone_parachute\build\libraries\Wire\SoftWire.cpp.o
+ .debug_info    0x00009740      0xd87 e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
+ .debug_info    0x0000a4c7      0xf2c e:\drone_parachute\build\libraries\Wire\utility\WireBase.cpp.o
+ .debug_info    0x0000b3f3     0x3533 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
+ .debug_info    0x0000e926     0x1362 e:\drone_parachute\build\libraries\Servo\Servo.cpp.o
+ .debug_info    0x0000fc88      0xf2e e:\drone_parachute\build\core\board.cpp.o
+ .debug_info    0x00010bb6     0x142d e:\drone_parachute\build\core\wirish\boards.cpp.o
+ .debug_info    0x00011fe3      0x665 e:\drone_parachute\build\core\wirish\boards_setup.cpp.o
+ .debug_info    0x00012648       0xf8 e:\drone_parachute\build\core\wirish\start.S.o
+ .debug_info    0x00012740      0x14d e:\drone_parachute\build\core\wirish\start_c.c.o
+ .debug_info    0x0001288d      0x5cd e:\drone_parachute\build\core\wirish\syscalls.c.o
+ .debug_info    0x00012e5a     0x29ea e:\drone_parachute\build\core\core.a(HardwareSerial.cpp.o)
+ .debug_info    0x00015844     0x258c e:\drone_parachute\build\core\core.a(Print.cpp.o)
+ .debug_info    0x00017dd0      0x526 e:\drone_parachute\build\core\core.a(cxxabi-compat.cpp.o)
+ .debug_info    0x000182f6      0x79a e:\drone_parachute\build\core\core.a(adc.c.o)
+ .debug_info    0x00018a90      0xe4a e:\drone_parachute\build\core\core.a(adc_f1.c.o)
+ .debug_info    0x000198da      0x6f7 e:\drone_parachute\build\core\core.a(dma.c.o)
+ .debug_info    0x00019fd1     0x183f e:\drone_parachute\build\core\core.a(dma_f1.c.o)
+ .debug_info    0x0001b810       0xe8 e:\drone_parachute\build\core\core.a(exc.S.o)
+ .debug_info    0x0001b8f8      0xd3c e:\drone_parachute\build\core\core.a(exti.c.o)
+ .debug_info    0x0001c634      0x213 e:\drone_parachute\build\core\core.a(exti_f1.c.o)
+ .debug_info    0x0001c847      0x128 e:\drone_parachute\build\core\core.a(flash.c.o)
+ .debug_info    0x0001c96f      0x6d6 e:\drone_parachute\build\core\core.a(gpio_f1.c.o)
+ .debug_info    0x0001d045     0x1ab8 e:\drone_parachute\build\core\core.a(i2c.c.o)
+ .debug_info    0x0001eafd      0xc25 e:\drone_parachute\build\core\core.a(i2c_f1.c.o)
+ .debug_info    0x0001f722      0x5a2 e:\drone_parachute\build\core\core.a(nvic.c.o)
+ .debug_info    0x0001fcc4      0x556 e:\drone_parachute\build\core\core.a(rcc.c.o)
+ .debug_info    0x0002021a      0xb64 e:\drone_parachute\build\core\core.a(rcc_f1.c.o)
+ .debug_info    0x00020d7e      0xa88 e:\drone_parachute\build\core\core.a(spi.c.o)
+ .debug_info    0x00021806      0x794 e:\drone_parachute\build\core\core.a(spi_f1.c.o)
+ .debug_info    0x00021f9a       0xfd e:\drone_parachute\build\core\core.a(isrs.S.o)
+ .debug_info    0x00022097      0x182 e:\drone_parachute\build\core\core.a(systick.c.o)
+ .debug_info    0x00022219     0x197d e:\drone_parachute\build\core\core.a(timer.c.o)
+ .debug_info    0x00023b96      0xc32 e:\drone_parachute\build\core\core.a(usart.c.o)
+ .debug_info    0x000247c8      0xb89 e:\drone_parachute\build\core\core.a(usart_f1.c.o)
+ .debug_info    0x00025351      0x595 e:\drone_parachute\build\core\core.a(usart_private.c.o)
+ .debug_info    0x000258e6      0xd16 e:\drone_parachute\build\core\core.a(usb.c.o)
+ .debug_info    0x000265fc     0x22d2 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
+ .debug_info    0x000288ce      0x26c e:\drone_parachute\build\core\core.a(usb_reg_map.c.o)
+ .debug_info    0x00028b3a      0xddf e:\drone_parachute\build\core\core.a(usb_core.c.o)
+ .debug_info    0x00029919      0x3ed e:\drone_parachute\build\core\core.a(usb_init.c.o)
+ .debug_info    0x00029d06      0x183 e:\drone_parachute\build\core\core.a(usb_mem.c.o)
+ .debug_info    0x00029e89      0xc88 e:\drone_parachute\build\core\core.a(usb_regs.c.o)
+ .debug_info    0x0002ab11      0xad2 e:\drone_parachute\build\core\core.a(util.c.o)
+ .debug_info    0x0002b5e3       0x99 e:\drone_parachute\build\core\core.a(main.cpp.o)
+ .debug_info    0x0002b67c      0xbc0 e:\drone_parachute\build\core\core.a(pwm.cpp.o)
+ .debug_info    0x0002c23c      0xc8a e:\drone_parachute\build\core\core.a(wirish_digital_f1.cpp.o)
+ .debug_info    0x0002cec6      0xa7e e:\drone_parachute\build\core\core.a(wirish_analog.cpp.o)
+ .debug_info    0x0002d944      0xb0b e:\drone_parachute\build\core\core.a(wirish_digital.cpp.o)
+ .debug_info    0x0002e44f      0x2c6 e:\drone_parachute\build\core\core.a(wirish_time.cpp.o)
+ .debug_info    0x0002e715       0x33 e:\drone_parachute\build\core\core.a(hooks.c.o)
+ .debug_info    0x0002e748      0x313 e:\drone_parachute\build\core\core.a(gpio.c.o)
 
 .debug_abbrev   0x00000000     0x7f4b
  *(.debug_abbrev)
@@ -2568,239 +2570,239 @@ END GROUP
  .debug_abbrev  0x00007e12       0x26 e:\drone_parachute\build\core\core.a(hooks.c.o)
  .debug_abbrev  0x00007e38      0x113 e:\drone_parachute\build\core\core.a(gpio.c.o)
 
-.debug_line     0x00000000     0xe752
+.debug_line     0x00000000     0xe75b
  *(.debug_line)
- .debug_line    0x00000000      0x95b e:\drone_parachute\build\sketch\main.ino.cpp.o
- .debug_line    0x0000095b      0xf7b e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
- .debug_line    0x000018d6      0x6df e:\drone_parachute\build\libraries\Wire\SoftWire.cpp.o
- .debug_line    0x00001fb5      0x509 e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
- .debug_line    0x000024be      0x5d2 e:\drone_parachute\build\libraries\Wire\utility\WireBase.cpp.o
- .debug_line    0x00002a90      0xc9d e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
- .debug_line    0x0000372d      0x520 e:\drone_parachute\build\libraries\Servo\Servo.cpp.o
- .debug_line    0x00003c4d      0x45d e:\drone_parachute\build\core\board.cpp.o
- .debug_line    0x000040aa      0x4d3 e:\drone_parachute\build\core\wirish\boards.cpp.o
- .debug_line    0x0000457d      0x3c2 e:\drone_parachute\build\core\wirish\boards_setup.cpp.o
- .debug_line    0x0000493f       0xb6 e:\drone_parachute\build\core\wirish\start.S.o
- .debug_line    0x000049f5       0xc4 e:\drone_parachute\build\core\wirish\start_c.c.o
- .debug_line    0x00004ab9      0x30c e:\drone_parachute\build\core\wirish\syscalls.c.o
- .debug_line    0x00004dc5      0x560 e:\drone_parachute\build\core\core.a(HardwareSerial.cpp.o)
- .debug_line    0x00005325      0x5cc e:\drone_parachute\build\core\core.a(Print.cpp.o)
- .debug_line    0x000058f1      0x26e e:\drone_parachute\build\core\core.a(cxxabi-compat.cpp.o)
- .debug_line    0x00005b5f      0x348 e:\drone_parachute\build\core\core.a(adc.c.o)
- .debug_line    0x00005ea7      0x3f4 e:\drone_parachute\build\core\core.a(adc_f1.c.o)
- .debug_line    0x0000629b      0x396 e:\drone_parachute\build\core\core.a(dma.c.o)
- .debug_line    0x00006631      0x659 e:\drone_parachute\build\core\core.a(dma_f1.c.o)
- .debug_line    0x00006c8a       0xb9 e:\drone_parachute\build\core\core.a(exc.S.o)
- .debug_line    0x00006d43      0x421 e:\drone_parachute\build\core\core.a(exti.c.o)
- .debug_line    0x00007164      0x34c e:\drone_parachute\build\core\core.a(exti_f1.c.o)
- .debug_line    0x000074b0      0x2ca e:\drone_parachute\build\core\core.a(flash.c.o)
- .debug_line    0x0000777a      0x35f e:\drone_parachute\build\core\core.a(gpio_f1.c.o)
- .debug_line    0x00007ad9      0x90e e:\drone_parachute\build\core\core.a(i2c.c.o)
- .debug_line    0x000083e7      0x459 e:\drone_parachute\build\core\core.a(i2c_f1.c.o)
- .debug_line    0x00008840      0x332 e:\drone_parachute\build\core\core.a(nvic.c.o)
- .debug_line    0x00008b72      0x3cd e:\drone_parachute\build\core\core.a(rcc.c.o)
- .debug_line    0x00008f3f      0x41a e:\drone_parachute\build\core\core.a(rcc_f1.c.o)
- .debug_line    0x00009359      0x403 e:\drone_parachute\build\core\core.a(spi.c.o)
- .debug_line    0x0000975c      0x316 e:\drone_parachute\build\core\core.a(spi_f1.c.o)
- .debug_line    0x00009a72       0xb6 e:\drone_parachute\build\core\core.a(isrs.S.o)
- .debug_line    0x00009b28      0x29a e:\drone_parachute\build\core\core.a(systick.c.o)
- .debug_line    0x00009dc2      0x62d e:\drone_parachute\build\core\core.a(timer.c.o)
- .debug_line    0x0000a3ef      0x460 e:\drone_parachute\build\core\core.a(usart.c.o)
- .debug_line    0x0000a84f      0x46a e:\drone_parachute\build\core\core.a(usart_f1.c.o)
- .debug_line    0x0000acb9      0x306 e:\drone_parachute\build\core\core.a(usart_private.c.o)
- .debug_line    0x0000afbf      0x542 e:\drone_parachute\build\core\core.a(usb.c.o)
- .debug_line    0x0000b501      0x950 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
- .debug_line    0x0000be51      0x2fd e:\drone_parachute\build\core\core.a(usb_reg_map.c.o)
- .debug_line    0x0000c14e      0x435 e:\drone_parachute\build\core\core.a(usb_core.c.o)
- .debug_line    0x0000c583      0x14a e:\drone_parachute\build\core\core.a(usb_init.c.o)
- .debug_line    0x0000c6cd      0x184 e:\drone_parachute\build\core\core.a(usb_mem.c.o)
- .debug_line    0x0000c851      0x5ae e:\drone_parachute\build\core\core.a(usb_regs.c.o)
- .debug_line    0x0000cdff      0x3ce e:\drone_parachute\build\core\core.a(util.c.o)
- .debug_line    0x0000d1cd       0xb1 e:\drone_parachute\build\core\core.a(main.cpp.o)
- .debug_line    0x0000d27e      0x347 e:\drone_parachute\build\core\core.a(pwm.cpp.o)
- .debug_line    0x0000d5c5      0x3fa e:\drone_parachute\build\core\core.a(wirish_digital_f1.cpp.o)
- .debug_line    0x0000d9bf      0x32e e:\drone_parachute\build\core\core.a(wirish_analog.cpp.o)
- .debug_line    0x0000dced      0x37c e:\drone_parachute\build\core\core.a(wirish_digital.cpp.o)
- .debug_line    0x0000e069      0x360 e:\drone_parachute\build\core\core.a(wirish_time.cpp.o)
- .debug_line    0x0000e3c9       0x9a e:\drone_parachute\build\core\core.a(hooks.c.o)
- .debug_line    0x0000e463      0x2ef e:\drone_parachute\build\core\core.a(gpio.c.o)
+ .debug_line    0x00000000      0x964 e:\drone_parachute\build\sketch\main.ino.cpp.o
+ .debug_line    0x00000964      0xf7b e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
+ .debug_line    0x000018df      0x6df e:\drone_parachute\build\libraries\Wire\SoftWire.cpp.o
+ .debug_line    0x00001fbe      0x509 e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
+ .debug_line    0x000024c7      0x5d2 e:\drone_parachute\build\libraries\Wire\utility\WireBase.cpp.o
+ .debug_line    0x00002a99      0xc9d e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
+ .debug_line    0x00003736      0x520 e:\drone_parachute\build\libraries\Servo\Servo.cpp.o
+ .debug_line    0x00003c56      0x45d e:\drone_parachute\build\core\board.cpp.o
+ .debug_line    0x000040b3      0x4d3 e:\drone_parachute\build\core\wirish\boards.cpp.o
+ .debug_line    0x00004586      0x3c2 e:\drone_parachute\build\core\wirish\boards_setup.cpp.o
+ .debug_line    0x00004948       0xb6 e:\drone_parachute\build\core\wirish\start.S.o
+ .debug_line    0x000049fe       0xc4 e:\drone_parachute\build\core\wirish\start_c.c.o
+ .debug_line    0x00004ac2      0x30c e:\drone_parachute\build\core\wirish\syscalls.c.o
+ .debug_line    0x00004dce      0x560 e:\drone_parachute\build\core\core.a(HardwareSerial.cpp.o)
+ .debug_line    0x0000532e      0x5cc e:\drone_parachute\build\core\core.a(Print.cpp.o)
+ .debug_line    0x000058fa      0x26e e:\drone_parachute\build\core\core.a(cxxabi-compat.cpp.o)
+ .debug_line    0x00005b68      0x348 e:\drone_parachute\build\core\core.a(adc.c.o)
+ .debug_line    0x00005eb0      0x3f4 e:\drone_parachute\build\core\core.a(adc_f1.c.o)
+ .debug_line    0x000062a4      0x396 e:\drone_parachute\build\core\core.a(dma.c.o)
+ .debug_line    0x0000663a      0x659 e:\drone_parachute\build\core\core.a(dma_f1.c.o)
+ .debug_line    0x00006c93       0xb9 e:\drone_parachute\build\core\core.a(exc.S.o)
+ .debug_line    0x00006d4c      0x421 e:\drone_parachute\build\core\core.a(exti.c.o)
+ .debug_line    0x0000716d      0x34c e:\drone_parachute\build\core\core.a(exti_f1.c.o)
+ .debug_line    0x000074b9      0x2ca e:\drone_parachute\build\core\core.a(flash.c.o)
+ .debug_line    0x00007783      0x35f e:\drone_parachute\build\core\core.a(gpio_f1.c.o)
+ .debug_line    0x00007ae2      0x90e e:\drone_parachute\build\core\core.a(i2c.c.o)
+ .debug_line    0x000083f0      0x459 e:\drone_parachute\build\core\core.a(i2c_f1.c.o)
+ .debug_line    0x00008849      0x332 e:\drone_parachute\build\core\core.a(nvic.c.o)
+ .debug_line    0x00008b7b      0x3cd e:\drone_parachute\build\core\core.a(rcc.c.o)
+ .debug_line    0x00008f48      0x41a e:\drone_parachute\build\core\core.a(rcc_f1.c.o)
+ .debug_line    0x00009362      0x403 e:\drone_parachute\build\core\core.a(spi.c.o)
+ .debug_line    0x00009765      0x316 e:\drone_parachute\build\core\core.a(spi_f1.c.o)
+ .debug_line    0x00009a7b       0xb6 e:\drone_parachute\build\core\core.a(isrs.S.o)
+ .debug_line    0x00009b31      0x29a e:\drone_parachute\build\core\core.a(systick.c.o)
+ .debug_line    0x00009dcb      0x62d e:\drone_parachute\build\core\core.a(timer.c.o)
+ .debug_line    0x0000a3f8      0x460 e:\drone_parachute\build\core\core.a(usart.c.o)
+ .debug_line    0x0000a858      0x46a e:\drone_parachute\build\core\core.a(usart_f1.c.o)
+ .debug_line    0x0000acc2      0x306 e:\drone_parachute\build\core\core.a(usart_private.c.o)
+ .debug_line    0x0000afc8      0x542 e:\drone_parachute\build\core\core.a(usb.c.o)
+ .debug_line    0x0000b50a      0x950 e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
+ .debug_line    0x0000be5a      0x2fd e:\drone_parachute\build\core\core.a(usb_reg_map.c.o)
+ .debug_line    0x0000c157      0x435 e:\drone_parachute\build\core\core.a(usb_core.c.o)
+ .debug_line    0x0000c58c      0x14a e:\drone_parachute\build\core\core.a(usb_init.c.o)
+ .debug_line    0x0000c6d6      0x184 e:\drone_parachute\build\core\core.a(usb_mem.c.o)
+ .debug_line    0x0000c85a      0x5ae e:\drone_parachute\build\core\core.a(usb_regs.c.o)
+ .debug_line    0x0000ce08      0x3ce e:\drone_parachute\build\core\core.a(util.c.o)
+ .debug_line    0x0000d1d6       0xb1 e:\drone_parachute\build\core\core.a(main.cpp.o)
+ .debug_line    0x0000d287      0x347 e:\drone_parachute\build\core\core.a(pwm.cpp.o)
+ .debug_line    0x0000d5ce      0x3fa e:\drone_parachute\build\core\core.a(wirish_digital_f1.cpp.o)
+ .debug_line    0x0000d9c8      0x32e e:\drone_parachute\build\core\core.a(wirish_analog.cpp.o)
+ .debug_line    0x0000dcf6      0x37c e:\drone_parachute\build\core\core.a(wirish_digital.cpp.o)
+ .debug_line    0x0000e072      0x360 e:\drone_parachute\build\core\core.a(wirish_time.cpp.o)
+ .debug_line    0x0000e3d2       0x9a e:\drone_parachute\build\core\core.a(hooks.c.o)
+ .debug_line    0x0000e46c      0x2ef e:\drone_parachute\build\core\core.a(gpio.c.o)
 
-.debug_frame    0x00000000     0x3340
+.debug_frame    0x00000000     0x3344
  *(.debug_frame)
- .debug_frame   0x00000000      0x180 e:\drone_parachute\build\sketch\main.ino.cpp.o
- .debug_frame   0x00000180      0x5e0 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
- .debug_frame   0x00000760      0x1a8 e:\drone_parachute\build\libraries\Wire\SoftWire.cpp.o
- .debug_frame   0x00000908       0xe4 e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
- .debug_frame   0x000009ec      0x120 e:\drone_parachute\build\libraries\Wire\utility\WireBase.cpp.o
- .debug_frame   0x00000b0c      0x458 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
- .debug_frame   0x00000f64       0xd8 e:\drone_parachute\build\libraries\Servo\Servo.cpp.o
- .debug_frame   0x0000103c       0x38 e:\drone_parachute\build\core\board.cpp.o
- .debug_frame   0x00001074       0x84 e:\drone_parachute\build\core\wirish\boards.cpp.o
- .debug_frame   0x000010f8       0x68 e:\drone_parachute\build\core\wirish\boards_setup.cpp.o
- .debug_frame   0x00001160       0x28 e:\drone_parachute\build\core\wirish\start_c.c.o
- .debug_frame   0x00001188      0x130 e:\drone_parachute\build\core\wirish\syscalls.c.o
- .debug_frame   0x000012b8      0x10c e:\drone_parachute\build\core\core.a(HardwareSerial.cpp.o)
- .debug_frame   0x000013c4      0x378 e:\drone_parachute\build\core\core.a(Print.cpp.o)
- .debug_frame   0x0000173c       0x38 e:\drone_parachute\build\core\core.a(cxxabi-compat.cpp.o)
- .debug_frame   0x00001774       0x64 e:\drone_parachute\build\core\core.a(adc.c.o)
- .debug_frame   0x000017d8       0xb4 e:\drone_parachute\build\core\core.a(adc_f1.c.o)
- .debug_frame   0x0000188c       0x30 e:\drone_parachute\build\core\core.a(dma.c.o)
- .debug_frame   0x000018bc      0x180 e:\drone_parachute\build\core\core.a(dma_f1.c.o)
- .debug_frame   0x00001a3c      0x11c e:\drone_parachute\build\core\core.a(exti.c.o)
- .debug_frame   0x00001b58       0x20 e:\drone_parachute\build\core\core.a(exti_f1.c.o)
- .debug_frame   0x00001b78       0x20 e:\drone_parachute\build\core\core.a(flash.c.o)
- .debug_frame   0x00001b98       0x7c e:\drone_parachute\build\core\core.a(gpio_f1.c.o)
- .debug_frame   0x00001c14      0x14c e:\drone_parachute\build\core\core.a(i2c.c.o)
- .debug_frame   0x00001d60       0x94 e:\drone_parachute\build\core\core.a(i2c_f1.c.o)
- .debug_frame   0x00001df4       0x5c e:\drone_parachute\build\core\core.a(nvic.c.o)
- .debug_frame   0x00001e50       0x70 e:\drone_parachute\build\core\core.a(rcc.c.o)
- .debug_frame   0x00001ec0       0x98 e:\drone_parachute\build\core\core.a(rcc_f1.c.o)
- .debug_frame   0x00001f58       0xec e:\drone_parachute\build\core\core.a(spi.c.o)
- .debug_frame   0x00002044       0x48 e:\drone_parachute\build\core\core.a(spi_f1.c.o)
- .debug_frame   0x0000208c       0x68 e:\drone_parachute\build\core\core.a(systick.c.o)
- .debug_frame   0x000020f4      0x1c0 e:\drone_parachute\build\core\core.a(timer.c.o)
- .debug_frame   0x000022b4       0xb4 e:\drone_parachute\build\core\core.a(usart.c.o)
- .debug_frame   0x00002368       0xac e:\drone_parachute\build\core\core.a(usart_f1.c.o)
- .debug_frame   0x00002414       0x28 e:\drone_parachute\build\core\core.a(usart_private.c.o)
- .debug_frame   0x0000243c       0x6c e:\drone_parachute\build\core\core.a(usb.c.o)
- .debug_frame   0x000024a8      0x2cc e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
- .debug_frame   0x00002774       0x20 e:\drone_parachute\build\core\core.a(usb_reg_map.c.o)
- .debug_frame   0x00002794      0x1ac e:\drone_parachute\build\core\core.a(usb_core.c.o)
- .debug_frame   0x00002940       0x28 e:\drone_parachute\build\core\core.a(usb_init.c.o)
- .debug_frame   0x00002968       0x4c e:\drone_parachute\build\core\core.a(usb_mem.c.o)
- .debug_frame   0x000029b4      0x3d0 e:\drone_parachute\build\core\core.a(usb_regs.c.o)
- .debug_frame   0x00002d84       0xc8 e:\drone_parachute\build\core\core.a(util.c.o)
- .debug_frame   0x00002e4c       0x38 e:\drone_parachute\build\core\core.a(main.cpp.o)
- .debug_frame   0x00002e84       0x3c e:\drone_parachute\build\core\core.a(pwm.cpp.o)
- .debug_frame   0x00002ec0       0x2c e:\drone_parachute\build\core\core.a(wirish_digital_f1.cpp.o)
- .debug_frame   0x00002eec       0x20 e:\drone_parachute\build\core\core.a(wirish_analog.cpp.o)
- .debug_frame   0x00002f0c       0x30 e:\drone_parachute\build\core\core.a(wirish_digital.cpp.o)
- .debug_frame   0x00002f3c       0x4c e:\drone_parachute\build\core\core.a(wirish_time.cpp.o)
- .debug_frame   0x00002f88       0x20 e:\drone_parachute\build\core\core.a(hooks.c.o)
- .debug_frame   0x00002fa8       0x28 e:\drone_parachute\build\core\core.a(gpio.c.o)
- .debug_frame   0x00002fd0       0x38 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_sqrt.o)
- .debug_frame   0x00003008       0x34 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_sqrt.o)
- .debug_frame   0x0000303c       0x28 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_fpclassify.o)
- .debug_frame   0x00003064       0x20 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_matherr.o)
- .debug_frame   0x00003084       0x2c c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_fixdfdi.o)
- .debug_frame   0x000030b0       0x2c c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_fixunsdfdi.o)
- .debug_frame   0x000030dc       0x58 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(bpabi.o)
- .debug_frame   0x00003134       0x34 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_divdi3.o)
- .debug_frame   0x00003168       0x34 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_udivdi3.o)
- .debug_frame   0x0000319c       0x20 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-errno.o)
- .debug_frame   0x000031bc       0x28 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-exit.o)
- .debug_frame   0x000031e4       0x2c c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-init.o)
- .debug_frame   0x00003210       0x2c c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-memset.o)
- .debug_frame   0x0000323c       0x20 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-strcpy.o)
- .debug_frame   0x0000325c       0x20 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-strlen.o)
- .debug_frame   0x0000327c       0x48 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-__call_atexit.o)
- .debug_frame   0x000032c4       0x20 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-atexit.o)
- .debug_frame   0x000032e4       0x2c c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-fini.o)
- .debug_frame   0x00003310       0x30 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-__atexit.o)
+ .debug_frame   0x00000000      0x184 e:\drone_parachute\build\sketch\main.ino.cpp.o
+ .debug_frame   0x00000184      0x5e0 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
+ .debug_frame   0x00000764      0x1a8 e:\drone_parachute\build\libraries\Wire\SoftWire.cpp.o
+ .debug_frame   0x0000090c       0xe4 e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
+ .debug_frame   0x000009f0      0x120 e:\drone_parachute\build\libraries\Wire\utility\WireBase.cpp.o
+ .debug_frame   0x00000b10      0x458 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
+ .debug_frame   0x00000f68       0xd8 e:\drone_parachute\build\libraries\Servo\Servo.cpp.o
+ .debug_frame   0x00001040       0x38 e:\drone_parachute\build\core\board.cpp.o
+ .debug_frame   0x00001078       0x84 e:\drone_parachute\build\core\wirish\boards.cpp.o
+ .debug_frame   0x000010fc       0x68 e:\drone_parachute\build\core\wirish\boards_setup.cpp.o
+ .debug_frame   0x00001164       0x28 e:\drone_parachute\build\core\wirish\start_c.c.o
+ .debug_frame   0x0000118c      0x130 e:\drone_parachute\build\core\wirish\syscalls.c.o
+ .debug_frame   0x000012bc      0x10c e:\drone_parachute\build\core\core.a(HardwareSerial.cpp.o)
+ .debug_frame   0x000013c8      0x378 e:\drone_parachute\build\core\core.a(Print.cpp.o)
+ .debug_frame   0x00001740       0x38 e:\drone_parachute\build\core\core.a(cxxabi-compat.cpp.o)
+ .debug_frame   0x00001778       0x64 e:\drone_parachute\build\core\core.a(adc.c.o)
+ .debug_frame   0x000017dc       0xb4 e:\drone_parachute\build\core\core.a(adc_f1.c.o)
+ .debug_frame   0x00001890       0x30 e:\drone_parachute\build\core\core.a(dma.c.o)
+ .debug_frame   0x000018c0      0x180 e:\drone_parachute\build\core\core.a(dma_f1.c.o)
+ .debug_frame   0x00001a40      0x11c e:\drone_parachute\build\core\core.a(exti.c.o)
+ .debug_frame   0x00001b5c       0x20 e:\drone_parachute\build\core\core.a(exti_f1.c.o)
+ .debug_frame   0x00001b7c       0x20 e:\drone_parachute\build\core\core.a(flash.c.o)
+ .debug_frame   0x00001b9c       0x7c e:\drone_parachute\build\core\core.a(gpio_f1.c.o)
+ .debug_frame   0x00001c18      0x14c e:\drone_parachute\build\core\core.a(i2c.c.o)
+ .debug_frame   0x00001d64       0x94 e:\drone_parachute\build\core\core.a(i2c_f1.c.o)
+ .debug_frame   0x00001df8       0x5c e:\drone_parachute\build\core\core.a(nvic.c.o)
+ .debug_frame   0x00001e54       0x70 e:\drone_parachute\build\core\core.a(rcc.c.o)
+ .debug_frame   0x00001ec4       0x98 e:\drone_parachute\build\core\core.a(rcc_f1.c.o)
+ .debug_frame   0x00001f5c       0xec e:\drone_parachute\build\core\core.a(spi.c.o)
+ .debug_frame   0x00002048       0x48 e:\drone_parachute\build\core\core.a(spi_f1.c.o)
+ .debug_frame   0x00002090       0x68 e:\drone_parachute\build\core\core.a(systick.c.o)
+ .debug_frame   0x000020f8      0x1c0 e:\drone_parachute\build\core\core.a(timer.c.o)
+ .debug_frame   0x000022b8       0xb4 e:\drone_parachute\build\core\core.a(usart.c.o)
+ .debug_frame   0x0000236c       0xac e:\drone_parachute\build\core\core.a(usart_f1.c.o)
+ .debug_frame   0x00002418       0x28 e:\drone_parachute\build\core\core.a(usart_private.c.o)
+ .debug_frame   0x00002440       0x6c e:\drone_parachute\build\core\core.a(usb.c.o)
+ .debug_frame   0x000024ac      0x2cc e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
+ .debug_frame   0x00002778       0x20 e:\drone_parachute\build\core\core.a(usb_reg_map.c.o)
+ .debug_frame   0x00002798      0x1ac e:\drone_parachute\build\core\core.a(usb_core.c.o)
+ .debug_frame   0x00002944       0x28 e:\drone_parachute\build\core\core.a(usb_init.c.o)
+ .debug_frame   0x0000296c       0x4c e:\drone_parachute\build\core\core.a(usb_mem.c.o)
+ .debug_frame   0x000029b8      0x3d0 e:\drone_parachute\build\core\core.a(usb_regs.c.o)
+ .debug_frame   0x00002d88       0xc8 e:\drone_parachute\build\core\core.a(util.c.o)
+ .debug_frame   0x00002e50       0x38 e:\drone_parachute\build\core\core.a(main.cpp.o)
+ .debug_frame   0x00002e88       0x3c e:\drone_parachute\build\core\core.a(pwm.cpp.o)
+ .debug_frame   0x00002ec4       0x2c e:\drone_parachute\build\core\core.a(wirish_digital_f1.cpp.o)
+ .debug_frame   0x00002ef0       0x20 e:\drone_parachute\build\core\core.a(wirish_analog.cpp.o)
+ .debug_frame   0x00002f10       0x30 e:\drone_parachute\build\core\core.a(wirish_digital.cpp.o)
+ .debug_frame   0x00002f40       0x4c e:\drone_parachute\build\core\core.a(wirish_time.cpp.o)
+ .debug_frame   0x00002f8c       0x20 e:\drone_parachute\build\core\core.a(hooks.c.o)
+ .debug_frame   0x00002fac       0x28 e:\drone_parachute\build\core\core.a(gpio.c.o)
+ .debug_frame   0x00002fd4       0x38 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_sqrt.o)
+ .debug_frame   0x0000300c       0x34 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_sqrt.o)
+ .debug_frame   0x00003040       0x28 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_fpclassify.o)
+ .debug_frame   0x00003068       0x20 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_matherr.o)
+ .debug_frame   0x00003088       0x2c c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_fixdfdi.o)
+ .debug_frame   0x000030b4       0x2c c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_fixunsdfdi.o)
+ .debug_frame   0x000030e0       0x58 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(bpabi.o)
+ .debug_frame   0x00003138       0x34 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_divdi3.o)
+ .debug_frame   0x0000316c       0x34 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7-m\libgcc.a(_udivdi3.o)
+ .debug_frame   0x000031a0       0x20 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-errno.o)
+ .debug_frame   0x000031c0       0x28 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-exit.o)
+ .debug_frame   0x000031e8       0x2c c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-init.o)
+ .debug_frame   0x00003214       0x2c c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-memset.o)
+ .debug_frame   0x00003240       0x20 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-strcpy.o)
+ .debug_frame   0x00003260       0x20 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-strlen.o)
+ .debug_frame   0x00003280       0x48 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-__call_atexit.o)
+ .debug_frame   0x000032c8       0x20 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-atexit.o)
+ .debug_frame   0x000032e8       0x2c c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-fini.o)
+ .debug_frame   0x00003314       0x30 c:/users/param/appdata/local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7-m\libc.a(lib_a-__atexit.o)
 
-.debug_str      0x00000000     0xabd3
+.debug_str      0x00000000     0xac0b
  *(.debug_str)
- .debug_str     0x00000000     0x2d11 e:\drone_parachute\build\sketch\main.ino.cpp.o
-                               0x2edf (size before relaxing)
- .debug_str     0x00002d11      0x5e5 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
+ .debug_str     0x00000000     0x2d49 e:\drone_parachute\build\sketch\main.ino.cpp.o
+                               0x2f17 (size before relaxing)
+ .debug_str     0x00002d49      0x5e5 e:\drone_parachute\build\libraries\Bolder_Flight_Systems_MPU9250\MPU9250.cpp.o
                                0x2e68 (size before relaxing)
- .debug_str     0x000032f6      0x493 e:\drone_parachute\build\libraries\Wire\SoftWire.cpp.o
+ .debug_str     0x0000332e      0x493 e:\drone_parachute\build\libraries\Wire\SoftWire.cpp.o
                                0x1063 (size before relaxing)
- .debug_str     0x00003789      0x188 e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
+ .debug_str     0x000037c1      0x188 e:\drone_parachute\build\libraries\Wire\Wire.cpp.o
                                 0xd25 (size before relaxing)
- .debug_str     0x00003911      0x210 e:\drone_parachute\build\libraries\Wire\utility\WireBase.cpp.o
+ .debug_str     0x00003949      0x210 e:\drone_parachute\build\libraries\Wire\utility\WireBase.cpp.o
                                 0xe0a (size before relaxing)
- .debug_str     0x00003b21      0x657 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
+ .debug_str     0x00003b59      0x657 e:\drone_parachute\build\libraries\SPI\SPI.cpp.o
                                0x1c8f (size before relaxing)
- .debug_str     0x00004178      0x140 e:\drone_parachute\build\libraries\Servo\Servo.cpp.o
+ .debug_str     0x000041b0      0x140 e:\drone_parachute\build\libraries\Servo\Servo.cpp.o
                                 0xe42 (size before relaxing)
- .debug_str     0x000042b8      0x1e3 e:\drone_parachute\build\core\board.cpp.o
+ .debug_str     0x000042f0      0x1e3 e:\drone_parachute\build\core\board.cpp.o
                                 0xd51 (size before relaxing)
- .debug_str     0x0000449b      0x712 e:\drone_parachute\build\core\wirish\boards.cpp.o
+ .debug_str     0x000044d3      0x712 e:\drone_parachute\build\core\wirish\boards.cpp.o
                                0x1158 (size before relaxing)
- .debug_str     0x00004bad      0x468 e:\drone_parachute\build\core\wirish\boards_setup.cpp.o
+ .debug_str     0x00004be5      0x468 e:\drone_parachute\build\core\wirish\boards_setup.cpp.o
                                 0xb40 (size before relaxing)
- .debug_str     0x00005015      0x1c5 e:\drone_parachute\build\core\wirish\start_c.c.o
+ .debug_str     0x0000504d      0x1c5 e:\drone_parachute\build\core\wirish\start_c.c.o
                                 0x1fe (size before relaxing)
- .debug_str     0x000051da      0x1e1 e:\drone_parachute\build\core\wirish\syscalls.c.o
+ .debug_str     0x00005212      0x1e1 e:\drone_parachute\build\core\wirish\syscalls.c.o
                                 0x38f (size before relaxing)
- .debug_str     0x000053bb      0xfc2 e:\drone_parachute\build\core\core.a(HardwareSerial.cpp.o)
+ .debug_str     0x000053f3      0xfc2 e:\drone_parachute\build\core\core.a(HardwareSerial.cpp.o)
                                0x1c2e (size before relaxing)
- .debug_str     0x0000637d      0x3d0 e:\drone_parachute\build\core\core.a(Print.cpp.o)
+ .debug_str     0x000063b5      0x3d0 e:\drone_parachute\build\core\core.a(Print.cpp.o)
                                 0xffc (size before relaxing)
- .debug_str     0x0000674d      0x175 e:\drone_parachute\build\core\core.a(cxxabi-compat.cpp.o)
+ .debug_str     0x00006785      0x175 e:\drone_parachute\build\core\core.a(cxxabi-compat.cpp.o)
                                 0x3bb (size before relaxing)
- .debug_str     0x000068c2      0x233 e:\drone_parachute\build\core\core.a(adc.c.o)
+ .debug_str     0x000068fa      0x233 e:\drone_parachute\build\core\core.a(adc.c.o)
                                 0xad7 (size before relaxing)
- .debug_str     0x00006af5      0x20f e:\drone_parachute\build\core\core.a(adc_f1.c.o)
+ .debug_str     0x00006b2d      0x20f e:\drone_parachute\build\core\core.a(adc_f1.c.o)
                                 0xdf2 (size before relaxing)
- .debug_str     0x00006d04      0x186 e:\drone_parachute\build\core\core.a(dma.c.o)
+ .debug_str     0x00006d3c      0x186 e:\drone_parachute\build\core\core.a(dma.c.o)
                                 0xa4f (size before relaxing)
- .debug_str     0x00006e8a      0x85e e:\drone_parachute\build\core\core.a(dma_f1.c.o)
+ .debug_str     0x00006ec2      0x85e e:\drone_parachute\build\core\core.a(dma_f1.c.o)
                                0x139a (size before relaxing)
- .debug_str     0x000076e8      0x236 e:\drone_parachute\build\core\core.a(exti.c.o)
+ .debug_str     0x00007720      0x236 e:\drone_parachute\build\core\core.a(exti.c.o)
                                 0x936 (size before relaxing)
- .debug_str     0x0000791e       0xb3 e:\drone_parachute\build\core\core.a(exti_f1.c.o)
+ .debug_str     0x00007956       0xb3 e:\drone_parachute\build\core\core.a(exti_f1.c.o)
                                 0x2fc (size before relaxing)
- .debug_str     0x000079d1       0x80 e:\drone_parachute\build\core\core.a(flash.c.o)
+ .debug_str     0x00007a09       0x80 e:\drone_parachute\build\core\core.a(flash.c.o)
                                 0x21b (size before relaxing)
- .debug_str     0x00007a51      0x2ba e:\drone_parachute\build\core\core.a(gpio_f1.c.o)
+ .debug_str     0x00007a89      0x2ba e:\drone_parachute\build\core\core.a(gpio_f1.c.o)
                                 0x7d3 (size before relaxing)
- .debug_str     0x00007d0b      0x28e e:\drone_parachute\build\core\core.a(i2c.c.o)
+ .debug_str     0x00007d43      0x28e e:\drone_parachute\build\core\core.a(i2c.c.o)
                                 0xfd0 (size before relaxing)
- .debug_str     0x00007f99       0xde e:\drone_parachute\build\core\core.a(i2c_f1.c.o)
+ .debug_str     0x00007fd1       0xde e:\drone_parachute\build\core\core.a(i2c_f1.c.o)
                                 0xdcd (size before relaxing)
- .debug_str     0x00008077       0xef e:\drone_parachute\build\core\core.a(nvic.c.o)
+ .debug_str     0x000080af       0xef e:\drone_parachute\build\core\core.a(nvic.c.o)
                                 0x724 (size before relaxing)
- .debug_str     0x00008166       0xd8 e:\drone_parachute\build\core\core.a(rcc.c.o)
+ .debug_str     0x0000819e       0xd8 e:\drone_parachute\build\core\core.a(rcc.c.o)
                                 0x570 (size before relaxing)
- .debug_str     0x0000823e      0x107 e:\drone_parachute\build\core\core.a(rcc_f1.c.o)
+ .debug_str     0x00008276      0x107 e:\drone_parachute\build\core\core.a(rcc_f1.c.o)
                                 0x811 (size before relaxing)
- .debug_str     0x00008345      0x11a e:\drone_parachute\build\core\core.a(spi.c.o)
+ .debug_str     0x0000837d      0x11a e:\drone_parachute\build\core\core.a(spi.c.o)
                                 0xba3 (size before relaxing)
- .debug_str     0x0000845f       0xbe e:\drone_parachute\build\core\core.a(spi_f1.c.o)
+ .debug_str     0x00008497       0xbe e:\drone_parachute\build\core\core.a(spi_f1.c.o)
                                 0x9c9 (size before relaxing)
- .debug_str     0x0000851d       0xec e:\drone_parachute\build\core\core.a(systick.c.o)
+ .debug_str     0x00008555       0xec e:\drone_parachute\build\core\core.a(systick.c.o)
                                 0x281 (size before relaxing)
- .debug_str     0x00008609      0x372 e:\drone_parachute\build\core\core.a(timer.c.o)
+ .debug_str     0x00008641      0x372 e:\drone_parachute\build\core\core.a(timer.c.o)
                                 0xeca (size before relaxing)
- .debug_str     0x0000897b       0xeb e:\drone_parachute\build\core\core.a(usart.c.o)
+ .debug_str     0x000089b3       0xeb e:\drone_parachute\build\core\core.a(usart.c.o)
                                 0x9e7 (size before relaxing)
- .debug_str     0x00008a66      0x14f e:\drone_parachute\build\core\core.a(usart_f1.c.o)
+ .debug_str     0x00008a9e      0x14f e:\drone_parachute\build\core\core.a(usart_f1.c.o)
                                 0xadb (size before relaxing)
- .debug_str     0x00008bb5       0x7c e:\drone_parachute\build\core\core.a(usart_private.c.o)
+ .debug_str     0x00008bed       0x7c e:\drone_parachute\build\core\core.a(usart_private.c.o)
                                 0x8a6 (size before relaxing)
- .debug_str     0x00008c31      0x61e e:\drone_parachute\build\core\core.a(usb.c.o)
+ .debug_str     0x00008c69      0x61e e:\drone_parachute\build\core\core.a(usb.c.o)
                                 0xa7e (size before relaxing)
- .debug_str     0x0000924f      0x99b e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
+ .debug_str     0x00009287      0x99b e:\drone_parachute\build\core\core.a(usb_cdcacm.c.o)
                                0x184f (size before relaxing)
- .debug_str     0x00009bea       0xa9 e:\drone_parachute\build\core\core.a(usb_reg_map.c.o)
+ .debug_str     0x00009c22       0xa9 e:\drone_parachute\build\core\core.a(usb_reg_map.c.o)
                                 0x2a4 (size before relaxing)
- .debug_str     0x00009c93      0x4a9 e:\drone_parachute\build\core\core.a(usb_core.c.o)
+ .debug_str     0x00009ccb      0x4a9 e:\drone_parachute\build\core\core.a(usb_core.c.o)
                                 0xadc (size before relaxing)
- .debug_str     0x0000a13c       0xae e:\drone_parachute\build\core\core.a(usb_init.c.o)
+ .debug_str     0x0000a174       0xae e:\drone_parachute\build\core\core.a(usb_init.c.o)
                                 0x540 (size before relaxing)
- .debug_str     0x0000a1ea       0xba e:\drone_parachute\build\core\core.a(usb_mem.c.o)
+ .debug_str     0x0000a222       0xba e:\drone_parachute\build\core\core.a(usb_mem.c.o)
                                 0x1fe (size before relaxing)
- .debug_str     0x0000a2a4      0x3f3 e:\drone_parachute\build\core\core.a(usb_regs.c.o)
+ .debug_str     0x0000a2dc      0x3f3 e:\drone_parachute\build\core\core.a(usb_regs.c.o)
                                 0x57e (size before relaxing)
- .debug_str     0x0000a697       0xfa e:\drone_parachute\build\core\core.a(util.c.o)
+ .debug_str     0x0000a6cf       0xfa e:\drone_parachute\build\core\core.a(util.c.o)
                                 0xa53 (size before relaxing)
- .debug_str     0x0000a791       0x80 e:\drone_parachute\build\core\core.a(main.cpp.o)
+ .debug_str     0x0000a7c9       0x80 e:\drone_parachute\build\core\core.a(main.cpp.o)
                                 0x1c4 (size before relaxing)
- .debug_str     0x0000a811       0xa0 e:\drone_parachute\build\core\core.a(pwm.cpp.o)
+ .debug_str     0x0000a849       0xa0 e:\drone_parachute\build\core\core.a(pwm.cpp.o)
                                 0xb7e (size before relaxing)
- .debug_str     0x0000a8b1       0x8c e:\drone_parachute\build\core\core.a(wirish_digital_f1.cpp.o)
+ .debug_str     0x0000a8e9       0x8c e:\drone_parachute\build\core\core.a(wirish_digital_f1.cpp.o)
                                 0xc73 (size before relaxing)
- .debug_str     0x0000a93d       0x75 e:\drone_parachute\build\core\core.a(wirish_analog.cpp.o)
+ .debug_str     0x0000a975       0x75 e:\drone_parachute\build\core\core.a(wirish_analog.cpp.o)
                                 0xa9e (size before relaxing)
- .debug_str     0x0000a9b2       0x76 e:\drone_parachute\build\core\core.a(wirish_digital.cpp.o)
+ .debug_str     0x0000a9ea       0x76 e:\drone_parachute\build\core\core.a(wirish_digital.cpp.o)
                                 0xae4 (size before relaxing)
- .debug_str     0x0000aa28       0xc5 e:\drone_parachute\build\core\core.a(wirish_time.cpp.o)
+ .debug_str     0x0000aa60       0xc5 e:\drone_parachute\build\core\core.a(wirish_time.cpp.o)
                                 0x37a (size before relaxing)
- .debug_str     0x0000aaed       0x73 e:\drone_parachute\build\core\core.a(hooks.c.o)
+ .debug_str     0x0000ab25       0x73 e:\drone_parachute\build\core\core.a(hooks.c.o)
                                 0x13d (size before relaxing)
- .debug_str     0x0000ab60       0x73 e:\drone_parachute\build\core\core.a(gpio.c.o)
+ .debug_str     0x0000ab98       0x73 e:\drone_parachute\build\core\core.a(gpio.c.o)
                                 0x45f (size before relaxing)
 
 .debug_loc      0x00000000     0xc3d6

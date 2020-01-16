@@ -9,7 +9,6 @@ Soldered bluepill now testing blinkled code.
 5/1/20
 4.00 PM 
 Checking which code runs for IMU localization.
-<<<<<<< HEAD
 7.36 PM 
 Memory overflow for the ic with kriswiner code.
 
@@ -69,7 +68,7 @@ If not BACK here.
 
 HAVING FUCKED UP UPDATES MOVING TO WINDOWS TO SEE IF THINGS TURN CORRECT, PIO UPDATES IN PARTICULAR.
 
-8/1/20 
+7/1/20 
 10.50 PM 
 Started testing for link2,
 
@@ -78,7 +77,6 @@ Successfully ported the code on arduino framework with bolderflight's MPU lib, N
 components testing
 1. SERVO.
 2. RELAY.
-
 
 
 5.43 PM
@@ -96,16 +94,27 @@ Remaining
 1.check_state
 2.deploy chute
 
-9/1/20
-12.01 PM 
-Finished porting code to arduino IDE, now fine tuning and tweaking.
+10/1/20
+3.28 PM
+MAYBE I MESSED UP WITH GIT 
+LOST LOG OF 5 DAYS (yesterday night)
+ANYWAYS continuing building gpb since morning
 
-8.30 PM 
-Finished doing the prototype on breadboard today evening, tested main battery code, worked fine,
-Now moving on to the IMU code, it had some connecting issues regarding speed.
-Now need to address it via sysTick interrupts.
+11/1/20
+8.15 PM 
+Finished nearly the gpb all solder connections good, Havent yet solderded the ic.
+Also restored the comments from a previous commit, lost captains log for 8th and 9th JAN.
+SED.
+To do ... finish testing everything by tonight.
+S1. CHECK THE MAIN CODE, see if it works on the GPB 
+Work on it first, then move to bluetooth. 
+s2. REPEAT STEP 1 until finished.
+s3. TEST bluetooth.
+S4. SLEEP PROBABLY.
 
-11.57 PM 
-Wrote and tested both the scenarios for mayday faliure things seem to work good, now moving on to pcb and battery charging.
-=======
->>>>>>> 3285a02e86f6d9532a0dda0541a2d4119531dbf8
+12/1/20
+00.27 AM
+
+16/1/20
+9.59 PM
+Completed the PCB design alongwith GERBER files.
