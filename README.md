@@ -6,7 +6,8 @@ The expected output "Can be in the form of validated electronic circuit design, 
 (The code can be written in any programming language of your choice)
 ```
 ## Code
-find the cpp files in /src headers in /include.
+There are few versions of the code, please find the latest one in arduino_version. STM_32 mbed version is deprecated has memory overflow issues. 
+find the cpp files in /main headers in /include.
 
 ## Conditions 
 To eject the parachute emission, we apply the condition that it must reach a certain speed (1.5 m/s) or more within a specified time interval (0.25 s)
