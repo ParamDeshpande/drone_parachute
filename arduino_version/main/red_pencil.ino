@@ -16,6 +16,7 @@ void error_signal_init(void){
 
 void raise_error_signal(void){
     while(true){
+        Serial3.println("SOMEthing wrong here...");
         digitalWrite(BUZZER_PIN, HIGH);
         digitalWrite(LED_PIN, HIGH);
         delay(200);

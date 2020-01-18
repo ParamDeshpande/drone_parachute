@@ -61,6 +61,8 @@ void batteries_init(void){
     if(MAIN_max_pin_voltage > 3.2){
         #ifdef DEBUG
         Serial.println("Calculations for max Main battery pin voltage exceed 3.2v");
+        Serial3.println("Calculations for max Main battery pin voltage exceed 3.2v");
+        
         #endif  
         
         raise_error_signal();
@@ -76,6 +78,9 @@ void batteries_init(void){
         #ifdef DEBUG
         Serial.println("Struck at backup battery init backup est");
         Serial.println(backup_battery_volt_est);
+        Serial3.println("Struck at backup battery init backup est");
+        Serial3.print(backup_battery_volt_est);
+        Serial3.println(" volts ");
         
         #endif
     
@@ -89,9 +94,8 @@ void batteries_init(void){
         
         #ifdef DEBUG
         Serial.println("Struck at main battery init");
+        Serial3.println("Struck at main battery init");
         #endif
-        
-        raise_error_signal();
         
     }
 }

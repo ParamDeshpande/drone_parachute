@@ -1,3 +1,10 @@
+/*AIM OF MY demo it is show 
+1. Buzzers
+2. Main battery not present. 
+3. Backup battery voltage.
+4. all outputs relayed via btooth.
+*/
+
 #define DEBUG
 #define BT_DEBUG
 #ifdef DEBUG_TEST
@@ -31,22 +38,32 @@ void setup(){
     error_signal_init();
     #ifdef DEBUG
     Serial.println("err sig init");
+    Serial3.println("err sig init");
+    
     #endif
     batteries_init();
     #ifdef DEBUG
     Serial.println("batteries_init");
+    Serial3.println("batteries_init");
+   
     #endif
     parachute_init();
     #ifdef DEBUG
     Serial.println("parachute_init");
+    Serial3.println("parachute_init");
+    
     #endif
     imu_init();
     #ifdef DEBUG
     Serial.println("imu_init");
+    Serial3.println("imu_init");
+    
     #endif
     executioner_init();
     #ifdef DEBUG
     Serial.println("executioner init");
+    Serial3.println("executioner init");
+    
     #endif
     while (true){
         check_system();

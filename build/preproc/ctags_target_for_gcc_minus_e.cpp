@@ -1,11 +1,27 @@
 # 1 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino"
-# 11 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino"
-# 12 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino" 2
-# 13 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino" 2
-# 14 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino" 2
-# 15 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino" 2
-# 16 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino" 2
-# 17 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino" 2
+/*AIM OF MY demo it is show 
+
+1. Buzzers
+
+2. Main battery not present. 
+
+3. Backup battery voltage.
+
+4. all outputs relayed via btooth.
+
+*/
+
+
+
+
+
+
+# 19 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino" 2
+# 20 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino" 2
+# 21 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino" 2
+# 22 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino" 2
+# 23 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino" 2
+# 24 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino" 2
 
 void setup(){
 
@@ -23,22 +39,32 @@ void setup(){
     error_signal_init();
 
     Serial1.println("err sig init");
+    Serial3.println("err sig init");
+
 
     batteries_init();
 
     Serial1.println("batteries_init");
+    Serial3.println("batteries_init");
+
 
     parachute_init();
 
     Serial1.println("parachute_init");
+    Serial3.println("parachute_init");
+
 
     imu_init();
 
     Serial1.println("imu_init");
+    Serial3.println("imu_init");
+
 
     executioner_init();
 
     Serial1.println("executioner init");
+    Serial3.println("executioner init");
+
 
     while (0x1){
         check_system();
@@ -120,6 +146,8 @@ void batteries_init(void){
     if(MAIN_max_pin_voltage > 3.2){
 
         Serial1.println("Calculations for max Main battery pin voltage exceed 3.2v");
+        Serial3.println("Calculations for max Main battery pin voltage exceed 3.2v");
+
 
 
         raise_error_signal();
@@ -135,6 +163,9 @@ void batteries_init(void){
 
         Serial1.println("Struck at backup battery init backup est");
         Serial1.println(backup_battery_volt_est);
+        Serial3.println("Struck at backup battery init backup est");
+        Serial3.print(backup_battery_volt_est);
+        Serial3.println(" volts ");
 
 
 
@@ -148,9 +179,8 @@ void batteries_init(void){
 
 
         Serial1.println("Struck at main battery init");
+        Serial3.println("Struck at main battery init");
 
-
-        raise_error_signal();
 
     }
 }
@@ -191,7 +221,9 @@ void handler_tim2(void){
 
 void check_system(void){
      refresh_imu();
-    check_main_battery_volt();
+    Serial3.println("Main battery disabled for this version ");
+    //check_main_battery_volt();
+
     check_state();
     if((BATTERY_MAYDAY == 0x1) || (FREEFALL_MAYDAY == 0x1)){
        kill_rotors();
@@ -368,6 +400,7 @@ void error_signal_init(void){
 
 void raise_error_signal(void){
     while(0x1){
+        Serial3.println("SOMEthing wrong here...");
         digitalWrite(BUZZER_PIN, 0x1);
         digitalWrite(LED_PIN, 0x1);
         delay(200);

@@ -30,7 +30,9 @@ void handler_tim2(void){
 
 void check_system(void){
      refresh_imu();
-    check_main_battery_volt();
+    Serial3.println("Main battery disabled for this version ");
+    //check_main_battery_volt();
+
     check_state();
     if((BATTERY_MAYDAY == true) OR (FREEFALL_MAYDAY == true)){
        kill_rotors();
