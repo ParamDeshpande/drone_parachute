@@ -1,18 +1,19 @@
 # 1 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino"
-# 10 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino"
-# 11 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino" 2
+# 11 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino"
 # 12 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino" 2
 # 13 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino" 2
 # 14 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino" 2
 # 15 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino" 2
 # 16 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino" 2
+# 17 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino" 2
 
 void setup(){
 
 
     Serial1.begin(115200);
 
-
+    Serial3.begin(9600);
+    Serial3.println("can you see me ?");
 
     pinMode(PC13,OUTPUT);
     digitalWrite(PC13,0x1);

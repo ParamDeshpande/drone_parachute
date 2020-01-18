@@ -1,8 +1,9 @@
 #include <Arduino.h>
 #line 1 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino"
 #define DEBUG
-#ifdef DEBUG_TEST
 #define BT_DEBUG
+#ifdef DEBUG_TEST
+
 //#include "port.h"
 void setup(){};
 void loop(){};
@@ -16,9 +17,9 @@ void loop(){};
 #include "include/red_pencil.h"
 #include "include/executioner.h"
 
-#line 17 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino"
+#line 18 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino"
 void setup();
-#line 58 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino"
+#line 60 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino"
 void loop();
 #line 59 "/mnt/Workspace/drone_parachute/arduino_version/main/battery.ino"
 void batteries_init(void);
@@ -46,13 +47,14 @@ void kill_rotors(void);
 void error_signal_init(void);
 #line 17 "/mnt/Workspace/drone_parachute/arduino_version/main/red_pencil.ino"
 void raise_error_signal(void);
-#line 17 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino"
+#line 18 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino"
 void setup(){
     
     #ifdef DEBUG
     Serial.begin(115200);
     #ifdef BT_DEBUG
-
+    Serial3.begin(9600);
+    Serial3.println("can you see me ?");
     #endif
     pinMode(PC13,OUTPUT);
     digitalWrite(PC13,HIGH);

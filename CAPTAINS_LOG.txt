@@ -118,3 +118,9 @@ S4. SLEEP PROBABLY.
 16/1/20
 9.59 PM
 Completed the PCB design alongwith GERBER files.
+
+18/01/20
+
+10.21 AM 
+
+ADDED BLUETOOTH FEATURES.

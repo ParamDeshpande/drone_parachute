@@ -1,6 +1,7 @@
 #define DEBUG
-#ifdef DEBUG_TEST
 #define BT_DEBUG
+#ifdef DEBUG_TEST
+
 //#include "port.h"
 void setup(){};
 void loop(){};
@@ -19,7 +20,8 @@ void setup(){
     #ifdef DEBUG
     Serial.begin(115200);
     #ifdef BT_DEBUG
-
+    Serial3.begin(9600);
+    Serial3.println("can you see me ?");
     #endif
     pinMode(PC13,OUTPUT);
     digitalWrite(PC13,HIGH);
