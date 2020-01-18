@@ -1,67 +1,67 @@
 [
   {
-    "Sourcefile": "",
+    "Sourcefile": null,
     "Include": "",
-    "Includepath": "C:\\Users\\Param\\AppData\\Local\\Arduino15\\packages\\stm32duino\\hardware\\STM32F1\\2019.12.31\\cores\\maple"
+    "Includepath": "/home/param/.arduino15/packages/stm32duino/hardware/STM32F1/2019.12.31/cores/maple"
   },
   {
-    "Sourcefile": "",
+    "Sourcefile": null,
     "Include": "",
-    "Includepath": "C:\\Users\\Param\\AppData\\Local\\Arduino15\\packages\\stm32duino\\hardware\\STM32F1\\2019.12.31\\variants\\generic_stm32f103c"
+    "Includepath": "/home/param/.arduino15/packages/stm32duino/hardware/STM32F1/2019.12.31/variants/generic_stm32f103c"
   },
   {
-    "Sourcefile": "e:\\drone_parachute\\build\\sketch\\main.ino.cpp",
+    "Sourcefile": "/mnt/Workspace/drone_parachute/build/sketch/main.ino.cpp",
     "Include": "MPU9250.h",
-    "Includepath": "C:\\Users\\Param\\Documents\\Arduino\\libraries\\Bolder_Flight_Systems_MPU9250\\src"
+    "Includepath": "/home/param/Arduino/libraries/Bolder_Flight_Systems_MPU9250/src"
   },
   {
-    "Sourcefile": "e:\\drone_parachute\\build\\sketch\\main.ino.cpp",
+    "Sourcefile": "/mnt/Workspace/drone_parachute/build/sketch/main.ino.cpp",
     "Include": "Wire.h",
-    "Includepath": "C:\\Users\\Param\\AppData\\Local\\Arduino15\\packages\\stm32duino\\hardware\\STM32F1\\2019.12.31\\libraries\\Wire"
+    "Includepath": "/home/param/.arduino15/packages/stm32duino/hardware/STM32F1/2019.12.31/libraries/Wire"
   },
   {
-    "Sourcefile": "e:\\drone_parachute\\build\\sketch\\main.ino.cpp",
+    "Sourcefile": "/mnt/Workspace/drone_parachute/build/sketch/main.ino.cpp",
     "Include": "SPI.h",
-    "Includepath": "C:\\Users\\Param\\AppData\\Local\\Arduino15\\packages\\stm32duino\\hardware\\STM32F1\\2019.12.31\\libraries\\SPI\\src"
+    "Includepath": "/home/param/.arduino15/packages/stm32duino/hardware/STM32F1/2019.12.31/libraries/SPI/src"
   },
   {
-    "Sourcefile": "e:\\drone_parachute\\build\\sketch\\main.ino.cpp",
+    "Sourcefile": "/mnt/Workspace/drone_parachute/build/sketch/main.ino.cpp",
     "Include": "Servo.h",
-    "Includepath": "C:\\Users\\Param\\AppData\\Local\\Arduino15\\packages\\stm32duino\\hardware\\STM32F1\\2019.12.31\\libraries\\Servo\\src"
+    "Includepath": "/home/param/.arduino15/packages/stm32duino/hardware/STM32F1/2019.12.31/libraries/Servo/src"
   },
   {
-    "Sourcefile": "e:\\drone_parachute\\build\\sketch\\main.ino.cpp",
+    "Sourcefile": "/mnt/Workspace/drone_parachute/build/sketch/main.ino.cpp",
     "Include": "",
-    "Includepath": ""
+    "Includepath": null
   },
   {
-    "Sourcefile": "C:\\Users\\Param\\Documents\\Arduino\\libraries\\Bolder_Flight_Systems_MPU9250\\src\\MPU9250.cpp",
+    "Sourcefile": "/home/param/Arduino/libraries/Bolder_Flight_Systems_MPU9250/src/MPU9250.cpp",
     "Include": "",
-    "Includepath": ""
+    "Includepath": null
   },
   {
-    "Sourcefile": "C:\\Users\\Param\\AppData\\Local\\Arduino15\\packages\\stm32duino\\hardware\\STM32F1\\2019.12.31\\libraries\\Wire\\SoftWire.cpp",
+    "Sourcefile": "/home/param/.arduino15/packages/stm32duino/hardware/STM32F1/2019.12.31/libraries/Wire/SoftWire.cpp",
     "Include": "",
-    "Includepath": ""
+    "Includepath": null
   },
   {
-    "Sourcefile": "C:\\Users\\Param\\AppData\\Local\\Arduino15\\packages\\stm32duino\\hardware\\STM32F1\\2019.12.31\\libraries\\Wire\\Wire.cpp",
+    "Sourcefile": "/home/param/.arduino15/packages/stm32duino/hardware/STM32F1/2019.12.31/libraries/Wire/Wire.cpp",
     "Include": "",
-    "Includepath": ""
+    "Includepath": null
   },
   {
-    "Sourcefile": "C:\\Users\\Param\\AppData\\Local\\Arduino15\\packages\\stm32duino\\hardware\\STM32F1\\2019.12.31\\libraries\\Wire\\utility\\WireBase.cpp",
+    "Sourcefile": "/home/param/.arduino15/packages/stm32duino/hardware/STM32F1/2019.12.31/libraries/Wire/utility/WireBase.cpp",
     "Include": "",
-    "Includepath": ""
+    "Includepath": null
   },
   {
-    "Sourcefile": "C:\\Users\\Param\\AppData\\Local\\Arduino15\\packages\\stm32duino\\hardware\\STM32F1\\2019.12.31\\libraries\\SPI\\src\\SPI.cpp",
+    "Sourcefile": "/home/param/.arduino15/packages/stm32duino/hardware/STM32F1/2019.12.31/libraries/SPI/src/SPI.cpp",
     "Include": "",
-    "Includepath": ""
+    "Includepath": null
   },
   {
-    "Sourcefile": "C:\\Users\\Param\\AppData\\Local\\Arduino15\\packages\\stm32duino\\hardware\\STM32F1\\2019.12.31\\libraries\\Servo\\src\\Servo.cpp",
+    "Sourcefile": "/home/param/.arduino15/packages/stm32duino/hardware/STM32F1/2019.12.31/libraries/Servo/src/Servo.cpp",
     "Include": "",
-    "Includepath": ""
+    "Includepath": null
   }
 ]

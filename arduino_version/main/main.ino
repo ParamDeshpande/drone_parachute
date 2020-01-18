@@ -1,5 +1,6 @@
 #define DEBUG
 #ifdef DEBUG_TEST
+#define BT_DEBUG
 //#include "port.h"
 void setup(){};
 void loop(){};
@@ -12,11 +13,14 @@ void loop(){};
 #include "include/imu.h"
 #include "include/red_pencil.h"
 #include "include/executioner.h"
- 
+
 void setup(){
     
     #ifdef DEBUG
     Serial.begin(115200);
+    #ifdef BT_DEBUG
+
+    #endif
     pinMode(PC13,OUTPUT);
     digitalWrite(PC13,HIGH);
     while(!Serial) {}

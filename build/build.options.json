@@ -1,11 +1,11 @@
 {
-  "additionalFiles": "\\include\\battery.h,\\include\\commons.h,\\include\\executioner.h,\\include\\global_vars.h,\\include\\imu.h,\\include\\parachute.h,\\include\\port.h,\\include\\red_pencil.h",
-  "builtInLibrariesFolders": "C:\\Users\\Param\\Downloads\\arduino-1.8.7-windows\\arduino-1.8.7\\libraries",
-  "customBuildProperties": "build.path=e:\\drone_parachute\\build,build.warn_data_percentage=75,runtime.tools.stm32tools.path=C:\\Users\\Param\\AppData\\Local\\Arduino15\\packages\\stm32duino\\tools\\stm32tools\\2019.12.31,runtime.tools.stm32tools-2019.12.31.path=C:\\Users\\Param\\AppData\\Local\\Arduino15\\packages\\stm32duino\\tools\\stm32tools\\2019.12.31,runtime.tools.arm-none-eabi-gcc.path=C:\\Users\\Param\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\4.8.3-2014q1,runtime.tools.arm-none-eabi-gcc-4.8.3-2014q1.path=C:\\Users\\Param\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\arm-none-eabi-gcc\\4.8.3-2014q1",
+  "additionalFiles": "../..,../..,../..,../..,../..,../..,../..,../..,../..",
+  "builtInLibrariesFolders": "/home/param/Downloads/softwares/arduino-1.8.10/libraries",
+  "customBuildProperties": "build.path=/mnt/Workspace/drone_parachute/build,build.warn_data_percentage=75,runtime.tools.arm-none-eabi-gcc.path=/home/param/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1,runtime.tools.arm-none-eabi-gcc-4.8.3-2014q1.path=/home/param/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1,runtime.tools.stm32tools.path=/home/param/.arduino15/packages/stm32duino/tools/stm32tools/2019.12.31,runtime.tools.stm32tools-2019.12.31.path=/home/param/.arduino15/packages/stm32duino/tools/stm32tools/2019.12.31",
   "fqbn": "stm32duino:STM32F1:genericSTM32F103C:device_variant=STM32F103C8,upload_method=serialMethod,cpu_speed=speed_72mhz,opt=osstd",
-  "hardwareFolders": "C:\\Users\\Param\\Downloads\\arduino-1.8.7-windows\\arduino-1.8.7\\hardware,C:\\Users\\Param\\AppData\\Local\\Arduino15\\packages",
-  "otherLibrariesFolders": "C:\\Users\\Param\\Documents\\Arduino\\libraries",
-  "runtime.ide.version": "10807",
-  "sketchLocation": "e:\\drone_parachute\\arduino_version\\main\\main.ino",
-  "toolsFolders": "C:\\Users\\Param\\Downloads\\arduino-1.8.7-windows\\arduino-1.8.7\\tools-builder,C:\\Users\\Param\\Downloads\\arduino-1.8.7-windows\\arduino-1.8.7\\hardware\\tools\\avr,C:\\Users\\Param\\AppData\\Local\\Arduino15\\packages"
+  "hardwareFolders": "/home/param/Downloads/softwares/arduino-1.8.10/hardware,/home/param/.arduino15/packages",
+  "otherLibrariesFolders": "/home/param/Arduino/libraries",
+  "runtime.ide.version": "10810",
+  "sketchLocation": "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino",
+  "toolsFolders": "/home/param/Downloads/softwares/arduino-1.8.10/tools-builder,/home/param/Downloads/softwares/arduino-1.8.10/hardware/tools/avr,/home/param/.arduino15/packages"
 }

@@ -1,8 +1,8 @@
 #include <Arduino.h>
-#line 1 "e:\\drone_parachute\\arduino_version\\main\\main.ino"
-#line 1 "e:\\drone_parachute\\arduino_version\\main\\main.ino"
+#line 1 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino"
 #define DEBUG
 #ifdef DEBUG_TEST
+#define BT_DEBUG
 //#include "port.h"
 void setup(){};
 void loop(){};
@@ -15,42 +15,45 @@ void loop(){};
 #include "include/imu.h"
 #include "include/red_pencil.h"
 #include "include/executioner.h"
- 
-#line 16 "e:\\drone_parachute\\arduino_version\\main\\main.ino"
+
+#line 17 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino"
 void setup();
-#line 54 "e:\\drone_parachute\\arduino_version\\main\\main.ino"
+#line 58 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino"
 void loop();
-#line 59 "e:\\drone_parachute\\arduino_version\\main\\battery.ino"
+#line 59 "/mnt/Workspace/drone_parachute/arduino_version/main/battery.ino"
 void batteries_init(void);
-#line 99 "e:\\drone_parachute\\arduino_version\\main\\battery.ino"
+#line 99 "/mnt/Workspace/drone_parachute/arduino_version/main/battery.ino"
 void check_main_battery_volt(void);
-#line 13 "e:\\drone_parachute\\arduino_version\\main\\executioner.ino"
+#line 13 "/mnt/Workspace/drone_parachute/arduino_version/main/executioner.ino"
 void executioner_init(void);
-#line 27 "e:\\drone_parachute\\arduino_version\\main\\executioner.ino"
+#line 27 "/mnt/Workspace/drone_parachute/arduino_version/main/executioner.ino"
 void handler_tim2(void);
-#line 31 "e:\\drone_parachute\\arduino_version\\main\\executioner.ino"
+#line 31 "/mnt/Workspace/drone_parachute/arduino_version/main/executioner.ino"
 void check_system(void);
-#line 32 "e:\\drone_parachute\\arduino_version\\main\\imu.ino"
+#line 32 "/mnt/Workspace/drone_parachute/arduino_version/main/imu.ino"
 void imu_init(void);
-#line 53 "e:\\drone_parachute\\arduino_version\\main\\imu.ino"
+#line 53 "/mnt/Workspace/drone_parachute/arduino_version/main/imu.ino"
 void refresh_imu(void);
-#line 69 "e:\\drone_parachute\\arduino_version\\main\\imu.ino"
+#line 69 "/mnt/Workspace/drone_parachute/arduino_version/main/imu.ino"
 void check_state(void);
-#line 13 "e:\\drone_parachute\\arduino_version\\main\\parachute.ino"
+#line 13 "/mnt/Workspace/drone_parachute/arduino_version/main/parachute.ino"
 void parachute_init(void);
-#line 18 "e:\\drone_parachute\\arduino_version\\main\\parachute.ino"
+#line 18 "/mnt/Workspace/drone_parachute/arduino_version/main/parachute.ino"
 void deploy_chute();
-#line 26 "e:\\drone_parachute\\arduino_version\\main\\parachute.ino"
+#line 26 "/mnt/Workspace/drone_parachute/arduino_version/main/parachute.ino"
 void kill_rotors(void);
-#line 12 "e:\\drone_parachute\\arduino_version\\main\\red_pencil.ino"
+#line 12 "/mnt/Workspace/drone_parachute/arduino_version/main/red_pencil.ino"
 void error_signal_init(void);
-#line 17 "e:\\drone_parachute\\arduino_version\\main\\red_pencil.ino"
+#line 17 "/mnt/Workspace/drone_parachute/arduino_version/main/red_pencil.ino"
 void raise_error_signal(void);
-#line 16 "e:\\drone_parachute\\arduino_version\\main\\main.ino"
+#line 17 "/mnt/Workspace/drone_parachute/arduino_version/main/main.ino"
 void setup(){
     
     #ifdef DEBUG
     Serial.begin(115200);
+    #ifdef BT_DEBUG
+
+    #endif
     pinMode(PC13,OUTPUT);
     digitalWrite(PC13,HIGH);
     while(!Serial) {}
@@ -90,7 +93,7 @@ void loop(){};
 #endif
 /*END OF FILE */
 
-#line 1 "e:\\drone_parachute\\arduino_version\\main\\battery.ino"
+#line 1 "/mnt/Workspace/drone_parachute/arduino_version/main/battery.ino"
 /*
 *  @brief: monitors status of the 2 batteries. IE main and the backup battery.
 *
@@ -201,7 +204,9 @@ void check_main_battery_volt(void){
     
 }
 
-#line 1 "e:\\drone_parachute\\arduino_version\\main\\executioner.ino"
+#line 1 "/mnt/Workspace/drone_parachute/arduino_version/main/bluetooth.ino"
+
+#line 1 "/mnt/Workspace/drone_parachute/arduino_version/main/executioner.ino"
 
 
 #include "include/commons.h"
@@ -246,7 +251,7 @@ void check_system(void){
 }
 
 
-#line 1 "e:\\drone_parachute\\arduino_version\\main\\imu.ino"
+#line 1 "/mnt/Workspace/drone_parachute/arduino_version/main/imu.ino"
 /*
 Advanced_I2C.ino
 Brian R Taylor
@@ -354,7 +359,7 @@ void check_state(void){
     }
 
 }
-#line 1 "e:\\drone_parachute\\arduino_version\\main\\parachute.ino"
+#line 1 "/mnt/Workspace/drone_parachute/arduino_version/main/parachute.ino"
 
 #include <Servo.h>
 #include "include/commons.h"
@@ -384,7 +389,7 @@ void kill_rotors(void){
     digitalWrite(RELAY_PIN,RELAY_TRIGGER_SIGNAL);
 }
 
-#line 1 "e:\\drone_parachute\\arduino_version\\main\\red_pencil.ino"
+#line 1 "/mnt/Workspace/drone_parachute/arduino_version/main/red_pencil.ino"
 /*
 * THIS FILE HELPS IN DEBUGGING
 */
