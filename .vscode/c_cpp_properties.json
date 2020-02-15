@@ -6,11 +6,11 @@
         {
             "name": "Linux",
             "includePath": [
-                "/mnt/Workspace/drone_parachute/include",
-                "/mnt/Workspace/drone_parachute/src",
+                "/mnt/Workspace/drone_para_new/include",
+                "/mnt/Workspace/drone_para_new/src",
                 "/home/param/.platformio/packages/framework-mbed/cmsis/TARGET_CORTEX_M",
                 "/home/param/.platformio/packages/framework-mbed",
-                "/mnt/Workspace/drone_parachute/.pio/build/genericSTM32F103C8",
+                "/mnt/Workspace/drone_para_new/.pio/build/genericSTM32F103C8",
                 "/home/param/.platformio/packages/framework-mbed/drivers",
                 "/home/param/.platformio/packages/framework-mbed/drivers/internal",
                 "/home/param/.platformio/packages/framework-mbed/events",
@@ -56,11 +56,11 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "/mnt/Workspace/drone_parachute/include",
-                    "/mnt/Workspace/drone_parachute/src",
+                    "/mnt/Workspace/drone_para_new/include",
+                    "/mnt/Workspace/drone_para_new/src",
                     "/home/param/.platformio/packages/framework-mbed/cmsis/TARGET_CORTEX_M",
                     "/home/param/.platformio/packages/framework-mbed",
-                    "/mnt/Workspace/drone_parachute/.pio/build/genericSTM32F103C8",
+                    "/mnt/Workspace/drone_para_new/.pio/build/genericSTM32F103C8",
                     "/home/param/.platformio/packages/framework-mbed/drivers",
                     "/home/param/.platformio/packages/framework-mbed/drivers/internal",
                     "/home/param/.platformio/packages/framework-mbed/events",
