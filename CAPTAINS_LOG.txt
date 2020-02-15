@@ -122,3 +122,7 @@ Completed the PCB design alongwith GERBER files.
 18/01/20
 10.21 AM 
 ADDED BLUETOOTH FEATURES.
+
+15/02/20
+9.30 AM 
+Added Charging IC ti details and notes.
