@@ -6,11 +6,11 @@
         {
             "name": "Linux",
             "includePath": [
-                "/mnt/Workspace/drone_para_new/include",
-                "/mnt/Workspace/drone_para_new/src",
+                "/mnt/Workspace/drone_parachute/include",
+                "/mnt/Workspace/drone_parachute/src",
                 "/home/param/.platformio/packages/framework-mbed/cmsis/TARGET_CORTEX_M",
                 "/home/param/.platformio/packages/framework-mbed",
-                "/mnt/Workspace/drone_para_new/.pio/build/genericSTM32F103C8",
+                "/mnt/Workspace/drone_parachute/.pio/build/genericSTM32F103C8",
                 "/home/param/.platformio/packages/framework-mbed/drivers",
                 "/home/param/.platformio/packages/framework-mbed/drivers/internal",
                 "/home/param/.platformio/packages/framework-mbed/events",
@@ -56,11 +56,11 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "/mnt/Workspace/drone_para_new/include",
-                    "/mnt/Workspace/drone_para_new/src",
+                    "/mnt/Workspace/drone_parachute/include",
+                    "/mnt/Workspace/drone_parachute/src",
                     "/home/param/.platformio/packages/framework-mbed/cmsis/TARGET_CORTEX_M",
                     "/home/param/.platformio/packages/framework-mbed",
-                    "/mnt/Workspace/drone_para_new/.pio/build/genericSTM32F103C8",
+                    "/mnt/Workspace/drone_parachute/.pio/build/genericSTM32F103C8",
                     "/home/param/.platformio/packages/framework-mbed/drivers",
                     "/home/param/.platformio/packages/framework-mbed/drivers/internal",
                     "/home/param/.platformio/packages/framework-mbed/events",
@@ -105,7 +105,7 @@
                 ]
             },
             "defines": [
-                "PLATFORMIO=40100",
+                "PLATFORMIO=40201",
                 "STM32F103xB",
                 "STM32F1",
                 "ARM_MATH_CM3",
@@ -159,7 +159,16 @@
             ],
             "intelliSenseMode": "clang-x64",
             "cppStandard": "c++14",
-            "compilerPath": "\"/home/param/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc\" -mcpu=cortex-m3 -mthumb"
+            "forcedInclude": [
+                "/mnt/Workspace/drone_parachute/.pio/build/genericSTM32F103C8/mbed_config.h",
+                ""
+            ],
+            "compilerPath": "/home/param/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc",
+            "compilerArgs": [
+                "-mcpu=cortex-m3",
+                "-mthumb",
+                ""
+            ]
         }
     ],
     "version": 4

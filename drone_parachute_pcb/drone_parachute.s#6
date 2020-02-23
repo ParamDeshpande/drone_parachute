@@ -57,12 +57,8 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -75,63 +71,6 @@
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="100" name="5V" color="13" fill="1" visible="yes" active="yes"/>
-<layer number="101" name="Hidden" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="102" name="Changes" color="12" fill="1" visible="yes" active="yes"/>
-<layer number="103" name="ATT_MISO" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="105" name="Beschreib" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="106" name="BGA-Top" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="107" name="BD-Top" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="108" name="centerline" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="109" name="fp9" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="131" name="prix" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="132" name="test" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="202" name="202bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="203" name="203bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="204" name="204bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="205" name="205bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="206" name="206bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="207" name="207bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="208" name="208bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
-<layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
-<layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
-<layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
-<layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
-<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
-<layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
-<layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
-<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="250" name="Descript" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -971,232 +910,6 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="userlib">
-<description>User library</description>
-<packages>
-<package name="18650-CASE-CABLE">
-<pad name="NEG" x="-40" y="0" drill="1" diameter="1.9304" shape="octagon"/>
-<pad name="POS" x="40" y="0" drill="1" diameter="1.9304" shape="octagon"/>
-<rectangle x1="-30" y1="-9" x2="35" y2="9" layer="21"/>
-<rectangle x1="35" y1="-3" x2="36" y2="3" layer="21"/>
-<text x="-30" y="10" size="1.27" layer="25">NAME</text>
-<text x="-30" y="-12" size="1.27" layer="27">VALUE</text>
-</package>
-<package name="18650-CASE-PTH">
-<pad name="POS" x="35.56" y="0" drill="2" shape="octagon"/>
-<pad name="NEG" x="-35.56" y="0" drill="2" shape="octagon"/>
-<rectangle x1="-33.02" y1="-10.16" x2="30.48" y2="10.16" layer="21"/>
-<rectangle x1="30.48" y1="-3.81" x2="31.75" y2="3.81" layer="21"/>
-<wire x1="35.56" y1="5.08" x2="35.56" y2="2.54" width="0.127" layer="21"/>
-<wire x1="34.29" y1="3.81" x2="36.83" y2="3.81" width="0.127" layer="21"/>
-</package>
-<package name="TP4056-LITHIUM-PROTECTED-MODULE">
-<wire x1="-12.7" y1="8.255" x2="12.7" y2="8.255" width="0.127" layer="21"/>
-<wire x1="12.7" y1="8.255" x2="12.7" y2="-8.255" width="0.127" layer="21"/>
-<wire x1="12.7" y1="-8.255" x2="-12.7" y2="-8.255" width="0.127" layer="21"/>
-<wire x1="-12.7" y1="-8.255" x2="-12.7" y2="8.255" width="0.127" layer="21"/>
-<pad name="IN+" x="-11.43" y="6.985" drill="0.9" shape="square"/>
-<pad name="IN-" x="-11.43" y="-6.35" drill="0.9" shape="square"/>
-<pad name="OUT-" x="10.795" y="-6.35" drill="0.9" shape="square"/>
-<pad name="OUT+" x="10.795" y="6.985" drill="0.9" shape="square"/>
-<pad name="B+" x="10.795" y="4.445" drill="0.9" shape="square"/>
-<pad name="B-" x="10.795" y="-3.81" drill="0.9" shape="square"/>
-</package>
-<package name="CP8-ADJ">
-<polygon width="0.127" layer="21" pour="hatch">
-<vertex x="-23.41" y="8.65"/>
-<vertex x="21.59" y="8.65"/>
-<vertex x="21.59" y="-11.35"/>
-<vertex x="-23.41" y="-11.35"/>
-</polygon>
-<pad name="IN+" x="-21.81" y="7.05" drill="1.6" shape="octagon"/>
-<pad name="IN-" x="-21.81" y="-9.75" drill="1.6" shape="octagon"/>
-<pad name="OUT-" x="19.99" y="-9.75" drill="1.6" shape="octagon"/>
-<pad name="OUT+" x="19.99" y="7.05" drill="1.6" shape="octagon"/>
-<text x="-22.86" y="10.16" size="1.27" layer="25">NAME</text>
-<text x="-22.86" y="10.16" size="1.27" layer="25">NAME</text>
-<text x="-22.86" y="-13.97" size="1.27" layer="27">VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="3V7">
-<wire x1="-0.508" y1="1.016" x2="-0.508" y2="-1.016" width="0.254" layer="94"/>
-<wire x1="0.762" y1="2.54" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
-<pin name="NEG" x="-5.588" y="0" visible="off" length="middle" direction="pwr"/>
-<pin name="POS" x="5.842" y="0" visible="off" length="middle" direction="pwr" rot="R180"/>
-</symbol>
-<symbol name="LITHIUM-CHG-PROTECT">
-<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<pin name="IN+" x="-12.7" y="5.08" length="middle" direction="pwr"/>
-<pin name="IN-" x="-12.7" y="-5.08" length="middle" direction="pwr"/>
-<pin name="OUT+" x="12.7" y="5.08" length="middle" direction="pwr" rot="R180"/>
-<pin name="B+" x="12.7" y="2.54" length="middle" direction="pwr" rot="R180"/>
-<pin name="B-" x="12.7" y="-2.54" length="middle" direction="pwr" rot="R180"/>
-<pin name="OUT-" x="12.7" y="-5.08" length="middle" direction="pwr" rot="R180"/>
-</symbol>
-<symbol name="VREG-CP8">
-<wire x1="-9.906" y1="7.62" x2="10.414" y2="7.62" width="0.254" layer="94"/>
-<wire x1="10.414" y1="7.62" x2="10.414" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="10.414" y1="-7.62" x2="-9.906" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-9.906" y1="-7.62" x2="-9.906" y2="7.62" width="0.254" layer="94"/>
-<pin name="IN+" x="-14.986" y="2.54" length="middle" direction="pas"/>
-<pin name="IN-" x="-14.986" y="-2.54" length="middle" direction="pas"/>
-<pin name="OUT+" x="15.494" y="2.54" length="middle" direction="pas" rot="R180"/>
-<pin name="OUT-" x="15.494" y="-2.54" length="middle" direction="pas" rot="R180"/>
-<text x="-9.906" y="8.89" size="1.27" layer="95">NAME</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="18650">
-<description>Lithium Ion 18650</description>
-<gates>
-<gate name="G$1" symbol="3V7" x="19.812" y="-10.16"/>
-</gates>
-<devices>
-<device name="CABLE" package="18650-CASE-CABLE">
-<connects>
-<connect gate="G$1" pin="NEG" pad="NEG"/>
-<connect gate="G$1" pin="POS" pad="POS"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="PTH" package="18650-CASE-PTH">
-<connects>
-<connect gate="G$1" pin="NEG" pad="NEG"/>
-<connect gate="G$1" pin="POS" pad="POS"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TP4056-MODULE">
-<gates>
-<gate name="G$1" symbol="LITHIUM-CHG-PROTECT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TP4056-LITHIUM-PROTECTED-MODULE">
-<connects>
-<connect gate="G$1" pin="B+" pad="B+"/>
-<connect gate="G$1" pin="B-" pad="B-"/>
-<connect gate="G$1" pin="IN+" pad="IN+"/>
-<connect gate="G$1" pin="IN-" pad="IN-"/>
-<connect gate="G$1" pin="OUT+" pad="OUT+"/>
-<connect gate="G$1" pin="OUT-" pad="OUT-"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CP8-ADJ">
-<description>Voltage regulator
-IN: 7-35V
-OUT: ADJ</description>
-<gates>
-<gate name="G$1" symbol="VREG-CP8" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CP8-ADJ">
-<connects>
-<connect gate="G$1" pin="IN+" pad="IN+"/>
-<connect gate="G$1" pin="IN-" pad="IN-"/>
-<connect gate="G$1" pin="OUT+" pad="OUT+"/>
-<connect gate="G$1" pin="OUT-" pad="OUT-"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="gy-521">
-<packages>
-<package name="GY-521">
-<pad name="SDA" x="-8.89" y="1.27" drill="0.8" diameter="1.778" shape="long"/>
-<pad name="XDA" x="-8.89" y="-1.27" drill="0.8" diameter="1.778" shape="long"/>
-<pad name="SCL" x="-8.89" y="3.81" drill="0.8" diameter="1.778" shape="long"/>
-<pad name="GND" x="-8.89" y="6.35" drill="0.8" diameter="1.778" shape="long"/>
-<pad name="VCC" x="-8.89" y="8.89" drill="0.8" diameter="1.778" shape="long"/>
-<pad name="XCL" x="-8.89" y="-3.81" drill="0.8" diameter="1.778" shape="long"/>
-<pad name="ADO" x="-8.89" y="-6.35" drill="0.8" diameter="1.778" shape="long"/>
-<pad name="INT" x="-8.89" y="-8.89" drill="0.8" diameter="1.778" shape="long"/>
-<wire x1="-11.43" y1="10.795" x2="4.445" y2="10.795" width="0.127" layer="21"/>
-<wire x1="4.445" y1="10.795" x2="4.445" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="4.445" y1="-10.16" x2="-11.43" y2="-10.16" width="0.127" layer="21"/>
-<wire x1="-11.43" y1="-10.16" x2="-11.43" y2="10.795" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-8.89" x2="1.27" y2="-8.89" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-8.89" x2="0.635" y2="-8.255" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-8.89" x2="0.635" y2="-9.525" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-8.89" x2="-2.54" y2="-5.08" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-5.08" x2="-1.905" y2="-5.715" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-5.08" x2="-3.175" y2="-5.715" width="0.127" layer="21"/>
-<text x="1.905" y="-8.89" size="1.27" layer="21">x</text>
-<text x="-1.27" y="-5.08" size="1.27" layer="21">y</text>
-<text x="3.81" y="-1.27" size="1.27" layer="21" rot="R90">ITG/MPU</text>
-</package>
-</packages>
-<symbols>
-<symbol name="MPU6050">
-<wire x1="-10.16" y1="17.78" x2="-10.16" y2="-22.86" width="0.6096" layer="94"/>
-<wire x1="-10.16" y1="-22.86" x2="17.78" y2="-22.86" width="0.6096" layer="94"/>
-<wire x1="17.78" y1="-22.86" x2="17.78" y2="17.78" width="0.6096" layer="94"/>
-<wire x1="17.78" y1="17.78" x2="-10.16" y2="17.78" width="0.6096" layer="94"/>
-<text x="13.716" y="-9.398" size="1.778" layer="94" rot="R270">GY-521</text>
-<text x="15.24" y="-7.62" size="1.778" layer="94" rot="R90">ITG/MPU</text>
-<pin name="VCC" x="-15.24" y="15.24" length="middle"/>
-<pin name="GND" x="-15.24" y="10.16" length="middle"/>
-<pin name="SCL" x="-15.24" y="5.08" length="middle"/>
-<pin name="SDA" x="-15.24" y="0" length="middle"/>
-<pin name="XDA" x="-15.24" y="-5.08" length="middle"/>
-<pin name="XCL" x="-15.24" y="-10.16" length="middle"/>
-<pin name="ADO" x="-15.24" y="-15.24" length="middle"/>
-<pin name="INT" x="-15.24" y="-20.32" length="middle"/>
-<wire x1="2.54" y1="-20.32" x2="7.62" y2="-20.32" width="0.3048" layer="94"/>
-<wire x1="7.62" y1="-20.32" x2="6.35" y2="-19.05" width="0.3048" layer="94"/>
-<wire x1="7.62" y1="-20.32" x2="6.35" y2="-21.59" width="0.3048" layer="94"/>
-<wire x1="2.54" y1="-20.32" x2="2.54" y2="-15.24" width="0.3048" layer="94"/>
-<wire x1="2.54" y1="-15.24" x2="1.27" y2="-16.51" width="0.3048" layer="94"/>
-<wire x1="2.54" y1="-15.24" x2="3.81" y2="-16.51" width="0.3048" layer="94"/>
-<text x="8.89" y="-21.082" size="1.778" layer="94">x</text>
-<text x="5.08" y="-15.24" size="1.778" layer="94">y</text>
-<text x="-1.524" y="14.732" size="1.778" layer="94">3.3V (or 5v)</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="GY-521" prefix="U">
-<gates>
-<gate name="G$1" symbol="MPU6050" x="-2.54" y="5.08"/>
-</gates>
-<devices>
-<device name="MPU6050" package="GY-521">
-<connects>
-<connect gate="G$1" pin="ADO" pad="ADO"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="INT" pad="INT"/>
-<connect gate="G$1" pin="SCL" pad="SCL"/>
-<connect gate="G$1" pin="SDA" pad="SDA"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
-<connect gate="G$1" pin="XCL" pad="XCL"/>
-<connect gate="G$1" pin="XDA" pad="XDA"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1209,12 +922,6 @@ OUT: ADJ</description>
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_A_L" device=""/>
 <part name="U$1" library="BluePill" deviceset="BLUE_PILL" device=""/>
-<part name="U$2" library="userlib" deviceset="18650" device="PTH"/>
-<part name="U$3" library="userlib" deviceset="TP4056-MODULE" device=""/>
-<part name="U$4" library="userlib" deviceset="TP4056-MODULE" device=""/>
-<part name="U$5" library="userlib" deviceset="18650" device="PTH"/>
-<part name="U$6" library="userlib" deviceset="CP8-ADJ" device=""/>
-<part name="U1" library="gy-521" deviceset="GY-521" device="MPU6050"/>
 </parts>
 <sheets>
 <sheet>
@@ -1228,12 +935,6 @@ OUT: ADJ</description>
 <attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94"/>
 </instance>
 <instance part="U$1" gate="G$1" x="129.54" y="139.7" smashed="yes"/>
-<instance part="U$2" gate="G$1" x="68.58" y="132.08" smashed="yes"/>
-<instance part="U$3" gate="G$1" x="48.26" y="66.04" smashed="yes"/>
-<instance part="U$4" gate="G$1" x="96.52" y="66.04" smashed="yes"/>
-<instance part="U$5" gate="G$1" x="66.04" y="119.38" smashed="yes"/>
-<instance part="U$6" gate="G$1" x="210.82" y="139.7" smashed="yes"/>
-<instance part="U1" gate="G$1" x="182.88" y="91.44" smashed="yes"/>
 </instances>
 <busses>
 </busses>
