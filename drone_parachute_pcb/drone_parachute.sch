@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -14720,25 +14720,28 @@ Source: www.kingbright.com</description>
 <wire x1="185.42" y1="60.96" x2="182.88" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="NTC" class="0">
 <segment>
 <pinref part="U3" gate="G$0" pin="TS"/>
 <wire x1="254" y1="109.22" x2="264.16" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="R6" gate="1" pin="2"/>
+<label x="256.54" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="CHG_BAR" class="0">
 <segment>
 <pinref part="U3" gate="G$0" pin="!CHG!"/>
 <wire x1="226.06" y1="104.14" x2="220.98" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="LED1" gate="G$1" pin="C"/>
+<label x="218.44" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="ISET" class="0">
 <segment>
 <pinref part="U3" gate="G$0" pin="ISET"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="208.28" y1="109.22" x2="226.06" y2="109.22" width="0.1524" layer="91"/>
+<label x="220.98" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$13" class="0">

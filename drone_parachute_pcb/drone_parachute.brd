@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2176,52 +2176,52 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="C" x="40.64" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="43.434" y="53.594" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="U3" library="Texas Instruments - BQ21040DBVR" package="TEXAS_INSTRUMENTS_BQ21040DBVR_0" value="TEXAS_INSTRUMENTS_BQ21040DBVRTEXAS_INSTRUMENTS_BQ21040DBVR_0_0" x="-8.89" y="-6.35" smashed="yes">
-<attribute name="CENTROID_NOT_SPECIFIED" value="No" x="-8.89" y="-6.35" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET" value="http://www.ti.com/lit/ds/symlink/bq21040.pdf" x="-8.89" y="-6.35" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_DESCRIPTION" value="IC BAT CHG LI-ION 1 CELL SOT23-6" x="-8.89" y="-6.35" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="296-47315-1-ND" x="-8.89" y="-6.35" size="1.778" layer="27" display="off"/>
-<attribute name="LEAD_FREE" value="yes" x="-8.89" y="-6.35" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="Texas Instruments" x="-8.89" y="-6.35" size="1.778" layer="27" display="off"/>
-<attribute name="MFG_PACKAGE_IDENT" value="DBV0006B" x="-8.89" y="-6.35" size="1.778" layer="27" display="off"/>
-<attribute name="MFG_PACKAGE_IDENT_DATE" value="08/11" x="-8.89" y="-6.35" size="1.778" layer="27" display="off"/>
-<attribute name="MFG_PACKAGE_IDENT_REV" value="C" x="-8.89" y="-6.35" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_DESCRIPTION" value="Battery Management 0.8A Single Input Single-Cell Li-Ion and Li-Pol Battery Charger 6-SOT-23 0 to 125" x="-8.89" y="-6.35" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="595-BQ21040DBVR" x="-8.89" y="-6.35" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="BQ21040DBVR" x="-8.89" y="-6.35" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-10.915" y="-6.9" size="1" layer="25" rot="R90"/>
-<attribute name="PACKAGE" value="SOT236" x="-8.89" y="-6.35" size="1.778" layer="27" display="off"/>
-<attribute name="PREFIX" value="U" x="-8.89" y="-6.35" size="1.778" layer="27" display="off"/>
-<attribute name="ROHS" value="yes" x="-8.89" y="-6.35" size="1.778" layer="27" display="off"/>
-<attribute name="TEMPERATURE_RANGE_HIGH" value="+125°C" x="-8.89" y="-6.35" size="1.778" layer="27" display="off"/>
-<attribute name="TEMPERATURE_RANGE_LOW" value="0°C" x="-8.89" y="-6.35" size="1.778" layer="27" display="off"/>
+<element name="U3" library="Texas Instruments - BQ21040DBVR" package="TEXAS_INSTRUMENTS_BQ21040DBVR_0" value="TEXAS_INSTRUMENTS_BQ21040DBVRTEXAS_INSTRUMENTS_BQ21040DBVR_0_0" x="86.36" y="17.78" smashed="yes" rot="R270">
+<attribute name="CENTROID_NOT_SPECIFIED" value="No" x="86.36" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DATASHEET" value="http://www.ti.com/lit/ds/symlink/bq21040.pdf" x="86.36" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIGIKEY_DESCRIPTION" value="IC BAT CHG LI-ION 1 CELL SOT23-6" x="86.36" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="296-47315-1-ND" x="86.36" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="LEAD_FREE" value="yes" x="86.36" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="Texas Instruments" x="86.36" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFG_PACKAGE_IDENT" value="DBV0006B" x="86.36" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFG_PACKAGE_IDENT_DATE" value="08/11" x="86.36" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFG_PACKAGE_IDENT_REV" value="C" x="86.36" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOUSER_DESCRIPTION" value="Battery Management 0.8A Single Input Single-Cell Li-Ion and Li-Pol Battery Charger 6-SOT-23 0 to 125" x="86.36" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="595-BQ21040DBVR" x="86.36" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="BQ21040DBVR" x="86.36" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="85.81" y="19.805" size="1" layer="25"/>
+<attribute name="PACKAGE" value="SOT236" x="86.36" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PREFIX" value="U" x="86.36" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="ROHS" value="yes" x="86.36" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="TEMPERATURE_RANGE_HIGH" value="+125°C" x="86.36" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="TEMPERATURE_RANGE_LOW" value="0°C" x="86.36" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="" x="-10.16" y="-13.97" smashed="yes">
-<attribute name="NAME" x="-11.43" y="-12.7" size="1.27" layer="25"/>
-<attribute name="POPULARITY" value="63" x="-10.16" y="-13.97" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="-10.16" y="-13.97" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-11.43" y="-16.51" size="1.27" layer="27"/>
+<element name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="" x="91.44" y="17.78" smashed="yes" rot="R270">
+<attribute name="NAME" x="92.71" y="19.05" size="1.27" layer="25" rot="R270"/>
+<attribute name="POPULARITY" value="63" x="91.44" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="91.44" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="88.9" y="19.05" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R6" library="ptc-ntc" package="P640" value="" x="-8.89" y="-19.05" smashed="yes">
-<attribute name="NAME" x="-11.43" y="-17.145" size="1.27" layer="25" ratio="10"/>
-<attribute name="VALUE" x="-11.43" y="-22.225" size="1.27" layer="27" ratio="10"/>
+<element name="R6" library="ptc-ntc" package="P640" value="" x="86.36" y="26.67" smashed="yes" rot="R180">
+<attribute name="NAME" x="88.9" y="24.765" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="88.9" y="29.845" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/2" value="" x="-16.51" y="-17.78" smashed="yes">
-<attribute name="NAME" x="-17.78" y="-19.05" size="1.27" layer="25" rot="R90"/>
-<attribute name="POPULARITY" value="68" x="-16.51" y="-17.78" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-13.97" y="-19.05" size="1.27" layer="27" rot="R90"/>
+<element name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/2" value="" x="80.01" y="15.24" smashed="yes">
+<attribute name="NAME" x="78.74" y="13.97" size="1.27" layer="25" rot="R90"/>
+<attribute name="POPULARITY" value="68" x="80.01" y="15.24" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="82.55" y="13.97" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="" x="-16.51" y="-29.21" smashed="yes">
-<attribute name="NAME" x="-17.145" y="-27.94" size="1.27" layer="25"/>
-<attribute name="POPULARITY" value="85" x="-16.51" y="-29.21" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="-16.51" y="-29.21" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-17.145" y="-31.75" size="1.27" layer="27"/>
+<element name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="" x="80.01" y="10.16" smashed="yes" rot="R270">
+<attribute name="NAME" x="81.28" y="10.795" size="1.27" layer="25" rot="R270"/>
+<attribute name="POPULARITY" value="85" x="80.01" y="10.16" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="80.01" y="10.16" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="77.47" y="10.795" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="" x="-33.147" y="-8.763" smashed="yes">
-<attribute name="NAME" x="-33.782" y="-7.493" size="1.27" layer="25"/>
-<attribute name="POPULARITY" value="85" x="-33.147" y="-8.763" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="-33.147" y="-8.763" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-33.782" y="-11.303" size="1.27" layer="27"/>
+<element name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="" x="93.98" y="11.43" smashed="yes">
+<attribute name="NAME" x="93.345" y="12.7" size="1.27" layer="25"/>
+<attribute name="POPULARITY" value="85" x="93.98" y="11.43" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="93.98" y="11.43" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="93.345" y="8.89" size="1.27" layer="27"/>
 </element>
 </elements>
 <signals>
@@ -2351,24 +2351,64 @@ design rules under a new name.</description>
 <contactref element="R1" pad="1"/>
 <contactref element="PAD1" pad="1"/>
 <contactref element="PAD5" pad="1"/>
-<wire x1="60.96" y1="29.21" x2="60.96" y2="27.94" width="0.508" layer="1"/>
-<wire x1="60.96" y1="29.21" x2="63.5" y2="31.75" width="0.508" layer="1"/>
 <wire x1="63.5" y1="31.75" x2="63.5" y2="39.37" width="0.508" layer="1"/>
 <wire x1="63.5" y1="39.37" x2="64.77" y2="40.64" width="0.508" layer="1"/>
 <wire x1="64.77" y1="40.64" x2="66.04" y2="40.64" width="0.508" layer="1"/>
 <wire x1="63.5" y1="31.75" x2="64.77" y2="30.48" width="0.508" layer="1"/>
 <wire x1="64.77" y1="30.48" x2="81.28" y2="30.48" width="0.508" layer="1"/>
-<wire x1="91.44" y1="38.1" x2="88.9" y2="35.56" width="0.508" layer="1"/>
-<wire x1="82.55" y1="35.56" x2="81.28" y2="34.29" width="0.508" layer="1"/>
+<wire x1="81.915" y1="34.925" x2="81.28" y2="34.29" width="0.508" layer="1"/>
 <wire x1="81.28" y1="34.29" x2="81.28" y2="30.48" width="0.508" layer="1"/>
-<wire x1="88.9" y1="35.56" x2="82.55" y2="35.56" width="0.508" layer="1"/>
 <wire x1="66.04" y1="40.64" x2="66.04" y2="71.12" width="0.508" layer="16"/>
 <wire x1="66.04" y1="71.12" x2="63.5" y2="73.66" width="0.508" layer="16"/>
 <wire x1="63.5" y1="73.66" x2="60.96" y2="73.66" width="0.508" layer="16"/>
 <contactref element="R8" pad="2"/>
 <contactref element="U3" pad="2"/>
-<wire x1="-8.89" y1="-7.7" x2="60.96" y2="27.94" width="0" layer="19" extent="1-1"/>
-<wire x1="-15.56" y1="-29.21" x2="-8.89" y2="-7.7" width="0" layer="19" extent="1-1"/>
+<wire x1="85.01" y1="17.78" x2="77.47" y2="17.78" width="0.3048" layer="1"/>
+<wire x1="77.47" y1="17.78" x2="76.2" y2="16.51" width="0.3048" layer="1"/>
+<wire x1="76.2" y1="16.51" x2="76.2" y2="10.16" width="0.3048" layer="1"/>
+<wire x1="76.2" y1="10.16" x2="77.47" y2="8.89" width="0.3048" layer="1"/>
+<wire x1="77.47" y1="8.89" x2="80.01" y2="8.89" width="0.3048" layer="1"/>
+<polygon width="0.254" layer="1">
+<vertex x="82.55" y="20.32"/>
+<vertex x="82.55" y="16.51"/>
+<vertex x="83.82" y="15.24"/>
+<vertex x="86.36" y="15.24"/>
+<vertex x="86.36" y="21.59"/>
+<vertex x="83.82" y="21.59"/>
+<vertex x="82.55" y="22.86"/>
+<vertex x="82.55" y="31.75"/>
+<vertex x="80.01" y="31.75"/>
+<vertex x="80.01" y="22.86"/>
+</polygon>
+<polygon width="0.254" layer="1">
+<vertex x="80.01" y="31.75"/>
+<vertex x="80.01" y="35.56"/>
+<vertex x="82.55" y="38.1"/>
+<vertex x="88.9" y="38.1"/>
+<vertex x="90.17" y="39.37"/>
+<vertex x="91.44" y="39.37"/>
+<vertex x="82.55" y="34.29"/>
+<vertex x="82.55" y="31.75"/>
+</polygon>
+<polygon width="0.254" layer="1">
+<vertex x="91.44" y="39.37"/>
+<vertex x="92.71" y="39.37"/>
+<vertex x="92.71" y="36.83"/>
+<vertex x="91.44" y="36.83"/>
+<vertex x="88.9" y="34.29"/>
+<vertex x="83.82" y="34.29"/>
+<vertex x="82.55" y="33.02"/>
+<vertex x="82.55" y="31.75"/>
+<vertex x="80.01" y="31.75"/>
+<vertex x="80.01" y="35.56"/>
+<vertex x="82.55" y="38.1"/>
+<vertex x="88.9" y="38.1"/>
+<vertex x="90.17" y="39.37"/>
+</polygon>
+<wire x1="91.44" y1="38.1" x2="88.265" y2="34.925" width="0.3048" layer="1"/>
+<wire x1="88.265" y1="34.925" x2="81.915" y2="34.925" width="0.3048" layer="1"/>
+<wire x1="80.01" y1="8.89" x2="80.01" y2="9.21" width="0" layer="19" extent="1-1"/>
+<wire x1="91.44" y1="38.1" x2="85.01" y2="17.78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
 <contactref element="U$11" pad="IN-"/>
@@ -2399,25 +2439,29 @@ design rules under a new name.</description>
 <contactref element="U3" pad="5"/>
 <contactref element="R7" pad="2"/>
 <contactref element="R6" pad="1"/>
-<wire x1="88.9" y1="88.9" x2="88.9" y2="91.44" width="0" layer="19" extent="1-1"/>
-<wire x1="57.15" y1="92.075" x2="88.9" y2="91.44" width="0" layer="19" extent="1-1"/>
-<wire x1="40.64" y1="86.36" x2="57.15" y2="92.075" width="0" layer="19" extent="1-1"/>
-<wire x1="25.146" y1="78.232" x2="40.64" y2="86.36" width="0" layer="19" extent="1-1"/>
-<wire x1="33.02" y1="66.04" x2="25.146" y2="78.232" width="0" layer="19" extent="1-1"/>
-<wire x1="48.51" y1="55.075" x2="33.02" y2="66.04" width="0" layer="19" extent="1-1"/>
-<wire x1="60.96" y1="66.04" x2="48.51" y2="55.075" width="0" layer="19" extent="1-1"/>
-<wire x1="43.18" y1="38.1" x2="48.51" y2="53.8894" width="0" layer="19" extent="1-1"/>
-<wire x1="31.75" y1="30.48" x2="43.18" y2="38.1" width="0" layer="19" extent="1-1"/>
-<wire x1="25.146" y1="38.608" x2="31.75" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="2.54" y1="38.1" x2="25.146" y2="38.608" width="0" layer="19" extent="1-1"/>
-<wire x1="50.8" y1="8.89" x2="31.75" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="77.47" y1="40.64" x2="60.96" y2="66.04" width="0" layer="19" extent="1-1"/>
-<wire x1="91.44" y1="33.02" x2="77.47" y2="40.64" width="0" layer="19" extent="1-1"/>
-<wire x1="95.25" y1="52.07" x2="91.44" y2="33.02" width="0" layer="19" extent="1-1"/>
-<wire x1="-8.89" y1="-5" x2="2.54" y2="38.1" width="0" layer="19" extent="1-1"/>
-<wire x1="-9.21" y1="-13.97" x2="-8.89" y2="-5" width="0" layer="19" extent="1-1"/>
-<wire x1="-10.16" y1="-19.05" x2="-9.21" y2="-13.97" width="0" layer="19" extent="1-1"/>
-<wire x1="-32.197" y1="-8.763" x2="-10.16" y2="-19.05" width="0" layer="19" extent="1-1"/>
+<wire x1="93.66" y1="16.83" x2="91.44" y2="16.83" width="0.3048" layer="1"/>
+<wire x1="94.93" y1="11.43" x2="94.93" y2="15.56" width="0.3048" layer="1"/>
+<wire x1="94.93" y1="15.56" x2="93.66" y2="16.83" width="0.3048" layer="1"/>
+<polygon width="0.3048" layer="1">
+<vertex x="87.63" y="12.7"/>
+<vertex x="87.63" y="17.78"/>
+<vertex x="95.25" y="17.78"/>
+<vertex x="96.52" y="17.78"/>
+<vertex x="96.52" y="10.16"/>
+<vertex x="87.63" y="10.16"/>
+</polygon>
+<polygon width="0.1524" layer="16">
+<vertex x="0" y="96.52"/>
+<vertex x="0" y="-1.27"/>
+<vertex x="97.79" y="-1.27"/>
+<vertex x="97.79" y="96.52"/>
+</polygon>
+<wire x1="0" y1="96.52" x2="0" y2="-1.27" width="0.1524" layer="16"/>
+<wire x1="0" y1="-1.27" x2="97.79" y2="-1.27" width="0.1524" layer="16"/>
+<wire x1="97.79" y1="-1.27" x2="97.79" y2="96.52" width="0.1524" layer="16"/>
+<wire x1="97.79" y1="96.52" x2="0" y2="96.52" width="0.1524" layer="16"/>
+<wire x1="87.71" y1="17.78" x2="88.9" y2="17.78" width="0.3048" layer="1"/>
+<wire x1="87.63" y1="26.67" x2="87.71" y2="17.78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="V+_MB">
 <contactref element="R3" pad="1"/>
@@ -2484,9 +2528,56 @@ design rules under a new name.</description>
 <wire x1="33.02" y1="62.23" x2="36.83" y2="58.42" width="0.508" layer="1"/>
 <contactref element="U3" pad="6"/>
 <contactref element="C3" pad="1"/>
+<wire x1="87.71" y1="18.73" x2="91.44" y2="18.73" width="0.3048" layer="1"/>
+<wire x1="50.8" y1="13.97" x2="54.61" y2="13.97" width="0.3048" layer="1"/>
+<via x="54.61" y="13.97" extent="1-16" drill="0.35"/>
+<wire x1="54.61" y1="13.97" x2="55.88" y2="13.97" width="0.3048" layer="16"/>
+<wire x1="91.44" y1="19.05" x2="90.17" y2="20.32" width="0.3048" layer="1"/>
+<polygon width="0.3048" layer="1">
+<vertex x="8.89" y="80.01"/>
+<vertex x="7.62" y="78.74"/>
+<vertex x="7.62" y="69.85"/>
+<vertex x="34.29" y="69.85"/>
+<vertex x="35.56" y="74.93"/>
+<vertex x="13.97" y="74.93"/>
+<vertex x="11.43" y="77.47"/>
+</polygon>
+<polygon width="0.3048" layer="1">
+<vertex x="8.89" y="78.74"/>
+<vertex x="15.24" y="78.74"/>
+<vertex x="15.24" y="74.93"/>
+<vertex x="38.1" y="74.93"/>
+<vertex x="38.1" y="64.77"/>
+<vertex x="7.62" y="64.77"/>
+<vertex x="7.62" y="69.85"/>
+<vertex x="8.89" y="71.12"/>
+</polygon>
+<via x="91.44" y="24.13" extent="1-16" drill="0.35"/>
+<wire x1="90.17" y1="20.32" x2="90.17" y2="22.86" width="0.3048" layer="1"/>
+<wire x1="90.17" y1="22.86" x2="91.44" y2="24.13" width="0.3048" layer="1"/>
+<wire x1="55.88" y1="13.97" x2="87.63" y2="13.97" width="1.524" layer="16"/>
+<wire x1="90.17" y1="16.51" x2="90.17" y2="24.13" width="1.524" layer="16"/>
+<wire x1="87.63" y1="13.97" x2="90.17" y2="16.51" width="1.524" layer="16"/>
+<wire x1="90.17" y1="24.13" x2="91.44" y2="24.13" width="1.524" layer="16"/>
+<wire x1="91.44" y1="24.13" x2="91.44" y2="18.73" width="1.524" layer="1"/>
+<polygon width="0.254" layer="1">
+<vertex x="50.8" y="12.7"/>
+<vertex x="36.83" y="12.7"/>
+<vertex x="35.56" y="13.97"/>
+<vertex x="35.56" y="34.29"/>
+<vertex x="35.56" y="57.15"/>
+<vertex x="33.02" y="59.69"/>
+<vertex x="33.02" y="60.96"/>
+<vertex x="26.67" y="60.96"/>
+<vertex x="26.67" y="66.04"/>
+<vertex x="30.48" y="66.04"/>
+<vertex x="38.1" y="58.42"/>
+<vertex x="38.1" y="17.78"/>
+<vertex x="39.37" y="16.51"/>
+<vertex x="40.64" y="15.24"/>
+<vertex x="50.8" y="15.24"/>
+</polygon>
 <wire x1="59.69" y1="91.44" x2="59.69" y2="92.075" width="0" layer="19" extent="1-1"/>
-<wire x1="-9.84" y1="-5" x2="50.8" y2="13.97" width="0" layer="19" extent="1-1"/>
-<wire x1="-11.11" y1="-13.97" x2="-9.84" y2="-5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="R5" pad="1"/>
@@ -2516,25 +2607,42 @@ design rules under a new name.</description>
 <wire x1="49.53" y1="52.07" x2="50.8" y2="53.34" width="0.3048" layer="1"/>
 <wire x1="50.8" y1="53.34" x2="50.8" y2="55.075" width="0.3048" layer="1"/>
 </signal>
-<signal name="N$7">
+<signal name="NTC">
 <contactref element="U3" pad="1"/>
 <contactref element="R6" pad="2"/>
-<wire x1="-9.84" y1="-7.7" x2="-7.62" y2="-19.05" width="0" layer="19" extent="1-1"/>
+<wire x1="85.01" y1="25.32" x2="85.01" y2="18.73" width="0.3048" layer="1"/>
+<wire x1="85.01" y1="25.32" x2="85.09" y2="25.4" width="0.3048" layer="1"/>
+<wire x1="85.09" y1="25.4" x2="85.09" y2="26.67" width="0.3048" layer="1"/>
 </signal>
-<signal name="N$9">
+<signal name="CHG_BAR">
 <contactref element="U3" pad="3"/>
 <contactref element="LED1" pad="C"/>
-<wire x1="-7.94" y1="-7.7" x2="-16.51" y2="-16.73" width="0" layer="19" extent="1-1"/>
+<wire x1="84.69" y1="16.51" x2="85.01" y2="16.83" width="0.3048" layer="1"/>
+<wire x1="85.01" y1="16.83" x2="85.01" y2="16.29" width="0.3048" layer="1"/>
+<wire x1="85.01" y1="16.29" x2="80.01" y2="16.29" width="0.3048" layer="1"/>
 </signal>
-<signal name="N$11">
+<signal name="ISET">
 <contactref element="U3" pad="4"/>
 <contactref element="R7" pad="1"/>
-<wire x1="-7.94" y1="-5" x2="-34.097" y2="-8.763" width="0" layer="19" extent="1-1"/>
+<wire x1="87.71" y1="16.83" x2="90.57" y2="13.97" width="0.3048" layer="1"/>
+<wire x1="90.57" y1="13.97" x2="91.44" y2="13.97" width="0.3048" layer="1"/>
+<wire x1="91.44" y1="13.97" x2="92.71" y2="12.7" width="0.3048" layer="1"/>
+<wire x1="92.71" y1="12.7" x2="92.71" y2="11.43" width="0.3048" layer="1"/>
+<wire x1="92.71" y1="11.43" x2="93.03" y2="11.43" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$13">
 <contactref element="LED1" pad="A"/>
 <contactref element="R8" pad="1"/>
-<wire x1="-16.51" y1="-18.83" x2="-17.46" y2="-29.21" width="0" layer="19" extent="1-1"/>
+<wire x1="80.01" y1="14.19" x2="80.01" y2="11.11" width="0.3048" layer="1"/>
+</signal>
+<signal name="N$6">
+<via x="86.36" y="17.78" extent="1-16" drill="0.35"/>
+</signal>
+<signal name="N$7">
+<via x="95.25" y="16.51" extent="1-16" drill="0.35"/>
+</signal>
+<signal name="N$11">
+<via x="88.9" y="11.43" extent="1-16" drill="0.35"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
