@@ -1,11 +1,11 @@
 {
     "Header": {
         "Comment": "All values are metric (mm)",
-        "CreationDate": "2020-01-16T15:56:39Z",
+        "CreationDate": "2020-03-08T12:09:16Z",
         "GenerationSoftware": {
             "Application": "EAGLE",
             "Vendor": "Autodesk",
-            "Version": "9.5.2"
+            "Version": "9.5.0"
         },
         "Part": "Single"
     },
@@ -15,7 +15,7 @@
         "Name": {
             "ProjectId": "drone_parachute"
         },
-        "Owner": "Param Deshpande <deshpandeparam10@gmail.com>",
+        "Owner": "  <>",
         "Size": {
             "X": 97.79,
             "Y": 97.79
